@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Header -->
+	 <!-- Header -->
+<head>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap Imports -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="static/necysc_app/style.css" rel="stylesheet" />
+    <link rel="icon" href="static/necysc_app/images/favicon.ico">
+</head>
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--Bootstrap CSS-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<title> About Us </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!--global Hind font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: "Hind", sans-serif;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		
+
+    <style>
+        a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            top: 100%;
+        }
+
+        .dropdown-content a {
+            color: #4e598c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #4e598c;
+            color: #F9C784;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar-link {
+            color: #4e598c;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #F9C784;
+            background: #4e598c;
+            transition: color 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 9px;
+        }
+
+        .active {
+            color: #F9C784; 
+            background: #4e598c;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 9px;
+        }
+
+
+        .btn-login {
+            background-color: #4e598c;
+            color: #F9C784;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-login:hover {
+            background-color: #F9C784;
+            color: #FFFFFF;
+        }
+
+        .btn-padding {
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            text-align: center;
+            background: #F9C784;
+            color: #4e598c;
+            transition: all 0.3s ease;
+        }
+
+        .btn-padding:hover {
+            background-color: #4e598c;
+            color: #ffffff;
+        }
+
+
+        .col-auto {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            height: 4rem;
+            max-width: 100%;
+        }
+
+        #logobutton {
+            background-color: #4e598c;
+            transition: all 0.3s ease;
+        }
+
+        #logobutton:hover {
+            background-color: #F9C784;
+            color: #FFFFFF;
+        }
+
+
+        .menu-toggle {
+            display: none;
+        }
+        
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #4e598c;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        @media (max-width: 1000px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                padding: 10px;
+                z-index: 1000;
+                padding-left: 50px;
+                font-size: 3vh;
+                padding-right: 50px;
+            }
+        
+            .menu-toggle:checked + .hamburger + .nav-links {
+            display: flex;
+            }
+        
+            .hamburger {
+            display: block;
+            }
+        }
+        
+        .optional {
+            color: gray;
+            font-style: italic;
+        }
+        
+        .white-link {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .white-link:hover {
+            color: #cccccc;
+        }
+        
+        .welcome-title {
+            color: white;
+        }
+  </style>
+
+<!-- navbar sticky -->
+<!-- navbar sticky -->
+<div class="row mt-2 pt-4 pb-4 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row">
+    <!-- NECYSC logo -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        &#9776;
+    </label>
+
+    <div class="nav-links">
+       
+        <div class="col-auto d-none d-xl-block">
+            <a href="index.html" id="logo-link">
+                <img src="static/necysc_app/images/logo2.png" alt="Your Image Description" id="logobutton" class="rounded-pill p-2" style="width: 6rem; height: auto"/>
+            </a>
+        </div>
+
+        <div class="dropdown col-auto">
+            <a href="index.html" class="navbar-link">Home</a>
+        </div>
+
+    
+    <div class="dropdown col-auto">
+        <a href="about.html" class="navbar-link active">About</a>
+        <div class="dropdown-content">
+            <a href="about.html#sponsors">Sponsors</a>
+            <a href="about.html#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="programs.html" class="navbar-link ">Programs</a>
+        <div class="dropdown-content">
+            <a href="programs.html#day">Day Camp</a>
+            <a href="programs.html#on">Overnight Camp</a>
+            <a href="programs.html#ea">ExplorAsian</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="staff.html" class="navbar-link ">Staff</a>
+        <div class="dropdown-content">
+            <a href="staff.html#cit">CIT</a>
+            <a href="staff.html#counselor">Counselor</a>
+            <a href="staff.html#ra">RA</a>
+            <a href="staff.html#ops">OPs</a>
+            <a href="staff.html#committee">Committee</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="registration.html" class="navbar-link ">Registration</a>
+        <div class="dropdown-content">
+            <a href="registration.html#importantdates">2025 Important Dates</a>
+            <a href="registration.html#financialaid">Financial Aid</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="faq.html" class="navbar-link ">FAQ</a>
+        <div class="dropdown-content">
+            <a href="faq.html#faqregistration">Registration</a>
+            <a href="faq.html#faqleavingcamp">Leaves and Visits</a>
+            <a href="faq.html#faqhealth">Health and Safety</a>
+            <a href="faq.html#camp">Camp Activities</a>
+        </div>
+    </div>
+    
+    
+    <div class="col-auto ms-auto">
+          <a href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G" target="_blank" class="btn-padding me-3">2024 Video</a>
+          
+          <a href="" class="btn-login">Register</a>
+          
+    </div>
+    
+</div>
+
+		<!-- Content -->
+		<div class="container">
+
+<link rel="stylesheet" href="static/necysc_app/about.css">
+
+<section>
+	<div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+		<div class="overlay"></div>
+		<div class="col-md-6 p-lg-5 mx-auto my-5 position-relative container">
+			<h1 class="display-3 fw-bold text-white">About Us</h1>
+		</div>
+	</div>
+</section>
+
+<section class="ms-md-5 me-md-5 mb-5 mt-5">
+	<div id="aboutus" class="overlay">
+	<div class="container">
+		<h1 class="textleft"><i class="icon-right-circled"></i>About Us</h1>
+		<p>
+		Established in 1986, the New England Chinese Youth Summer Camp (NECYSC)
+		is a non-profit organization run by dedicated parents and volunteers.
+		Hosted at Brandeis University, our week-long summer camp is designed for
+		youth aged 6 to 15. A range of programs - including Day, Overnight, and
+		ExplorAsian - are provided, with the primary goal of nurturing cultural
+		appreciation and fostering a strong community spirit.
+		</p>
+		<p>
+		Our campers actively participate in cultural activities like Chinese
+		Yo-yo, Kung-fu, and Calligraphy throughout the day. These are
+		complemented by counselor-led events such as Carnival, Fun In The Sun,
+		Talent Show, End-of-the-Week Dance, and the eagerly-awaited CIT Dress
+		Up. Campers create life-long memories and friendships that go beyond the
+		ordinary camp setting. As the week concludes, each group performs skills
+		they learned during their time at NECYSC for friends and family members.
+		</p>
+	</div>
+
+	<div class="bg-dark" style="height: 2px;"></div>
+</section>
+
+<section class="ms-md-5 me-md-5 mb-5 mt-5">
+	<div class="container mb-5">
+		<div class="overlay">
+		<h1 class="textleft"><i class="icon-right-circled"></i>Meet the Team</h1>
+			<div class="row g-4 pt-2" id="meettheteam">
+				<!-- staff cards will be dynamically added here -->
+			</div>
+		</div>
+		<div class="mt-4">
+			<p class="fs-5"> More committee members are listed <a href="staff.html">here.</a></p>
+		</div>
+	</div>
+
+	
+	<div class="bg-dark" style="height: 2px;"></div>
+</section>
+
+
+<section class="ps-md-5 pe-md-5 mb-3 ">
+	<div class="container">
+		<h1 class="textleft" id="sponsors" >Sponsors</h1>
+		<!-- grid of cards for each sponsor, each with glow animation -->
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Tow Family</h4>
+						<!-- hline -->
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Dragon Sponsor</h5>
+						<p class="text-secondary">The Tow family honors Alana Tow's legacy by supporting NECYSC through the Alana for Allergies Memorial Fund, in remembrance of her summers as a camper and counselor, where she made lifelong friends.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Cultural Center of TECO in Boston</h4>
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Diamond Sponsor</h5>
+						<p class="card-text text-secondary">Thank you for your generous support to Director Mr. Chris Liao!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Overseas Community Affairs Council (OCAC)</h4>
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Diamond Sponsor</h5>
+						<p class="card-text text-secondary">Thank you for your generous support to Director Mr. Zhuren Pan!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Greater Boston Chinese Culture Association (GBCCA)</h4>
+						<!-- hline -->
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Diamond Sponsor</h5>
+						<p class="text-secondary">Thank you for your generous support to Ms. Shirley Wong and Ms. Renne Liu!</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Summer Star Foundation</h4>
+						<!-- hline -->
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Diamond Sponsor</h5>
+						<p class="text-secondary">Thank you for your generous support to the Summer Star Foundation for allowing our campers to learn about local hunger relief initiatives at Land Sake Farm!</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Breger Family</h4>
+						<!-- hline -->
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Diamond Sponsor</h5>
+						<p class="text-secondary">Thank you for your generous support to the Breger Family!</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="card glow h-100 d-flex flex-column">
+					<div class="card-body">
+						<h4 class="card-title">Iridium Strategy Solutions</h4>
+						<!-- hline -->
+						<div class="bg-secondary mt-3 mb-3" style="height: 1px;"></div>
+						<h5 class="card-text">Platinum Sponsor</h5>
+						<p class="text-secondary">Thank you for your generous support to Andrew and Kim from Iridium Strategy Solutions!</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+<section class="ps-md-5 pe-md-5 mb-3">
+	<div class="container row">
+		<div class="col-md-8">
+			<h1 class="textleft" id="sponsors" >Featured Partner: The BOBA Project</h1>
+			<p>The <strong style="color: #F9C784;">BOBA Project</strong> is a research initiative focused on understanding the experiences 
+				and perspectives of Asian American teens, specifically those <u>aged 12-18</u>, 
+				and their families. Conducted by a team from Brigham and Women's Hospital 
+				and Harvard Medical School, the project aims to explore issues related to 
+				identity, 
+				<i>mental health, and the impact of discrimination</i> through surveys and 
+				interactive Zoom sessions. 
+			</p>
+				
+			<p>By facilitating open dialogues between teens 
+				and their parents, 
+				the BOBA Project seeks to uplift Asian American voices and foster community 
+				connections while addressing the well-being of these families in a post-pandemic 
+				context
+			<p>
+			<a class="btn-purple fw-bold px-4 py-2" href="https://www.thebobaproject.com/" target="_blank">Learn More</a>
+		</div>
+		<div class="col-md-4 justify-content-center align-items-center">
+			<img src="static/necysc_app/images/BOBA_logo.png" alt="The BOBA Project" class="img-fluid">
+		</div>
+	</div>
+</section>
+
+<style>
+	.glow {
+		transition: box-shadow 0.3s ease-in-out;
+		}
+		
+	.glow:hover {
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15); /* Adjust the glow effect */
+	}
+</style>
+
+<script>
+	const staff = [
+		["Christopher Chiu", "Directory", "chris_chiu.jpg"],
+		["Paul Eska", "Assistant Director", "paul_eska.jpg"],
+		["Mikayla Tow", "Head Counselor", "mikayla.jpg"],
+		["Charles Tang", "Head Counselor", "charles.jpg"],
+		["David Fox", "Public Relations", "david_fox.jpg"],
+		["Helen Ng", "Public Relations", "helen_ng.jpg"],
+		["Mike Breen", "Registration", "mike_breen.jpg"],
+		["Lola Yao", "Treasurer", "lola_yao.jpg"],
+		["Lina Harp", "Education", "lina_harp.jpg"],
+		["Deb Morris", "Education", "deb_morris.jpg"],
+		["Eugene Chiu", "Education", "eugene_chiu.jpg"],
+		["Deb Breen", "General Admin", "deb_breen.jpg"],
+		["Wendy Chan", "General Admin", "wendy_chan.jpg"],
+		["Danielle Watson", "Medical", "danielle_watson.jpg"],
+		["Alyssa Chan", "Medical", "alyssa_chan.jpg"],
+		["Barbara O'Toole", "Registration", "barbara_otoole.jpg"]
+		["Wei Tang", "Registration", "wei_tang.jpg"]
+		
+	]
+
+	const staffContainer = document.getElementById("meettheteam");
+
+	for (let i = 0; i < staff.length; i++) {
+		const staffMember = staff[i];
+		const staffCard = document.createElement("div");
+		staffCard.className = "col-xl-3 col-md-6";
+		staffCard.innerHTML = `
+			<div class="card text-center border-0 bg-light">
+				<div class="card-body px-4 py-4">
+					<div class="mb-4 mx-2 mx-md-5"><img onerror="this.onerror=null; this.remove();" class="img-fluid rounded-circle" src="static/necysc_app/images/headshots/${staffMember[2]}"></div>
+					<h5 class="fw-bold">${staffMember[0]}</h5>
+					<div class="text-muted">
+						${staffMember[1]}
+					</div>
+				</div>
+			</div>
+		`;
+		staffContainer.appendChild(staffCard);
+	}
+
+</script>
+</div>
+
+		<!-- Footer -->
+		<!-- Footer -->
+<footer class="container p-4 m-auto align-items-center justify-content-center" id="contact">
+  <div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px;"></div>
+
+  <h2 class="mb-3 mt-5 text-center" style="color: #4e598c;">Connect With Us!</h2>
+  <p class="text-center text-muted small"> General Inquiries:
+    <a href="mailto:registration@necysc.org" style="color: black">registration@necysc.org</a>
+  </p>
+  <p class="text-center small text-muted"> Director:
+    <a href="mailto:registration@necysc.org" style="color: black">director@necysc.org</a>
+  </p>
+
+  <div class="row text-center align-items-center justify-content-center">
+    <div class="col-auto">
+        <a href="https://www.instagram.com/NECYSC/" style="display: inline-block;" target="_blank">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png" alt="Instagram Logo" style="width: 50px; height: auto;">
+        </a>
+    </div>
+    <div class="col-auto">
+      <a href="https://www.facebook.com/NECYSC" style="display: inline-block;" target="_blank">
+          <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png" alt="Facebook Logo" style="width: 40px; height: auto;">
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Copyright -->
+  <div class="container"></div>
+  <div class="text-center p-4">
+    © 2024 Copyright.
+    <a class="text-reset" href="https://necysc.org/">necysc.org</a>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+		<!--Bootstrap JavaScript Plugins-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

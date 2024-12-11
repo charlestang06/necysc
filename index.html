@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Header -->
+	 <!-- Header -->
+<head>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap Imports -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="static/necysc_app/style.css" rel="stylesheet" />
+    <link rel="icon" href="static/necysc_app/images/favicon.ico">
+</head>
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--Bootstrap CSS-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<title> Home </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!--global Hind font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: "Hind", sans-serif;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		
+
+    <style>
+        a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            top: 100%;
+        }
+
+        .dropdown-content a {
+            color: #4e598c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #4e598c;
+            color: #F9C784;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar-link {
+            color: #4e598c;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #F9C784;
+            background: #4e598c;
+            transition: color 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 9px;
+        }
+
+        .active {
+            color: #F9C784; 
+            background: #4e598c;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 9px;
+        }
+
+
+        .btn-login {
+            background-color: #4e598c;
+            color: #F9C784;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-login:hover {
+            background-color: #F9C784;
+            color: #FFFFFF;
+        }
+
+        .btn-padding {
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            text-align: center;
+            background: #F9C784;
+            color: #4e598c;
+            transition: all 0.3s ease;
+        }
+
+        .btn-padding:hover {
+            background-color: #4e598c;
+            color: #ffffff;
+        }
+
+
+        .col-auto {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            height: 4rem;
+            max-width: 100%;
+        }
+
+        #logobutton {
+            background-color: #4e598c;
+            transition: all 0.3s ease;
+        }
+
+        #logobutton:hover {
+            background-color: #F9C784;
+            color: #FFFFFF;
+        }
+
+
+        .menu-toggle {
+            display: none;
+        }
+        
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #4e598c;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        @media (max-width: 1000px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                padding: 10px;
+                z-index: 1000;
+                padding-left: 50px;
+                font-size: 3vh;
+                padding-right: 50px;
+            }
+        
+            .menu-toggle:checked + .hamburger + .nav-links {
+            display: flex;
+            }
+        
+            .hamburger {
+            display: block;
+            }
+        }
+        
+        .optional {
+            color: gray;
+            font-style: italic;
+        }
+        
+        .white-link {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .white-link:hover {
+            color: #cccccc;
+        }
+        
+        .welcome-title {
+            color: white;
+        }
+  </style>
+
+<!-- navbar sticky -->
+<div class="row mt-2 pt-4 pb-4 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row">
+    <!-- NECYSC logo -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        &#9776;
+    </label>
+
+    <div class="nav-links">
+       
+        <div class="col-auto d-none d-xl-block">
+            <a href="index.html" id="logo-link">
+                <img src="static/necysc_app/images/logo2.png" alt="Your Image Description" id="logobutton" class="rounded-pill p-2" style="width: 6rem; height: auto"/>
+            </a>
+        </div>
+
+        <div class="dropdown col-auto">
+            <a href="index.html" class="navbar-link active">Home</a>
+        </div>
+
+    
+    <div class="dropdown col-auto">
+        <a href="about.html" class="navbar-link ">About</a>
+        <div class="dropdown-content">
+            <a href="about.html#sponsors">Sponsors</a>
+            <a href="about.html#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="programs.html" class="navbar-link ">Programs</a>
+        <div class="dropdown-content">
+            <a href="programs.html#day">Day Camp</a>
+            <a href="programs.html#on">Overnight Camp</a>
+            <a href="programs.html#ea">ExplorAsian</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="staff.html" class="navbar-link ">Staff</a>
+        <div class="dropdown-content">
+            <a href="staff.html#cit">CIT</a>
+            <a href="staff.html#counselor">Counselor</a>
+            <a href="staff.html#ra">RA</a>
+            <a href="staff.html#ops">OPs</a>
+            <a href="staff.html#committee">Committee</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="registration.html" class="navbar-link ">Registration</a>
+        <div class="dropdown-content">
+            <a href="registration.html#importantdates">2025 Important Dates</a>
+            <a href="registration.html#financialaid">Financial Aid</a>
+        </div>
+    </div>
+
+    <div class="dropdown col-auto">
+        <a href="faq.html" class="navbar-link ">FAQ</a>
+        <div class="dropdown-content">
+            <a href="faq.html#faqregistration">Registration</a>
+            <a href="faq.html#faqleavingcamp">Leaves and Visits</a>
+            <a href="faq.html#faqhealth">Health and Safety</a>
+            <a href="faq.html#camp">Camp Activities</a>
+        </div>
+    </div>
+    
+    
+    <div class="col-auto ms-auto">
+          <a href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G" target="_blank" class="btn-padding me-3">2024 Video</a>
+          
+          <a href="" class="btn-login">Register</a>          
+    </div>
+    
+</div>
+
+		<!-- Content -->
+		<div class="container">
+
+<link rel="stylesheet" href="static/necysc_app/index.css">
+<style>
+    .hero-section { 
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero-section video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        z-index: 1;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero-section:hover::before {
+        background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+    }
+    
+    .hero-section .container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    @media (max-width: 776px) {
+        .ratio {
+            width: 47% !important; /* Adjust the value as needed */
+        }
+    }
+    
+    .bg-purple {
+        background-color: #4E598C;
+    }
+
+</style>
+
+<section>
+    <div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <video autoplay loop muted playsinline>
+            <source src="static/necysc_app/images/home_hero_banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="col-md-10 p-lg-5 mx-auto my-5 position-relative container">
+            <h1 class="display-4 fw-bold text-white" id="importantdates" style="">New England Chinese Youth Summer Camp</h1>
+        </div>
+    </div>
+</section>
+
+<h1 class="ps-5 mb-3 pt-3" id="aboutus">About Us</h1>
+<p class="ps-5 pe-5 mb-4 col-md-6">Established in 1986, the New England Chinese Youth Summer Camp (NECYSC) is a non-profit organization 
+    run by dedicated parents and volunteers. Hosted at Brandeis University, our week-long summer camp is designed 
+    for youth aged 6 to 15. 
+    <a class="programslink" href="/programs/" style="color: #f9c784;">A range of programs - including Day, Overnight, and ExplorAsian</a> - are provided, with 
+    the primary goal of nurturing cultural appreciation and fostering a strong community spirit.
+</p>
+<div class="ps-5">
+    <a href="registration.html" class="col-md-3 btn-purple rounded-pill fw-bold">
+        Register today!
+    </a>
+</div>
+
+
+<div class="bg-purple position-relative" style="line-height: 0;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <h2 class="mb-5 text-white text-center">An authentic <span class="fw-bolder text-decoration-underline" style="text-underline-offset: 10px;">Chinese-American</span> cultural experience...</h2>
+    <div class="row ms-md-5 me-md-5 pt-0 justify-content-center align-items-center">
+    <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/waterballoons.png" alt="Water Balloons Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+    <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/indoors.png" alt="Indoors Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+    <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/pose.png" alt="Pose Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+    <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/filming.png" alt="Filming Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+</div>
+</div>
+
+<div class="shadow fansparallax mobileparallax"></div>
+
+
+<div class="bg-purple position-relative pt-5">
+<div class="ps-5 pe-5 justify-content-center align-items-center">
+    <h2 class="text-center text-white">
+        Camp Activities
+    </h2>
+    <p class="col-md-6 m-auto text-white">Our campers actively participate in cultural activities like Chinese Yo-yo, Kung-fu, 
+        and Calligraphy throughout the day. These are complemented by counselor-led events such as 
+        Carnival, Fun In The Sun, Talent Show, End-of-the-Week Dance, and the eagerly-awaited CIT Dress Up. 
+        Campers create life-long memories and friendships that go beyond the ordinary camp setting. As the week concludes, 
+        each group performs skills they learned during their time at NECYSC for friends and family members.
+    </p>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</div>
+
+
+<div class="row ms-md-5 me-md-5 mb-5 justify-content-center align-items-center">
+    <div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/lunch.png" alt="Lunch Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+    <div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/swim.png" alt="Swim Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+    <div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/flags.png" alt="Flags Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+    <div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+        <img src="static/necysc_app/images/instrument.png" alt="Instrument Image" class="img-fluid" style="object-fit: cover;">
+    </div>
+</div>
+
+<div class="shadow volleyballparallax mobileparallax mb-5"></div>
+
+<div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px;"></div>
+
+<div class="container d-flex justify-content-center">
+    <div class="card shadow glow h-100 d-flex flex-column" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h3 class="card-title">Sample Schedule</h3>
+            <!-- Horizontal line -->
+            
+            <img src="static/necysc_app/images/schedule.svg" alt="Sample Schedule" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+
+<!--parallax with fan activity image-->
+<style>
+    .fansparallax {
+      background-image: url("static/necysc_app/images/fans.png");
+    
+      min-height: 500px;
+    
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .volleyballparallax {
+      background-image: url("static/necysc_app/images/volleyball.png");
+    
+      min-height: 500px;
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        max-width: 600px;
+        padding: 33px;
+        background-color: rgba(255, 255, 255);
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    /* turn off parallax scrolling for mobile*/
+    @media only screen and (max-device-width: 1366px) {
+        .mobileparallax {
+            background-attachment: scroll;
+        }
+    }
+
+    .btn-dark:hover {
+        background-color: #5a6268;
+        color: white;
+    }
+</style>
+
+
+
+
+</div>
+
+		<!-- Footer -->
+		<!-- Footer -->
+<footer class="container p-4 m-auto align-items-center justify-content-center" id="contact">
+  <div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px;"></div>
+
+  <h2 class="mb-3 mt-5 text-center" style="color: #4e598c;">Connect With Us!</h2>
+  <p class="text-center text-muted small"> General Inquiries:
+    <a href="mailto:registration@necysc.org" style="color: black">registration@necysc.org</a>
+  </p>
+  <p class="text-center small text-muted"> Director:
+    <a href="mailto:registration@necysc.org" style="color: black">director@necysc.org</a>
+  </p>
+
+  <div class="row text-center align-items-center justify-content-center">
+    <div class="col-auto">
+        <a href="https://www.instagram.com/NECYSC/" style="display: inline-block;" target="_blank">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png" alt="Instagram Logo" style="width: 50px; height: auto;">
+        </a>
+    </div>
+    <div class="col-auto">
+      <a href="https://www.facebook.com/NECYSC" style="display: inline-block;" target="_blank">
+          <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png" alt="Facebook Logo" style="width: 40px; height: auto;">
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Copyright -->
+  <div class="container"></div>
+  <div class="text-center p-4">
+    © 2024 Copyright.
+    <a class="text-reset" href="https://necysc.org/">necysc.org</a>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+		<!--Bootstrap JavaScript Plugins-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
