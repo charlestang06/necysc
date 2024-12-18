@@ -318,6 +318,10 @@
 
 <link rel="stylesheet" href="static/necysc_app/index.css">
 <style>
+    h1, h2, h3{
+        color: #4e598c; 
+    }
+
     .hero-section { 
         position: relative;
         overflow: hidden;
@@ -341,14 +345,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+         background-color: rgba(0, 0, 0, 0.1); /*  Adjust the opacity as needed */
         z-index: 1;
-        transition: background-color 0.3s ease;
+        /* transition: background-color 0.3s ease; */
     }
     
-    .hero-section:hover::before {
-        background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
-    }
+    /* .hero-section:hover::before {
+        background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed
+    } */
     
     .hero-section .container {
         position: relative;
@@ -374,25 +378,58 @@
             <source src="static/necysc_app/images/home_hero_banner.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="col-md-10 p-lg-5 mx-auto my-5 position-relative container">
-            <h1 class="display-4 fw-bold text-white" id="importantdates" style="">New England Chinese Youth Summer Camp</h1>
-        </div>
     </div>
 </section>
 
-<h1 class="ps-5 mb-3 pt-3" id="aboutus">About Us</h1>
-<p class="ps-5 pe-5 mb-4 col-md-6">Established in 1986, the New England Chinese Youth Summer Camp (NECYSC) is a non-profit organization 
-    run by dedicated parents and volunteers. Hosted at Brandeis University, our week-long summer camp is designed 
-    for youth aged 6 to 15. 
-    <a class="programslink" href="/programs/" style="color: #f9c784;">A range of programs - including Day, Overnight, and ExplorAsian</a> - are provided, with 
-    the primary goal of nurturing cultural appreciation and fostering a strong community spirit.
-</p>
-<div class="ps-5">
-    <a href="registration.html" class="col-md-3 btn-purple rounded-pill fw-bold">
-        Register today!
-    </a>
+<div class="row">
+    <div class="col-md-6">
+        <h1 class="ps-md-5 mb-3 pt-3 fw-bold" id="aboutus">Welcome to NECYSC</h1>
+        <p class="ps-md-5 pe-5 mb-4 fs-5">Welcome to the New England Chinese Youth Summer Camp (NECYSC) – the premier cultural summer camp for 
+            Chinese-American youth in the New England area. Our camp is dedicated to providing an enriching and unforgettable summer experience 
+            focused on <strong>nurturing fun, leadership development, cultural immersion, and community building</strong>. 
+            Discover the perfect summer camp where your child can grow, learn, and make lasting memories!
+        </p>
+        <div class="ps-md-5">
+            <a href="registration.html" class="col-md-3 fs-5 btn-purple rounded-pill w-75 fw-bold">
+                Register today!
+            </a>
+        </div>
+    </div>
+    <!-- <div class="col-md-6 py-5 justify-content-center align-items-center" style="background-image: url('static/necysc_app/images/bg-blob.png'); background-size:70%; background-repeat: no-repeat; background-position: center;"> -->
+    <div class="col-md-6">
+        <div class="m-auto text-white pt-3" style="width: 90%">
+            <div class="card-body mt-1 px-5 bg-purple">
+                <h6 class="fs-4 pt-3">Upcoming Dates</h6>
+                <div id="content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5">Staff Applications Due</p>
+                        <p class="fs-5">Jan 31, 2025</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5">Early Bird (Discount) Registration Open</p>
+                        <p class="fs-5">Feb 1, 2025</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5">Early Bird Discount Close</p>
+                        <p class="fs-5">Mar 15, 2025</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5">Overnight/EA Registration Close</p>
+                        <p class="fs-5">Jun 15, 2025</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5">Day Registration Close</p>
+                        <p class="fs-5">Jun 30, 2025</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5">Camp Week!</p>
+                        <p class="fs-5">Jun 27-Aug 2, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 
 <div class="bg-purple position-relative" style="line-height: 0;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
@@ -418,17 +455,18 @@
 
 <div class="bg-purple position-relative pt-5">
 <div class="ps-5 pe-5 justify-content-center align-items-center">
-    <h2 class="text-center text-white">
+    <h2 class="text-center text-white fw-bold">
         Camp Activities
     </h2>
-    <p class="col-md-6 m-auto text-white">Our campers actively participate in cultural activities like Chinese Yo-yo, Kung-fu, 
-        and Calligraphy throughout the day. These are complemented by counselor-led events such as 
-        Carnival, Fun In The Sun, Talent Show, End-of-the-Week Dance, and the eagerly-awaited CIT Dress Up. 
-        Campers create life-long memories and friendships that go beyond the ordinary camp setting. As the week concludes, 
-        each group performs skills they learned during their time at NECYSC for friends and family members.
+    <p class="col-md-6 m-auto text-white fs-5">Our campers actively participate in cultural activities like <strong>Chinese Yo-yo, Kung-fu, 
+        and Calligraphy</strong> throughout the day. These are complemented by counselor-led events such as 
+        <strong>Carnival, Fun In The Sun, Talent Show, End-of-the-Week Dance, and the eagerly-awaited CIT Dress Up.</strong> 
     </p>
-    <p class="m-auto col-md-6 mt-2 text-white">
-        Check out our <a href="https://sites.google.com/necysc.org/times" target="_blank" style="color: #f9c784;">camp week newsletter!</a> 
+    <p class="col-md-6 m-auto text-white fs-5 mt-4">
+    Campers create life-long memories and friendships that go beyond the ordinary camp setting. As the week concludes, 
+        each group performs skills they learned during their time at NECYSC for friends and family members.
+    <p class="m-auto col-md-6 mt-2 text-white fs-3 text-center mt-4">
+        Check out our <a href="https://sites.google.com/necysc.org/times" class="text-decoration-underline"target="_blank" style="color: #f9c784; text-underline-offset: 10px;">camp week newsletter!</a> 
     </p>
 </div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -534,6 +572,8 @@
   <p class="text-center small text-muted"> Director:
     <a href="mailto:registration@necysc.org" style="color: black">director@necysc.org</a>
   </p>
+  <p class="text-center small text-muted"> NECYSC, PO Box 615, Weston, MA 02493
+  </p>
 
   <div class="row text-center align-items-center justify-content-center">
     <div class="col-auto">
@@ -546,14 +586,24 @@
           <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png" alt="Facebook Logo" style="width: 40px; height: auto;">
       </a>
     </div>
+    <div class="col-auto">
+        <a href="http://www.youtube.com/@NECYSC1" style="display: inline-block;" target="_blank">
+            <img src="static/necysc_app/images/youtube_logo.svg" alt="YouTube Logo" style="width: 40px; height: auto;">
+        </a>
+      </div>
+      <div class="col-auto">
+        <a href="https://www.tiktok.com/@necysc" style="display: inline-block;" target="_blank">
+            <img src="static/necysc_app/images/tiktok_logo.svg" alt="Tiktok Logo" style="width: 40px; height: auto;">
+        </a>
+      </div>
   </div>
 
 
   <!-- Copyright -->
   <div class="container"></div>
   <div class="text-center p-4">
-    © 2024 Copyright.
-    <a class="text-reset" href="https://necysc.org/">necysc.org</a>
+    Copyright © 2024 NECYSC. All Rights Reserved.
+    <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
   </div>
 
 </footer>
