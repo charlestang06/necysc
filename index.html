@@ -372,15 +372,38 @@
         background-color: #4E598C;
     }
 
+    .hero-video {
+        display: block;
+    }
+
+    .hero-image {
+        display: none;
+        background-image: url('static/necysc_app/images/hero/about_hero.jpg');
+    }
+    
+    
+    @media (max-width: 776px) {
+        .hero-video {
+            display: none;
+        }
+
+        .hero-image {
+            display: block;
+        }
+        
+    }
+
 </style>
 
 <section style="height: 98vh;">
-    <div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height: 25%;">
-        <video autoplay loop muted playsinline>
+    <div class="hero-section hero-video shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height: 25%;">
+        <video autoplay loop muted playsinline poster="static/necysc_app/images/hero/about_hero.jpg">
             <source src="static/necysc_app/images/hero/home_hero_banner_3.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+    <div class="hero-section hero-image shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height: 25%;">
+	</div>
     <div>
         <h1 class="pt-3 fw-bold text-center display-4">Traditions. Friendship. Culture. Fun. </h1>
         <h2 class="pt-3 text-center"><i>A lifetime of memories begins with just one summer at NECYSC.</i></h2>
