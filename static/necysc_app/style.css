@@ -98,3 +98,198 @@
   font-size: 50px; /* You can adjust the size according to your preference */
   animation: floatAnimation 1s ease-in-out infinite; /* Adjust the duration and timing function as needed */
 }
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  top: 100%;
+}
+
+.dropdown-content a {
+  color: #4e598c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #4e598c;
+  color: #f9c784;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .dropdown {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+}
+
+.navbar-link {
+  color: #4e598c;
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+}
+
+.navbar-link:hover {
+  color: #f9c784;
+  background: #4e598c;
+  transition: color 0.3s ease;
+  border-radius: 50px;
+}
+
+.active {
+  color: #f9c784;
+  background: #4e598c;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn-login {
+  background-color: #4e598c;
+  color: #f9c784;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-login:hover {
+  background-color: #f9c784;
+  color: #ffffff;
+}
+
+.btn-padding {
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  background: #f9c784;
+  color: #4e598c;
+  transition: all 0.3s ease;
+}
+
+.btn-padding:hover {
+  background-color: #4e598c;
+  color: #ffffff;
+}
+
+.col-auto {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 4rem;
+  max-width: 100%;
+}
+
+#logobutton {
+  background-color: #4e598c;
+  transition: all 0.3s ease;
+}
+
+#logobutton:hover {
+  background-color: #f9c784;
+  color: #ffffff;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #4e598c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    padding-left: 25px;
+    padding-right: 50px;
+  }
+
+  /* full width menu */
+  .navbar-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.optional {
+  color: gray;
+  font-style: italic;
+}
+
+.white-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.white-link:hover {
+  color: #cccccc;
+}
+
+.welcome-title {
+  color: white;
+}
+
+.glow {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow:hover {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15); /* Adjust the glow effect */
+}

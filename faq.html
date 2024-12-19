@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Header -->
-	 <!-- Header -->
-<head>
+  <!-- Header -->
+  <!-- Header -->
+  <head>
     <meta charset="UTF-8" />
     <!-- Bootstrap Imports -->
     <link
@@ -16,512 +16,527 @@
       rel="stylesheet"
     />
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <link href="static/necysc_app/style.css" rel="stylesheet" />
-    <link rel="icon" href="static/necysc_app/images/favicon.ico">
-</head>
+    <link rel="stylesheet" href="static/necysc_app/staff.css" />
+    <link rel="icon" href="static/necysc_app/images/favicon.ico" />
 
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frequently Asked Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-		<!--Bootstrap CSS-->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-
-		<title> Frequently Asked Questions </title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-			rel="stylesheet"
-		/>
-
-		<!--global Hind font-->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap"
-			rel="stylesheet"
-		/>
-		<style>
-			body {
-				font-family: "Hind", sans-serif;
-			}
-		</style>
-
-	</head>
-
-	<body>
-		<!-- Navbar -->
-		
-
+    <!--global Hind font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        a {
-            font-weight: bold;
-            text-decoration: none;
-        }
+      body {
+        font-family: "Hind", sans-serif;
+      }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+      .hero-section {
+        background-image: url("static/necysc_app/images/hero/faq_banner.jpg");
+      }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-            top: 100%;
-        }
+      h2 {
+        color: #4e598c;
+      }
+    </style>
+  </head>
 
-        .dropdown-content a {
-            color: #4e598c;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: color 0.3s ease, background-color 0.3s ease;
-        }
+  <body>
+    <!-- navbar sticky -->
+    <div
+      class="row mt-2 pt-4 pb-4 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row"
+    >
+      <!-- NECYSC logo -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger"> &#9776; </label>
 
-        .dropdown-content a:hover {
-            background-color: #4e598c;
-            color: #F9C784;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .navbar-link {
-            color: #4e598c;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-link:hover {
-            color: #F9C784;
-            background: #4e598c;
-            transition: color 0.3s ease;
-            padding: 10px 20px;
-            border-radius: 9px;
-        }
-
-        .active {
-            color: #F9C784; 
-            background: #4e598c;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 9px;
-        }
-
-
-        .btn-login {
-            background-color: #4e598c;
-            color: #F9C784;
-            transition: all 0.3s ease;
-            padding: 10px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            text-align: center;
-        }
-
-        .btn-login:hover {
-            background-color: #F9C784;
-            color: #FFFFFF;
-        }
-
-        .btn-padding {
-            padding: 10px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            text-align: center;
-            background: #F9C784;
-            color: #4e598c;
-            transition: all 0.3s ease;
-        }
-
-        .btn-padding:hover {
-            background-color: #4e598c;
-            color: #ffffff;
-        }
-
-
-        .col-auto {
-            display: flex;
-            align-items: center;
-        }
-
-        img {
-            height: 4rem;
-            max-width: 100%;
-        }
-
-        #logobutton {
-            background-color: #4e598c;
-            transition: all 0.3s ease;
-        }
-
-        #logobutton:hover {
-            background-color: #F9C784;
-            color: #FFFFFF;
-        }
-
-
-        .menu-toggle {
-            display: none;
-        }
-        
-        .hamburger {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #4e598c;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        @media (max-width: 1000px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background-color: white;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                width: 100%;
-                padding: 10px;
-                z-index: 1000;
-                padding-left: 50px;
-                font-size: 3vh;
-                padding-right: 50px;
-            }
-        
-            .menu-toggle:checked + .hamburger + .nav-links {
-            display: flex;
-            }
-        
-            .hamburger {
-            display: block;
-            }
-        }
-        
-        .optional {
-            color: gray;
-            font-style: italic;
-        }
-        
-        .white-link {
-            color: #ffffff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .white-link:hover {
-            color: #cccccc;
-        }
-        
-        .welcome-title {
-            color: white;
-        }
-  </style>
-
-<!-- navbar sticky -->
-<!-- navbar sticky -->
-<div class="row mt-2 pt-4 pb-4 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row">
-    <!-- NECYSC logo -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-        &#9776;
-    </label>
-
-    <div class="nav-links">
-       
+      <div class="nav-links">
         <div class="col-auto d-none d-xl-block">
-            <a href="index.html" id="logo-link">
-                <img src="static/necysc_app/images/logo2.png" alt="Your Image Description" id="logobutton" class="rounded-pill p-2" style="width: 6rem; height: auto"/>
-            </a>
+          <a href="index.html" id="logo-link">
+            <img
+              src="static/necysc_app/images/logo2.png"
+              alt="Your Image Description"
+              id="logobutton"
+              class="rounded-pill p-2"
+              style="width: 6rem; height: auto"
+            />
+          </a>
         </div>
 
         <div class="dropdown col-auto">
-            <a href="index.html" class="navbar-link">Home</a>
+          <a href="index.html" class="navbar-link">Home</a>
         </div>
 
-    
-    <div class="dropdown col-auto">
-        <a href="about.html" class="navbar-link">About</a>
-        <div class="dropdown-content">
+        <div class="dropdown col-auto">
+          <a href="about.html" class="navbar-link">About</a>
+          <div class="dropdown-content">
             <a href="about.html#sponsors">Sponsors</a>
             <a href="about.html#contact">Contact Us</a>
+          </div>
         </div>
-    </div>
 
-    <div class="dropdown col-auto">
-        <a href="programs.html" class="navbar-link ">Programs</a>
-        <div class="dropdown-content">
+        <div class="dropdown col-auto">
+          <a href="programs.html" class="navbar-link">Programs</a>
+          <div class="dropdown-content">
             <a href="programs.html#day">Day Camp</a>
             <a href="programs.html#on">Overnight Camp</a>
             <a href="programs.html#ea">ExplorAsian</a>
+          </div>
         </div>
-    </div>
 
-    <div class="dropdown col-auto">
-        <a href="staff.html" class="navbar-link ">Staff</a>
-        <div class="dropdown-content">
+        <div class="dropdown col-auto">
+          <a href="staff.html" class="navbar-link">Staff</a>
+          <div class="dropdown-content">
             <a href="staff.html#cit">CIT</a>
             <a href="staff.html#counselor">Counselor</a>
             <a href="staff.html#ra">RA</a>
             <a href="staff.html#ops">OPs</a>
             <a href="staff.html#committee">Committee</a>
+          </div>
         </div>
-    </div>
 
-    <div class="dropdown col-auto">
-        <a href="registration.html" class="navbar-link ">Registration</a>
-        <div class="dropdown-content">
+        <div class="dropdown col-auto">
+          <a href="registration.html" class="navbar-link">Registration</a>
+          <div class="dropdown-content">
             <a href="registration.html#importantdates">2025 Important Dates</a>
             <a href="registration.html#financialaid">Financial Aid</a>
+          </div>
         </div>
-    </div>
 
-    <div class="dropdown col-auto">
-        <a href="faq.html" class="navbar-link active">FAQ</a>
-        <div class="dropdown-content">
+        <div class="dropdown col-auto">
+          <a href="faq.html" class="navbar-link active">FAQ</a>
+          <div class="dropdown-content">
             <a href="faq.html#faqregistration">Registration</a>
             <a href="faq.html#faqleavingcamp">Leaves and Visits</a>
             <a href="faq.html#faqhealth">Health and Safety</a>
             <a href="faq.html#camp">Camp Activities</a>
+          </div>
         </div>
+
+        <div class="col-auto ms-auto">
+          <a
+            href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
+            target="_blank"
+            class="btn-padding me-3"
+            >2024 Video</a
+          >
+
+          <a href="" class="btn-login">Register</a>
+        </div>
+      </div>
     </div>
-    
-    
-    <div class="col-auto ms-auto">
-          <a href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G" target="_blank" class="btn-padding me-3">2024 Video</a>
-          
-          <a href="" class="btn-login">Register</a>          
-    </div>
-    
-</div>
 
-		<!-- Content -->
-		<div class="container">
-<link rel="stylesheet" href="static/necysc_app/staff.css" />
-<link rel="stylesheet" href="static/necysc_app/style.css" />
-<style>
-    .hero-section {
-        background-image: url("static/necysc_app/images/hero/faq_banner.jpg");
-    }
-
-    h2 {
-        color: #4e598c;
-    }
-</style>
-
-
-<section>
-    <div class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="overlay"></div>
-        <!-- <div class="col-md-6 p-lg-5 mx-auto my-5 position-relative container">
+    <!-- Content -->
+    <div class="container">
+      <section>
+        <div
+          class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+        >
+          <div class="overlay"></div>
+          <!-- <div class="col-md-6 p-lg-5 mx-auto my-5 position-relative container">
             <h1 class="display-3 fw-bold text-white">Frequently Asked Questions</h1>
         </div> -->
-    </div>
-</section>
-
-<h1 class="pb-2 text-center py-4 fw-bold display-5" style="color: #4e598c;">Frequently Asked Questions</h1>
-
-<div class="accordion container my-5 p-4 shadow rounded-3" id="faqAccordion" style="max-width: 800px; background-color: #f8f9fa;">
-    <h2 id="faqregistration" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">Registration</h2>
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What is the mailing address for forms and payment?
-            </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-                For 2024, the mailing address is:<br>
-                <strong>NECYSC</strong><br>P.O. Box 615<br>Weston, MA 02493
-            </div>
         </div>
-    </div>
+      </section>
 
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Why do I need to submit all forms and payment during registration?
-            </button>
+      <h1
+        class="pb-2 text-center py-4 fw-bold display-5"
+        style="color: #4e598c"
+      >
+        Frequently Asked Questions
+      </h1>
+
+      <div
+        class="accordion container my-5 p-4 shadow rounded-3"
+        id="faqAccordion"
+        style="max-width: 800px; background-color: #f8f9fa"
+      >
+        <h2
+          id="faqregistration"
+          class="faq-subtitle mt-4 mb-3"
+          style="font-size: 1.75rem"
+        >
+          Registration
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-                With over a hundred campers and CITs, our volunteer staff must review every form before camp begins. Therefore, all forms and payment are required during registration. Campers will not be accepted until all required forms and payment are received. If you need an extension due to special circumstances, please contact <a href="mailto:registration@necysc.org">registration@necysc.org</a>.
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Why can't you simply accept everyone who applies for camp?
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is the mailing address for forms and payment?
             </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                Factors like room availability, staff-to-camper ratio, and licensing restrictions limit the number of campers we can accept each year.
+              For 2024, the mailing address is:<br />
+              <strong>NECYSC</strong><br />P.O. Box 615<br />Weston, MA 02493
             </div>
+          </div>
         </div>
-    </div>
 
-    <h2 id="faqleavingcamp" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem;">Leaving Camp, Early Check-out, Visits</h2>
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Will campers be allowed to leave camp during the camp week?
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Why do I need to submit all forms and payment during registration?
             </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                Campers are not allowed to leave during the camp week for non-emergency appointments (e.g., doctor’s visits, sports practices). Exceptions for unforeseen situations can be discussed with the camp director.
+              With over a hundred campers and CITs, our volunteer staff must
+              review every form before camp begins. Therefore, all forms and
+              payment are required during registration. Campers will not be
+              accepted until all required forms and payment are received. If you
+              need an extension due to special circumstances, please contact
+              <a href="mailto:registration@necysc.org"
+                >registration@necysc.org</a
+              >.
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Can I check out my child early?
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Why can't you simply accept everyone who applies for camp?
             </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                Early check-out is discouraged to ensure full participation in closing ceremonies. If necessary, a Request for Early Check-Out form can be completed prior to camp for a designated early check-out time.
+              Factors like room availability, staff-to-camper ratio, and
+              licensing restrictions limit the number of campers we can accept
+              each year.
             </div>
+          </div>
         </div>
-    </div>
 
-    <h2 id="faqhealth" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem;">Health and Safety</h2>
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Are there medical staff on-site at camp?
+        <h2
+          id="faqleavingcamp"
+          class="faq-subtitle mt-4 mb-3"
+          style="font-size: 1.75rem"
+        >
+          Leaving Camp, Early Check-out, Visits
+        </h2>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Will campers be allowed to leave camp during the camp week?
             </button>
-        </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                Yes, trained medical staff are available on-site throughout the camp week to handle any medical issues or emergencies.
+              Campers are not allowed to leave during the camp week for
+              non-emergency appointments (e.g., doctor’s visits, sports
+              practices). Exceptions for unforeseen situations can be discussed
+              with the camp director.
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                What happens if my child becomes ill during camp?
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Can I check out my child early?
             </button>
-        </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                If a camper becomes ill, they will be evaluated by medical staff. Parents may be contacted based on the severity of the illness.
+              Early check-out is discouraged to ensure full participation in
+              closing ceremonies. If necessary, a Request for Early Check-Out
+              form can be completed prior to camp for a designated early
+              check-out time.
             </div>
+          </div>
         </div>
-    </div>
 
-    <h2 id="faqpacking" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem;">Packing and Preparation</h2>
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                What should my child bring to camp?
+        <h2
+          id="faqhealth"
+          class="faq-subtitle mt-4 mb-3"
+          style="font-size: 1.75rem"
+        >
+          Health and Safety
+        </h2>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              Are there medical staff on-site at camp?
             </button>
-        </h2>
-        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                Campers should bring essentials like clothing, toiletries, a water bottle, and any necessary medication. A detailed packing list will be provided upon registration.
+              Yes, trained medical staff are available on-site throughout the
+              camp week to handle any medical issues or emergencies.
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                Are electronic devices allowed at camp?
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              What happens if my child becomes ill during camp?
             </button>
-        </h2>
-        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#faqAccordion"
+          >
             <div class="accordion-body">
-                We encourage campers to leave electronic devices at home to fully immerse in the camp experience. If brought, devices may only be used during designated times or for emergencies.
+              If a camper becomes ill, they will be evaluated by medical staff.
+              Parents may be contacted based on the severity of the illness.
             </div>
+          </div>
         </div>
+
+        <h2
+          id="faqpacking"
+          class="faq-subtitle mt-4 mb-3"
+          style="font-size: 1.75rem"
+        >
+          Packing and Preparation
+        </h2>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              What should my child bring to camp?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Campers should bring essentials like clothing, toiletries, a water
+              bottle, and any necessary medication. A detailed packing list will
+              be provided upon registration.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              Are electronic devices allowed at camp?
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              We encourage campers to leave electronic devices at home to fully
+              immerse in the camp experience. If brought, devices may only be
+              used during designated times or for emergencies.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer
+      class="container p-4 m-auto align-items-center justify-content-center"
+      id="contact"
+    >
+      <div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px"></div>
 
+      <h2 class="mb-3 mt-5 text-center" style="color: #4e598c">
+        Connect With Us!
+      </h2>
+      <p class="text-center text-muted small">
+        General Inquiries:
+        <a href="mailto:registration@necysc.org" style="color: black"
+          >registration@necysc.org</a
+        >
+      </p>
+      <p class="text-center small text-muted">
+        Director:
+        <a href="mailto:registration@necysc.org" style="color: black"
+          >director@necysc.org</a
+        >
+      </p>
+      <p class="text-center small text-muted">
+        NECYSC, PO Box 615, Weston, MA 02493
+      </p>
 
-</div>
+      <div class="row text-center align-items-center justify-content-center">
+        <div class="col-auto">
+          <a
+            href="https://www.instagram.com/NECYSC/"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png"
+              alt="Instagram Logo"
+              style="width: 50px; height: auto"
+            />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://www.facebook.com/NECYSC"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png"
+              alt="Facebook Logo"
+              style="width: 40px; height: auto"
+            />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="http://www.youtube.com/@NECYSC1"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="static/necysc_app/images/youtube_logo.svg"
+              alt="YouTube Logo"
+              style="width: 40px; height: auto"
+            />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://www.tiktok.com/@necysc"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="static/necysc_app/images/tiktok_logo.svg"
+              alt="Tiktok Logo"
+              style="width: 40px; height: auto"
+            />
+          </a>
+        </div>
+      </div>
 
-		<!-- Footer -->
-		<!-- Footer -->
-        <footer class="container p-4 m-auto align-items-center justify-content-center" id="contact">
-            <div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px;"></div>
-          
-            <h2 class="mb-3 mt-5 text-center" style="color: #4e598c;">Connect With Us!</h2>
-            <p class="text-center text-muted small"> General Inquiries:
-              <a href="mailto:registration@necysc.org" style="color: black">registration@necysc.org</a>
-            </p>
-            <p class="text-center small text-muted"> Director:
-              <a href="mailto:registration@necysc.org" style="color: black">director@necysc.org</a>
-            </p>
-            <p class="text-center small text-muted"> NECYSC, PO Box 615, Weston, MA 02493
-            </p>
-          
-            <div class="row text-center align-items-center justify-content-center">
-              <div class="col-auto">
-                  <a href="https://www.instagram.com/NECYSC/" style="display: inline-block;" target="_blank">
-                      <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png" alt="Instagram Logo" style="width: 50px; height: auto;">
-                  </a>
-              </div>
-              <div class="col-auto">
-                <a href="https://www.facebook.com/NECYSC" style="display: inline-block;" target="_blank">
-                    <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png" alt="Facebook Logo" style="width: 40px; height: auto;">
-                </a>
-              </div>
-              <div class="col-auto">
-                  <a href="http://www.youtube.com/@NECYSC1" style="display: inline-block;" target="_blank">
-                      <img src="static/necysc_app/images/youtube_logo.svg" alt="YouTube Logo" style="width: 40px; height: auto;">
-                  </a>
-                </div>
-                <div class="col-auto">
-                  <a href="https://www.tiktok.com/@necysc" style="display: inline-block;" target="_blank">
-                      <img src="static/necysc_app/images/tiktok_logo.svg" alt="Tiktok Logo" style="width: 40px; height: auto;">
-                  </a>
-                </div>
-            </div>
-          
-          
-            <!-- Copyright -->
-            <div class="container"></div>
-            <div class="text-center p-4">
-              Copyright © 2024 NECYSC. All Rights Reserved.
-              <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
-            </div>
-          
-          </footer>
-<!-- Footer -->
+      <!-- Copyright -->
+      <div class="container"></div>
+      <div class="text-center p-4">
+        Copyright © 2024 NECYSC. All Rights Reserved.
+        <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
+      </div>
+    </footer>
+    <!-- Footer -->
 
-		<!--Bootstrap JavaScript Plugins-->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-		></script>
-	</body>
+    <!--Bootstrap JavaScript Plugins-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -24,22 +24,8 @@
     
     <link href="static/necysc_app/style.css" rel="stylesheet" />
     <link rel="icon" href="static/necysc_app/images/favicon.ico">
-</head>
 
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<!--Bootstrap CSS-->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-
-		<title> About Us </title>
+	<title> About Us </title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -57,187 +43,8 @@
 				font-family: "Hind", sans-serif;
 			}
 		</style>
-
-	</head>
-
-	<body>
-		<!-- Navbar -->
-		
-
-    <style>
-        a {
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-            top: 100%;
-        }
-
-        .dropdown-content a {
-            color: #4e598c;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: color 0.3s ease, background-color 0.3s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #4e598c;
-            color: #F9C784;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .navbar-link {
-            color: #4e598c;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-link:hover {
-            color: #F9C784;
-            background: #4e598c;
-            transition: color 0.3s ease;
-            padding: 10px 20px;
-            border-radius: 9px;
-        }
-
-        .active {
-            color: #F9C784; 
-            background: #4e598c;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 9px;
-        }
-
-
-        .btn-login {
-            background-color: #4e598c;
-            color: #F9C784;
-            transition: all 0.3s ease;
-            padding: 10px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            text-align: center;
-        }
-
-        .btn-login:hover {
-            background-color: #F9C784;
-            color: #FFFFFF;
-        }
-
-        .btn-padding {
-            padding: 10px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            text-align: center;
-            background: #F9C784;
-            color: #4e598c;
-            transition: all 0.3s ease;
-        }
-
-        .btn-padding:hover {
-            background-color: #4e598c;
-            color: #ffffff;
-        }
-
-
-        .col-auto {
-            display: flex;
-            align-items: center;
-        }
-
-        img {
-            height: 4rem;
-            max-width: 100%;
-        }
-
-        #logobutton {
-            background-color: #4e598c;
-            transition: all 0.3s ease;
-        }
-
-        #logobutton:hover {
-            background-color: #F9C784;
-            color: #FFFFFF;
-        }
-
-
-        .menu-toggle {
-            display: none;
-        }
-        
-        .hamburger {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #4e598c;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        @media (max-width: 1000px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background-color: white;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                width: 100%;
-                padding: 10px;
-                z-index: 1000;
-                padding-left: 50px;
-                font-size: 3vh;
-                padding-right: 50px;
-            }
-        
-            .menu-toggle:checked + .hamburger + .nav-links {
-            display: flex;
-            }
-        
-            .hamburger {
-            display: block;
-            }
-        }
-        
-        .optional {
-            color: gray;
-            font-style: italic;
-        }
-        
-        .white-link {
-            color: #ffffff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .white-link:hover {
-            color: #cccccc;
-        }
-        
-        .welcome-title {
-            color: white;
-        }
-  </style>
-
-<!-- navbar sticky -->
+</head>
+<body>
 <!-- navbar sticky -->
 <div class="row mt-2 pt-4 pb-4 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row">
     <!-- NECYSC logo -->
@@ -259,60 +66,58 @@
         </div>
 
     
-    <div class="dropdown col-auto">
-        <a href="about.html" class="navbar-link active">About</a>
-        <div class="dropdown-content">
-            <a href="about.html#sponsors">Sponsors</a>
-            <a href="about.html#contact">Contact Us</a>
-        </div>
-    </div>
+		<div class="dropdown col-auto">
+			<a href="about.html" class="navbar-link active">About</a>
+			<div class="dropdown-content">
+				<a href="about.html#sponsors">Sponsors</a>
+				<a href="about.html#contact">Contact Us</a>
+			</div>
+		</div>
 
-    <div class="dropdown col-auto">
-        <a href="programs.html" class="navbar-link ">Programs</a>
-        <div class="dropdown-content">
-            <a href="programs.html#day">Day Camp</a>
-            <a href="programs.html#on">Overnight Camp</a>
-            <a href="programs.html#ea">ExplorAsian</a>
-        </div>
-    </div>
+		<div class="dropdown col-auto">
+			<a href="programs.html" class="navbar-link ">Programs</a>
+			<div class="dropdown-content">
+				<a href="programs.html#day">Day Camp</a>
+				<a href="programs.html#on">Overnight Camp</a>
+				<a href="programs.html#ea">ExplorAsian</a>
+			</div>
+		</div>
 
-    <div class="dropdown col-auto">
-        <a href="staff.html" class="navbar-link ">Staff</a>
-        <div class="dropdown-content">
-            <a href="staff.html#cit">CIT</a>
-            <a href="staff.html#counselor">Counselor</a>
-            <a href="staff.html#ra">RA</a>
-            <a href="staff.html#ops">OPs</a>
-            <a href="staff.html#committee">Committee</a>
-        </div>
-    </div>
+		<div class="dropdown col-auto">
+			<a href="staff.html" class="navbar-link ">Staff</a>
+			<div class="dropdown-content">
+				<a href="staff.html#cit">CIT</a>
+				<a href="staff.html#counselor">Counselor</a>
+				<a href="staff.html#ra">RA</a>
+				<a href="staff.html#ops">OPs</a>
+				<a href="staff.html#committee">Committee</a>
+			</div>
+		</div>
 
-    <div class="dropdown col-auto">
-        <a href="registration.html" class="navbar-link ">Registration</a>
-        <div class="dropdown-content">
-            <a href="registration.html#importantdates">2025 Important Dates</a>
-            <a href="registration.html#financialaid">Financial Aid</a>
-        </div>
-    </div>
+		<div class="dropdown col-auto">
+			<a href="registration.html" class="navbar-link ">Registration</a>
+			<div class="dropdown-content">
+				<a href="registration.html#importantdates">2025 Important Dates</a>
+				<a href="registration.html#financialaid">Financial Aid</a>
+			</div>
+		</div>
 
-    <div class="dropdown col-auto">
-        <a href="faq.html" class="navbar-link ">FAQ</a>
-        <div class="dropdown-content">
-            <a href="faq.html#faqregistration">Registration</a>
-            <a href="faq.html#faqleavingcamp">Leaves and Visits</a>
-            <a href="faq.html#faqhealth">Health and Safety</a>
-            <a href="faq.html#camp">Camp Activities</a>
-        </div>
-    </div>
+		<div class="dropdown col-auto">
+			<a href="faq.html" class="navbar-link ">FAQ</a>
+			<div class="dropdown-content">
+				<a href="faq.html#faqregistration">Registration</a>
+				<a href="faq.html#faqleavingcamp">Leaves and Visits</a>
+				<a href="faq.html#faqhealth">Health and Safety</a>
+				<a href="faq.html#camp">Camp Activities</a>
+			</div>
+		</div>
     
-    
-    <div class="col-auto ms-auto">
-          <a href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G" target="_blank" class="btn-padding me-3">2024 Video</a>
-          
-          <a href="" class="btn-login">Register</a>
-          
+		<div class="col-auto ms-auto">
+			<a href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G" target="_blank" class="btn-padding me-3">2024 Video</a>
+			
+			<a href="" class="btn-login">Register</a>
+		</div>
     </div>
-    
 </div>
 
 		<!-- Content -->
@@ -354,7 +159,7 @@
 			</div>
 		</div>
 		<div class="mt-4">
-			<p class="fs-5"> More committee members are listed <a href="staff.html">here.</a></p>
+			<p class="fs-5"> Want to join committee? Learn more about us <a href="staff.html#committee">here.</a></p>
 		</div>
 	</div>
 
@@ -478,16 +283,6 @@
 	</div>
 </section>
 
-<style>
-	.glow {
-		transition: box-shadow 0.3s ease-in-out;
-		}
-		
-	.glow:hover {
-	box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15); /* Adjust the glow effect */
-	}
-</style>
-
 <script>
 	const staff = [
 		["Christopher Chiu", "Director", "chris_chiu.jpg"],
@@ -546,7 +341,7 @@
 		staffCard.innerHTML = `
 			<div class="card text-center border-0 bg-light">
 				<div class="card-body px-4 py-4">
-					<div class="mb-4 mx-2 mx-md-5"><img onerror="this.onerror=null; this.remove();" class="img-fluid rounded-circle" src="static/necysc_app/images/headshots/${staffMember[2]}"></div>
+					<div class="mb-4 mx-2 mx-md-5"><img onerror="this.onerror=null; this.src='static/necysc_app/images/headshots/anonymous.png';" class="img-fluid rounded-circle" src="static/necysc_app/images/headshots/${staffMember[2]}"></div>
 					<h5 class="fw-bold">${staffMember[0]}</h5>
 					<div class="text-muted">
 						${staffMember[1]}
