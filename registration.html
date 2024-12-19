@@ -327,6 +327,18 @@
     text-decoration: none;
     color: black;
 }
+
+.btn-yellow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.btn-yellow .bi-chevron-compact-right {
+    display: flex;
+    align-items: center;
+}
 </style>
 <link rel="stylesheet" href="static/necysc_app/registration.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -339,114 +351,216 @@
         </div> -->
     </div>
 </section>
-<h1 class="pb-2 text-center py-4 fw-bold display-5" style="color: #4e598c;">Registration Process</h1>
 
-<div class="container-fluid"> 
-    <div class="row justify-content-center"> 
-        <div class="text-center p-0 mt-3 mb-2"> 
-            <div class="px-0 pt-4 pb-0 mt-3 mb-3"> 
-                <form id="form"> 
-                    <ul id="progressbar"> 
-                        <li class="activeprogress" id="jan"> 
-                            <strong>Janurary</strong> 
-                        </li> 
-                        <li id="feb"><strong>February</strong></li> 
-                        <li id="mar"><strong>March</strong></li> 
-                        <li id="jun"><strong>June</strong></li>
-                        <li id="jul"><strong>July</strong></li>
-                        <li id="aug"><strong>August</strong></li>
-                    </ul> 
-                    <div class="mt-4 mb-3 progress shadow"> 
-                        <div class="progress-bar"></div> 
-                    </div> <br> 
-                    <fieldset> 
-                        <h2 style="color: #4e598c;">January</h2> 
-                        <p><strong>Early January</strong> - CIT, OPs, RA, Counselors 
-                                    <a href="staff.html">application</a> begins</p>
-                        <input type="button" name="next-step"
-                            class="next-step rounded-pill" value="Next" /> 
-                    </fieldset> 
-                    <fieldset> 
-                        <h2 style="color: #4e598c;">Feburary</h2> 
-                        <p><strong>End of February</strong> - All staff applications due</p>
-                        <p><strong>Mid-February</strong>- Camper (Day/ON/EA) <a href="registration.html">registration</a> begins + Early Bird discount</p>
-                        <input type="button" name="next-step"
-                            class="next-step rounded-pill" value="Next" /> 
-                        <input type="button" name="previous-step"
-                            class="previous-step rounded-pill"
-                            value="Previous" /> 
-                    </fieldset> 
-                    <fieldset> 
-                        <h2 style="color: #4e598c;">March</h2> 
-                        <p><strong>Mid-March</strong>- Camper (Day/ON/EA) Early Bird discount ends</p>
-                        <input type="button" name="next-step"
-                            class="next-step rounded-pill" value="Next" /> 
-                        <input type="button" name="previous-step"
-                            class="previous-step rounded-pill"
-                            value="Previous" /> 
-                    </fieldset> 
-                    <fieldset> 
-                        <h2 style="color: #4e598c;">June</h2> 
-                        <p><strong>Mid-June</strong> - Overnight and EA camper <a href="registration.html">registration</a> due</p>
-                        <p><strong>End of June</strong> - Day camper <a href="registration.html">registration</a> due</p>
-                        <input type="button" name="next-step"
-                            class="next-step rounded-pill" value="Next" /> 
-                        <input type="button" name="previous-step"
-                            class="previous-step rounded-pill"
-                            value="Previous" /> 
-                    </fieldset> 
-                    <fieldset> 
-                        <h2 style="color: #4e598c;">July</h2> 
-                        <p><strong>Mid-July</strong> - Final Camp information package email to accepted campers</p>
-                        <p><strong>End Of July</strong> - Overnight and ExplorAsian camper check-in</p>
-                        <p><strong>End of July</strong> - Day camper check-in</p>
-                        <input type="button" name="next-step"
-                            class="next-step rounded-pill" value="Next" /> 
-                        <input type="button" name="previous-step"
-                            class="previous-step rounded-pill"
-                            value="Previous" /> 
-                    </fieldset> 
-                    <fieldset> 
-                        <h2 style="color: #4e598c;">August</h2>
-                        <p><strong>Begining of August</strong> - Day camper program ends</p>
-                        <p><strong>Begining of August</strong> - Overnight and ExplorAsian camper program ends</p>
-                        <input type="button" name="previous-step"
-                            class="previous-step rounded-pill"
-                            value="Previous" /> 
-                    </fieldset> 
-                </form> 
+<section>
+    <div class="container py-4">
+        <h1 class="text-purple display-4 fw-bold">Exploring Chinese-American culture starts here.</h1>
+
+        <!-- Three steps, each step has a number encased in a bg-purple circle, and a header/description -->
+        <div class="row mt-5 gap-4">
+            <div class="col-sm-2">
+                <div class="d-flex justify-content-center align-items-center bg-purple rounded-circle text-white step-circle float-sm-end" style="width: 100px; height: 100px">
+                    <p class="text-white text-center m-0">STEP<br><span class="fs-1">1</span></p>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div>
+                    <h1 class="text-purple">Register</h1>
+                    <p class="fs-5 text-secondary">Get started today and join our community of Chinese-American youth.</p>
+                    <p class="fs-5 text-secondary">Signing up is easy. Sign up through the registration form below.</p>
+                    <p class="fs-5 text-secondary">Not ready to register? <a href="index.html">Learn more about NECYSC.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 gap-4">
+            <div class="col-sm-2">
+                <div class="d-flex justify-content-center align-items-center bg-purple rounded-circle text-white step-circle float-sm-end" style="width: 100px; height: 100px">
+                    <p class="text-white text-center m-0">STEP<br><span class="fs-1">2</span></p>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div>
+                    <h1 class="text-purple">Submit Payment and Forms</h1>
+                    <p class="fs-5 text-secondary">In the registration form, parents must submit payment for camp and required medical forms.</p>
+                    <p class="fs-5 text-secondary">We offer an Early Bird discount if you register and submit payment before the date listed below.</p>
+                    <p class="fs-5 text-secondary">Prepare the camper's annual physical and health insurance provider information.</p>
+                    <p class="fs-5 text-secondary">We offer financial aid to campers based on demonstrated need. See the <a href="#financialaid">financial aid section</a> for more information.</p>    
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 gap-4">
+            <div class="col-sm-2">
+                <div class="d-flex justify-content-center align-items-center bg-purple rounded-circle text-white step-circle float-sm-end" style="width: 100px; height: 100px">
+                    <p class="text-white text-center m-0">STEP<br><span class="fs-1">3</span></p>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div>
+                    <h1 class="text-purple">Prepare for Camp Week</h1>
+                    <p class="fs-5 text-secondary">Read our <a href="faq.html">FAQ section</a> for answers to your most frequent questions for camp week.</p>
+                    <p class="fs-5 text-secondary">For application updates, please check your email and add <a href="mailto:registration@necysc.org">registration@necysc.org</a> as a trusted sender.</p>
+                    <p class="fs-5 text-secondary">Our camp week packing list if added in the <a href="faq.html">FAQ section</a> along with other relevant resources.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="bg-purple align-items-center justify-content-center text-center text-white py-5">
+        <a href="https://form.jotform.com/243363178260153" target="_blank" class="m-auto btn-yellow fs-5 px-5 rounded-pill d-flex align-items-center justify-content-center w-25">
+            REGISTER for NECYSC
+            <span class="fs-4 ps-3 text-yellow bi bi-chevron-compact-right d-flex align-items-center"></span>
+        </a>
+    </div>
+</section>
+
+
+<section>
+    <div class="container m-auto text-white py-5" id="importantdates" style="width: 90%;">
+        <div class="card-body mt-1 px-5 bg-purple" style="border-radius: 50px;">
+            <h6 class="fs-4 pt-3">Upcoming Dates</h6>
+            <div id="content">
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5"><a href="staff.html" class="text-white fw-normal text-decoration-underline">Staff Applications Due</a></p>
+                    <p class="fs-5">Jan 31, 2025</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5"><a href="registration.html" class="text-white fw-normal text-decoration-underline">Early Bird (Discount) Registration Open</a></p>
+                    <p class="fs-5">Feb 1, 2025</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5">Early Bird Discount Close</p>
+                    <p class="fs-5">Mar 15, 2025</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5">Overnight/EA Registration Close</p>
+                    <p class="fs-5">Jun 15, 2025</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5">Day Registration Close</p>
+                    <p class="fs-5">Jun 30, 2025</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5">Camp Week!</p>
+                    <p class="fs-5">Jun 27-Aug 2, 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h1 class="pb-2 text-center py-4 fw-bold display-5" style="color: #4e598c;">Timeline</h1>
+    
+    <div class="container-fluid"> 
+        <div class="row justify-content-center"> 
+            <div class="text-center p-0 mt-3 mb-2"> 
+                <div class="px-0 pt-4 pb-0 mt-3 mb-3"> 
+                    <form id="form"> 
+                        <ul id="progressbar"> 
+                            <li class="activeprogress" id="jan"> 
+                                <strong>Janurary</strong> 
+                            </li> 
+                            <li id="feb"><strong>February</strong></li> 
+                            <li id="mar"><strong>March</strong></li> 
+                            <li id="jun"><strong>June</strong></li>
+                            <li id="jul"><strong>July</strong></li>
+                            <li id="aug"><strong>August</strong></li>
+                        </ul> 
+                        <div class="mt-4 mb-3 progress shadow"> 
+                            <div class="progress-bar"></div> 
+                        </div> <br> 
+                        <fieldset> 
+                            <h2 style="color: #4e598c;">January</h2> 
+                            <p class="fs-5"><strong>Early January</strong> - CIT, OPs, RA, Counselors 
+                                        <a href="staff.html">application</a> begins</p>
+                            <input type="button" name="next-step"
+                                class="next-step rounded-pill" value="Next" /> 
+                        </fieldset> 
+                        <fieldset> 
+                            <h2 style="color: #4e598c;">Feburary</h2> 
+                            <p class="fs-5"><strong>End of February</strong> - All staff applications due</p>
+                            <p class="fs-5"><strong>Mid-February</strong>- Camper (Day/ON/EA) <a href="registration.html">registration</a> begins + Early Bird discount</p>
+                            <input type="button" name="next-step"
+                                class="next-step rounded-pill" value="Next" /> 
+                            <input type="button" name="previous-step"
+                                class="previous-step rounded-pill"
+                                value="Previous" /> 
+                        </fieldset> 
+                        <fieldset> 
+                            <h2 style="color: #4e598c;">March</h2> 
+                            <p class="fs-5"><strong>Mid-March</strong>- Camper (Day/ON/EA) Early Bird discount ends</p>
+                            <input type="button" name="next-step"
+                                class="next-step rounded-pill" value="Next" /> 
+                            <input type="button" name="previous-step"
+                                class="previous-step rounded-pill"
+                                value="Previous" /> 
+                        </fieldset> 
+                        <fieldset> 
+                            <h2 style="color: #4e598c;">June</h2> 
+                            <p class="fs-5"><strong>Mid-June</strong> - Overnight and EA camper <a href="registration.html">registration</a> due</p>
+                            <p class="fs-5"><strong>End of June</strong> - Day camper <a href="registration.html">registration</a> due</p>
+                            <input type="button" name="next-step"
+                                class="next-step rounded-pill" value="Next" /> 
+                            <input type="button" name="previous-step"
+                                class="previous-step rounded-pill"
+                                value="Previous" /> 
+                        </fieldset> 
+                        <fieldset> 
+                            <h2 style="color: #4e598c;">July</h2> 
+                            <p class="fs-5"><strong>Mid-July</strong> - Final Camp information package email to accepted campers</p>
+                            <p class="fs-5"><strong>End Of July</strong> - Overnight and ExplorAsian camper check-in</p>
+                            <p class="fs-5"><strong>End of July</strong> - Day camper check-in</p>
+                            <input type="button" name="next-step"
+                                class="next-step rounded-pill" value="Next" /> 
+                            <input type="button" name="previous-step"
+                                class="previous-step rounded-pill"
+                                value="Previous" /> 
+                        </fieldset> 
+                        <fieldset> 
+                            <h2 style="color: #4e598c;">August</h2>
+                            <p class="fs-5"><strong>Begining of August</strong> - Day camper program ends</p>
+                            <p class="fs-5"><strong>Begining of August</strong> - Overnight and ExplorAsian camper program ends</p>
+                            <input type="button" name="previous-step"
+                                class="previous-step rounded-pill"
+                                value="Previous" /> 
+                        </fieldset> 
+                    </form> 
+                </div> 
             </div> 
-            <div class="bg-dark mt-5 mb-5 m-4" style="height: 2px;"></div>
         </div> 
-    </div> 
-</div>
+    </div>
+    </section>
     
 <section>
-    <div class="container">
+    <div class="container py-3">
         <h2 id="financialaid" style="color: #4e598c;" class="mb-3">Financial Aid</h2>
-        <p><strong>We try our best to make our programs affordable for everyone.</strong> Financial Aid is available and is based solely on need. 
+        <p class="fs-5"><strong>We try our best to make our programs affordable for everyone.</strong> Financial Aid is available and is based solely on need. 
             Families who qualify are encouraged to apply as soon as possible. It is essential that you provide support document 
             to demonstrate your need. Our goal is to offer an opportunity to families who may otherwise not be able to 
             afford the program to share our camp experience.
         </p>
-        <p>
+        <p class="fs-5">
             The Financial Aid application is strictly confidential. Financial Aid is a separate process from program acceptance 
             and is awarded after program acceptance. Please complete both the Camper/CIT program 
             <a href="https://www.necysc.org/v2/files/Financial_Aid_form.pdf" target="_blank">application form</a> (indicating 
             that you are applying for Financial Aid) and the Financial Aid application form. Please also note that it is 
             required that you send in a 50% deposit with your financial application.
         </p>
-        <p>
+        <p class="fs-5">
             Our data is based on the Federal Poverty Guidelines, which are released each year.
         </p>
-        <p>
+        <p class="fs-5">
             Please mail the following documents to NECYSC, P.O. Box 615, Weston, MA, 02493 or email to <a href="mailto:registration@necysc.org">registration@necysc.org</a>.
         </p>
-        <p>
+        <p class="fs-5">
             Required documents for verification of income with rest of registration forms (Submit at Time of Registration 
             or Before May 1, 2024):
         </p>
-        <ul>
+        <ul class="fs-5">
             <li>Financial Aid Application Form</li>
             <li>2022 family tax return copy (IRS 1040 form)</li>
             <li>Exemption approval of the School Lunch Program, or other relevant documents</li>
