@@ -235,6 +235,8 @@
         .welcome-title {
             color: white;
         }
+
+        
   </style>
 
 <!-- navbar sticky -->
@@ -314,7 +316,7 @@
 </div>
 
 		<!-- Content -->
-		<div class="container">
+<div class="container">
 
 <link rel="stylesheet" href="static/necysc_app/index.css">
 <style>
@@ -372,15 +374,28 @@
 
 </style>
 
-<section>
-    <div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+<section style="height: 98vh;">
+    <div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height: 25%;">
         <video autoplay loop muted playsinline>
-            <source src="static/necysc_app/images/home_hero_banner.mp4" type="video/mp4">
+            <source src="static/necysc_app/images/hero/home_hero_banner.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+    <div>
+        <h1 class="pt-3 fw-bold text-center display-4">Traditions. Friendship. Culture. Fun. </h1>
+        <h2 class="pt-3 text-center"><i>A lifetime of memories begins with just one summer at NECYSC.</i></h2>
+    </div>
+    <div
+        class="d-flex flex-row gap-1 pt-3 justify-content-center align-items-center text-white"
+    >
+        <a
+        href="#aboutus"
+        class="text-purple bi bi-chevron-compact-down floating"
+        ></a>
+    </div>
 </section>
 
+<section>
 <div class="row">
     <div class="col-md-6">
         <h1 class="ps-md-5 mb-3 pt-3 fw-bold" id="aboutus">Welcome to NECYSC</h1>
@@ -436,19 +451,21 @@
     <h2 class="mb-5 text-white text-center">An authentic <span class="fw-bolder text-decoration-underline" style="text-underline-offset: 10px;">Chinese-American</span> cultural experience...</h2>
     <div class="row ms-md-5 me-md-5 pt-0 justify-content-center align-items-center">
     <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
-        <img src="static/necysc_app/images/waterballoons.png" alt="Water Balloons Image" class="img-fluid" style="object-fit: cover;">
+        <img src="static/necysc_app/images/home_one.jpg" alt="Water Balloons Image" class="img-fluid" style="object-fit: cover;">
     </div>
     <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
         <img src="static/necysc_app/images/indoors.png" alt="Indoors Image" class="img-fluid" style="object-fit: cover;">
     </div>
     <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
-        <img src="static/necysc_app/images/pose.png" alt="Pose Image" class="img-fluid" style="object-fit: cover;">
+        <img src="static/necysc_app/images/home_three.jpg" alt="Pose Image" class="img-fluid" style="object-fit: cover;">
     </div>
     <div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
         <img src="static/necysc_app/images/filming.png" alt="Filming Image" class="img-fluid" style="object-fit: cover;">
     </div>
 </div>
 </div>
+</section>
+
 
 <div class="shadow fansparallax mobileparallax"></div>
 
@@ -508,7 +525,7 @@
 <!--parallax with fan activity image-->
 <style>
     .fansparallax {
-      background-image: url("static/necysc_app/images/fans.png");
+      background-image: url("static/necysc_app/images/home_parallax_one.jpg");
     
       min-height: 500px;
     
