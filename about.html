@@ -23,6 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <link href="static/necysc_app/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="static/necysc_app/about.css">
     <link rel="icon" href="static/necysc_app/images/favicon.ico">
 
 	<title> About Us </title>
@@ -46,84 +47,94 @@
 </head>
 <body>
 <!-- navbar sticky -->
-<div class="row mt-2 pt-4 pb-4 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row">
-    <!-- NECYSC logo -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-        &#9776;
-    </label>
+<!-- navbar sticky -->
+<nav
+class="row mt-2 pt-2 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row"
+style="opacity: 0.9"
+>
+<!-- NECYSC logo -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<label for="menu-toggle" class="hamburger"> &#9776; </label>
 
-    <div class="nav-links">
-       
-        <div class="col-auto d-none d-xl-block">
-            <a href="index.html" id="logo-link">
-                <img src="static/necysc_app/images/logo2.png" alt="Your Image Description" id="logobutton" class="rounded-pill p-2" style="width: 6rem; height: auto"/>
-            </a>
-        </div>
+<div class="nav-links">
+  <div class="col-auto d-none d-xl-block">
+	<a href="index.html" id="logo-link">
+	  <img
+		src="static/necysc_app/images/logo2.png"
+		alt="Your Image Description"
+		id="logobutton"
+		class="rounded-pill p-2 me-4"
+		style="width: 12rem; height: auto"
+	  />
+	</a>
+  </div>
 
-        <div class="dropdown col-auto">
-            <a href="index.html" class="navbar-link">Home</a>
-        </div>
+  <div class="dropdown col-auto">
+	<a href="index.html" class="navbar-link">Home</a>
+  </div>
 
-    
-		<div class="dropdown col-auto">
-			<a href="about.html" class="navbar-link active">About</a>
-			<div class="dropdown-content">
-				<a href="about.html#sponsors">Sponsors</a>
-				<a href="about.html#contact">Contact Us</a>
-			</div>
-		</div>
+  <div class="dropdown col-auto">
+	<a href="about.html" class="navbar-link active">About</a>
+	<div class="dropdown-content">
+	  <a href="about.html#sponsors">Sponsors</a>
+	  <a href="about.html#contact">Contact Us</a>
+	</div>
+  </div>
 
-		<div class="dropdown col-auto">
-			<a href="programs.html" class="navbar-link ">Programs</a>
-			<div class="dropdown-content">
-				<a href="programs.html#day">Day Camp</a>
-				<a href="programs.html#on">Overnight Camp</a>
-				<a href="programs.html#ea">ExplorAsian</a>
-			</div>
-		</div>
+  <div class="dropdown col-auto">
+	<a href="programs.html" class="navbar-link">Programs</a>
+	<div class="dropdown-content">
+	  <a href="programs.html#day">Day Camp</a>
+	  <a href="programs.html#on">Overnight Camp</a>
+	  <a href="programs.html#ea">ExplorAsian</a>
+	</div>
+  </div>
 
-		<div class="dropdown col-auto">
-			<a href="staff.html" class="navbar-link ">Staff</a>
-			<div class="dropdown-content">
-				<a href="staff.html#cit">CIT</a>
-				<a href="staff.html#counselor">Counselor</a>
-				<a href="staff.html#ra">RA</a>
-				<a href="staff.html#ops">OPs</a>
-				<a href="staff.html#committee">Committee</a>
-			</div>
-		</div>
+  <div class="dropdown col-auto">
+	<a href="staff.html" class="navbar-link">Staff</a>
+	<div class="dropdown-content">
+	  <a href="staff.html#cit">CIT</a>
+	  <a href="staff.html#counselor">Counselor</a>
+	  <a href="staff.html#ra">RA</a>
+	  <a href="staff.html#ops">OPs</a>
+	  <a href="staff.html#committee">Committee</a>
+	</div>
+  </div>
 
-		<div class="dropdown col-auto">
-			<a href="registration.html" class="navbar-link ">Registration</a>
-			<div class="dropdown-content">
-				<a href="registration.html#importantdates">2025 Important Dates</a>
-				<a href="registration.html#financialaid">Financial Aid</a>
-			</div>
-		</div>
+  <div class="dropdown col-auto">
+	<a href="registration.html" class="navbar-link">Registration</a>
+	<div class="dropdown-content">
+	  <a href="registration.html#importantdates">2025 Important Dates</a>
+	  <a href="registration.html#financialaid">Financial Aid</a>
+	</div>
+  </div>
 
-		<div class="dropdown col-auto">
-			<a href="faq.html" class="navbar-link ">FAQ</a>
-			<div class="dropdown-content">
-				<a href="faq.html#faqregistration">Registration</a>
-				<a href="faq.html#faqleavingcamp">Leaves and Visits</a>
-				<a href="faq.html#faqhealth">Health and Safety</a>
-				<a href="faq.html#camp">Camp Activities</a>
-			</div>
-		</div>
-    
-		<div class="col-auto ms-auto">
-			<a href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G" target="_blank" class="btn-padding me-3">2024 Video</a>
-			
-			<a href="" class="btn-login">Register</a>
-		</div>
-    </div>
+  <div class="dropdown col-auto">
+	<a href="faq.html" class="navbar-link">FAQ</a>
+	<div class="dropdown-content">
+	  <a href="faq.html#faqregistration">Registration</a>
+	  <a href="faq.html#faqleavingcamp">Leaves and Visits</a>
+	  <a href="faq.html#faqhealth">Health and Safety</a>
+	  <a href="faq.html#camp">Camp Activities</a>
+	</div>
+  </div>
+
+  <div class="col-auto ms-auto">
+	<a
+	  href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
+	  target="_blank"
+	  class="btn-padding me-3"
+	  >2024 RECAP</a
+	>
+
+	<a href="registration.html" class="btn-login me-3">Register</a>
+	<a href="#contact" class="btn-login">Contact Us</a>
+  </div>
 </div>
+</nav>
 
 		<!-- Content -->
-		<div class="container">
-
-<link rel="stylesheet" href="static/necysc_app/about.css">
+<div class="container">
 
 <section>
 	<div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
