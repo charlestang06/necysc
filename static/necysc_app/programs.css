@@ -73,15 +73,15 @@
 
 /* Specific background images for each card */
 #why-join-us .why-join-card.card-1 {
-  background-image: url("./images/waterballoons.png");
+  background-image: url("./images/programs/programs_one.jpg");
 }
 
 #why-join-us .why-join-card.card-2 {
-  background-image: url("./images/king.png");
+  background-image: url("./images/programs/programs_two.jpg");
 }
 
 #why-join-us .why-join-card.card-3 {
-  background-image: url("./images/swim.png");
+  background-image: url("./images/programs/programs_three.jpg");
 }
 
 .text-left {
