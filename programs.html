@@ -50,6 +50,29 @@
         scroll-margin-top: 100px;
       }
     </style>
+    <script src="config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".year").forEach((element) => {
+          element.textContent = CONFIG.year;
+        });
+        document.querySelectorAll(".prev_year").forEach((element) => {
+          element.textContent = CONFIG.prev_year;
+        });
+        document.querySelectorAll(".day_fee").forEach((element) => {
+          element.textContent = CONFIG.fees.day;
+        });
+        document.querySelectorAll(".on_fee").forEach((element) => {
+          element.textContent = CONFIG.fees.on;
+        });
+        document.querySelectorAll(".ea_fee").forEach((element) => {
+          element.textContent = CONFIG.fees.ea;
+        });
+        document.querySelectorAll(".cit_fee").forEach((element) => {
+          element.textContent = CONFIG.fees.cit;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -113,7 +136,9 @@
         <div class="dropdown col-auto">
           <a href="registration.html" class="navbar-link">Registration</a>
           <div class="dropdown-content">
-            <a href="registration.html#importantdates">2025 Important Dates</a>
+            <a href="registration.html#importantdates"
+              ><span class="year"></span> Important Dates</a
+            >
             <a href="registration.html#financialaid">Financial Aid</a>
           </div>
         </div>
@@ -133,7 +158,7 @@
             href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
             target="_blank"
             class="btn-padding me-3"
-            >2024 RECAP</a
+            ><span class="prev_year"></span> RECAP</a
           >
 
           <a href="registration.html" class="btn-login me-3">Register</a>
@@ -253,6 +278,9 @@
                 Day Camp
               </h3>
               <h5 class="text-muted text-center p-1">Ages 6-10</h5>
+              <h5 class="text-muted text-center p-1">
+                Program Fee: <span class="day_fee"></span>
+              </h5>
               <p class="ps-md-4 pe-md-4 text-center fs-5">
                 Day campers, grouped in small teams of around 10 peers, travel
                 together to a variety of classes and activities, including
@@ -289,6 +317,9 @@
                 Overnight Camp
               </h3>
               <h5 class="text-muted text-center p-1">Ages 10-14</h5>
+              <h5 class="text-muted text-center p-1">
+                Program Fee: <span class="on_fee"></span>
+              </h5>
               <p class="ps-md-4 pe-md-4 text-center fs-5">
                 Overnight campers, grouped with about 10 peers, enjoy the same
                 classes and activities as day campers, including Chinese Yo-Yo,
@@ -329,6 +360,9 @@
                 ExplorAsian
               </h3>
               <h5 class="text-muted text-center p-1">Ages 14-16</h5>
+              <h5 class="text-muted text-center p-1">
+                Program Fee: <span class="ea_fee"></span>
+              </h5>
               <p class="ps-md-4 pe-md-4 text-center fs-5">
                 ExplorAsian is a week-long, overnight program focused on
                 exploring Chinese-American identity, developing leadership
@@ -552,7 +586,7 @@
       <!-- Copyright -->
       <div class="container"></div>
       <div class="text-center p-4">
-        Copyright © 2024 NECYSC. All Rights Reserved.
+        Copyright © <span class="year"></span> NECYSC. All Rights Reserved.
         <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
       </div>
     </footer>

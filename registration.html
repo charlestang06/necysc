@@ -75,6 +75,20 @@
     </style>
     <link rel="stylesheet" href="static/necysc_app/registration.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".year").forEach((element) => {
+          element.textContent = CONFIG.year;
+        });
+        document.querySelectorAll(".prev_year").forEach((element) => {
+          element.textContent = CONFIG.prev_year;
+        });
+        document.querySelectorAll(".camp_week").forEach((element) => {
+          element.textContent = CONFIG.camp_week;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -139,7 +153,9 @@
             >Registration</a
           >
           <div class="dropdown-content">
-            <a href="registration.html#importantdates">2025 Important Dates</a>
+            <a href="registration.html#importantdates"
+              ><span class="year"></span> Important Dates</a
+            >
             <a href="registration.html#financialaid">Financial Aid</a>
           </div>
         </div>
@@ -159,7 +175,7 @@
             href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
             target="_blank"
             class="btn-padding me-3"
-            >2024 RECAP</a
+            ><span class="prev_year"></span> RECAP</a
           >
 
           <a href="registration.html" class="btn-login me-3">Register</a>
@@ -330,7 +346,7 @@
                     >Staff Applications Due</a
                   >
                 </p>
-                <p class="fs-5">Jan 31, 2025</p>
+                <p class="fs-5">Jan 31, <span class="year"></span></p>
               </div>
               <div class="d-flex justify-content-between">
                 <p class="fs-5">
@@ -340,23 +356,23 @@
                     >Early Bird (Discount) Registration Open</a
                   >
                 </p>
-                <p class="fs-5">Feb 1, 2025</p>
+                <p class="fs-5">Feb 1, <span class="year"></span></p>
               </div>
               <div class="d-flex justify-content-between">
                 <p class="fs-5">Early Bird Discount Close</p>
-                <p class="fs-5">Mar 15, 2025</p>
+                <p class="fs-5">Mar 15, <span class="year"></span></p>
               </div>
               <div class="d-flex justify-content-between">
                 <p class="fs-5">Overnight/EA Registration Close</p>
-                <p class="fs-5">Jun 15, 2025</p>
+                <p class="fs-5">Jun 15, <span class="year"></span></p>
               </div>
               <div class="d-flex justify-content-between">
                 <p class="fs-5">Day Registration Close</p>
-                <p class="fs-5">Jun 30, 2025</p>
+                <p class="fs-5">Jun 30, <span class="year"></span></p>
               </div>
               <div class="d-flex justify-content-between">
                 <p class="fs-5">Camp Week!</p>
-                <p class="fs-5">Jun 27-Aug 2, 2025</p>
+                <p class="fs-5"><span class="camp_week"></span></p>
               </div>
             </div>
           </div>
@@ -562,11 +578,14 @@
           <p class="fs-5">
             Required documents for verification of income with rest of
             registration forms (Submit at Time of Registration or Before May 1,
-            2024):
+            <span class="year"></span>):
           </p>
           <ul class="fs-5">
             <li>Financial Aid Application Form</li>
-            <li>2022 family tax return copy (IRS 1040 form)</li>
+            <li>
+              <span class="prev_year"></span> family tax return copy (IRS 1040
+              form)
+            </li>
             <li>
               Exemption approval of the School Lunch Program, or other relevant
               documents
@@ -737,7 +756,7 @@
       <!-- Copyright -->
       <div class="container"></div>
       <div class="text-center p-4">
-        Copyright © 2024 NECYSC. All Rights Reserved.
+        Copyright © <span class="year"></span> NECYSC. All Rights Reserved.
         <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
       </div>
     </footer>

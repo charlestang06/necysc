@@ -126,6 +126,23 @@
         scroll-margin-top: 150px;
       }
     </style>
+    <script src="config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".year").forEach((element) => {
+          element.textContent = CONFIG.year;
+        });
+        document.querySelectorAll(".prev_year").forEach((element) => {
+          element.textContent = CONFIG.prev_year;
+        });
+        document.querySelectorAll(".cit_fee").forEach((element) => {
+          element.textContent = CONFIG.fees.cit;
+        });
+        document.querySelectorAll(".staff_camp_week").forEach((element) => {
+          element.textContent = CONFIG.staff_camp_week;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -189,7 +206,9 @@
         <div class="dropdown col-auto">
           <a href="registration.html" class="navbar-link">Registration</a>
           <div class="dropdown-content">
-            <a href="registration.html#importantdates">2025 Important Dates</a>
+            <a href="registration.html#importantdates"
+              ><span class="year"></span> Important Dates</a
+            >
             <a href="registration.html#financialaid">Financial Aid</a>
           </div>
         </div>
@@ -209,7 +228,7 @@
             href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
             target="_blank"
             class="btn-padding me-3"
-            >2024 RECAP</a
+            ><span class="prev_year"></span> RECAP</a
           >
 
           <a href="registration.html" class="btn-login me-3">Register</a>
@@ -325,8 +344,12 @@
               </h1>
               <ul class="list-unstyled mb-3 fs-5">
                 <li><strong>Grades:</strong> 11+</li>
-                <li><strong>Dates:</strong> July 27 - August 2, 2025</li>
-                <li><strong>Program Fee:</strong> $1100.00</li>
+                <li>
+                  <strong>Dates:</strong><span class="staff_camp_week"></span>
+                </li>
+                <li>
+                  <strong>Program Fee:</strong> <span class="cit_fee"></span>
+                </li>
               </ul>
               <p class="fs-5">
                 The Counselor in Training (CIT) program provides the opportunity
@@ -381,7 +404,9 @@
               </h1>
               <ul class="list-unstyled mb-3 fs-5">
                 <li><strong>Ages:</strong> 18+</li>
-                <li><strong>Dates:</strong> July 27 - August 2, 2025</li>
+                <li>
+                  <strong>Dates:</strong><span class="staff_camp_week"></span>
+                </li>
                 <li><strong>Paid Position</strong></li>
               </ul>
               <p class="fs-5">
@@ -439,7 +464,9 @@
               </h1>
               <ul class="list-unstyled mb-3 fs-5">
                 <li><strong>Ages:</strong> 18+</li>
-                <li><strong>Dates:</strong> July 27 - August 2, 2025</li>
+                <li>
+                  <strong>Dates:</strong><span class="staff_camp_week"></span>
+                </li>
                 <li><strong>Paid Position</strong></li>
               </ul>
               <p class="fs-5">
@@ -495,7 +522,9 @@
               </h1>
               <ul class="list-unstyled mb-3 fs-5">
                 <li><strong>Ages:</strong> Grades 11+</li>
-                <li><strong>Dates:</strong> July 27 - August 2, 2025</li>
+                <li>
+                  <strong>Dates:</strong><span class="staff_camp_week"></span>
+                </li>
                 <li><strong>Paid Position</strong></li>
               </ul>
               <p class="fs-5">
@@ -661,7 +690,7 @@
       <!-- Copyright -->
       <div class="container"></div>
       <div class="text-center p-4">
-        Copyright © 2024 NECYSC. All Rights Reserved.
+        Copyright © <span class="prev_year"></span> NECYSC. All Rights Reserved.
         <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
       </div>
     </footer>

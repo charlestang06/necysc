@@ -68,6 +68,17 @@
         scroll-margin-top: 100px;
       }
     </style>
+    <script src="config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".year").forEach((element) => {
+          element.textContent = CONFIG.year;
+        });
+        document.querySelectorAll(".prev_year").forEach((element) => {
+          element.textContent = CONFIG.prev_year;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -131,7 +142,9 @@
         <div class="dropdown col-auto">
           <a href="registration.html" class="navbar-link">Registration</a>
           <div class="dropdown-content">
-            <a href="registration.html#importantdates">2025 Important Dates</a>
+            <a href="registration.html#importantdates"
+              ><span class="year"></span> Important Dates</a
+            >
             <a href="registration.html#financialaid">Financial Aid</a>
           </div>
         </div>
@@ -151,7 +164,7 @@
             href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
             target="_blank"
             class="btn-padding me-3"
-            >2024 RECAP</a
+            ><span class="prev_year"></span> RECAP</a
           >
 
           <a href="registration.html" class="btn-login me-3">Register</a>
@@ -941,7 +954,7 @@
       <!-- Copyright -->
       <div class="container"></div>
       <div class="text-center p-4">
-        Copyright © 2024 NECYSC. All Rights Reserved.
+        Copyright © <span class="year"></span> NECYSC. All Rights Reserved.
         <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
       </div>
     </footer>

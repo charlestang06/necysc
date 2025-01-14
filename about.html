@@ -60,6 +60,17 @@
 				scroll-margin-top: 100px;
 			}
 		</style>
+		<script src="config.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  document.querySelectorAll(".year").forEach((element) => {
+				element.textContent = CONFIG.year; // Replace CONFIG.year with your variable
+			  });
+			  document.querySelectorAll(".prev_year").forEach((element) => {
+				element.textContent = CONFIG.prev_year; // Replace CONFIG.year with your variable
+			  });
+			});
+		</script>
 </head>
 <body>
 <!-- navbar sticky -->
@@ -122,7 +133,7 @@ style="opacity: 0.9"
   <div class="dropdown col-auto">
 	<a href="registration.html" class="navbar-link">Registration</a>
 	<div class="dropdown-content">
-	  <a href="registration.html#importantdates">2025 Important Dates</a>
+	  <a href="registration.html#importantdates"><span class="year"></span> Important Dates</a>
 	  <a href="registration.html#financialaid">Financial Aid</a>
 	</div>
   </div>
@@ -142,7 +153,7 @@ style="opacity: 0.9"
 	  href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
 	  target="_blank"
 	  class="btn-padding me-3"
-	  >2024 RECAP</a
+	  ><span class="prev_year"></span> RECAP</a
 	>
 
 	<a href="registration.html" class="btn-login me-3">Register</a>
@@ -370,54 +381,8 @@ style="opacity: 0.9"
 	</div>
 </section>
 
-<script>
-	const staff = [
-		["Christopher Chiu", "Director", "chris_chiu.jpg"],
-		["Paul Eska", "Assistant Director", "paul_eska.jpg"],
-
-		["Mikayla Tow", "Head Counselor", "mikayla.jpg"],
-		["Charles Tang", "Head Counselor", "charles.jpg"],
-
-        ["Fiona Wang", "Assistant Head Counselor", "fiona_wang.jpg"],
-        ["Sydney Chuang", "Assistant Head Counselor", "sydney_chuang.jpg"],
-        ["Olivia Sater", "Assistant Head Counselor", "olivia_sater.jpg"],
-
-		["David Fox", "Public Relations", "david_fox.jpg"],
-		["Helen Ng", "Public Relations", "helen_ng.jpg"],
-        ["Andrew Yang", "Public Relations", "andrew_yang.jpg"],
-        ["Kim Yang", "Public Relations", "kim_yang.jpg"],
-        ["Tonia Chu", "Public Relations", "tonia_chu.jpg"],
-        ["Curie Chung", "Public Relations", "curie_chung.jpg"],
-
-		["Mike Breen", "Registration", "mike_breen.jpg"],
-        ["Barbara O'Toole", "Registration", "barbara_otoole.jpg"],
-		["Wei Tang", "Registration", "wei_tang.jpg"],
-        ["Hongbo Deng", "Registration", "hongbo_deng.jpg"],
-        ["Rong Yu", "Registration", "rong_yu.jpg"], 
-
-		["Lola Yao", "Treasurer", "lola_yao.jpg"],
-        ["Ivan Yim", "Treasurer", "ivan_yim.jpg"],
-
-		["Lina Harp", "Education", "lina_harp.jpg"],
-		["Deb Morris", "Education", "deb_morris.jpg"],
-		["Eugene Chiu", "Education", "eugene_chiu.jpg"],
-        ["Steven Hsu", "Education", "steven_hsu.jpg"],
-        ["Sandy Chiang", "Education", "sandy_chiang.jpg"],
-        ["Jay Chen", "Education", "jay_chen.jpg"],
-        ["Chingying Hsiao", "Education", "chingying_hsiao.jpg"],
-        
-		["Deb Breen", "General Admin", "deb_breen.jpg"],
-		["Wendy Chan", "General Admin", "wendy_chan.jpg"],
-        ["Karen Tseng", "General Admin", "karen_tseng.jpg"], 
-        ["Gabe Sater", "General Admin", "gabe_sater.jpg"],
-
-
-		["Danielle Watson", "Medical", "danielle_watson.jpg"],
-		["Alyssa Chan", "Medical", "alyssa_chan.jpg"],
-        ["Steve Feder", "Medical", "steve_feder.jpg"],
-        ["Jennifer Cheng", "Medical", "jennifer_cheng.jpg"],
-		
-	]
+<script type="module">
+	const staff = CONFIG.committee;
 
 	const staffContainer = document.getElementById("meettheteam");
 
@@ -438,7 +403,6 @@ style="opacity: 0.9"
 		`;
 		staffContainer.appendChild(staffCard);
 	}
-
 </script>
 </div>
 
@@ -484,7 +448,7 @@ style="opacity: 0.9"
             <!-- Copyright -->
             <div class="container"></div>
             <div class="text-center p-4">
-              Copyright © 2024 NECYSC. All Rights Reserved.
+              Copyright © <span class="year"></span> NECYSC. All Rights Reserved.
               <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
             </div>
           
