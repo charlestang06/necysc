@@ -141,6 +141,9 @@
         document.querySelectorAll(".staff_camp_week").forEach((element) => {
           element.textContent = CONFIG.staff_camp_week;
         });
+        document.querySelectorAll(".po_box").forEach((element) => {
+          element.textContent = CONFIG.po_box; // Replace CONFIG.year with your variable
+        });
       });
     </script>
   </head>
@@ -629,7 +632,7 @@
         >
       </p>
       <p class="text-center small text-muted">
-        NECYSC, PO Box 615, Weston, MA 02493
+        <span class="po_box"></span>
       </p>
 
       <div class="row text-center align-items-center justify-content-center">

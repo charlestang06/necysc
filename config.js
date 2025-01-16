@@ -5,6 +5,7 @@ const CONFIG = {
     camp_week: "Jul 27 - Aug 2, 2025",
     staff_camp_week: " Jul 26 - Aug 2, 2025",
     fees: { day: "$900.00", on: "$1,800.00", ea: "$1,800.00", cit: "$1,100.00" },
+    po_box: "NECYSC, PO Box 615, Weston, MA 02493",
     committee: [
         ["Christopher Chiu", "Director", "chris_chiu.jpg"],
         ["Paul Eska", "Assistant Director", "paul_eska.jpg"],

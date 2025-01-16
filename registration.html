@@ -87,6 +87,9 @@
         document.querySelectorAll(".camp_week").forEach((element) => {
           element.textContent = CONFIG.camp_week;
         });
+        document.querySelectorAll(".po_box").forEach((element) => {
+          element.textContent = CONFIG.po_box; // Replace CONFIG.year with your variable
+        });
       });
     </script>
   </head>
@@ -263,6 +266,17 @@
                   We offer financial aid to campers based on demonstrated need.
                   See the <a href="#financialaid">financial aid section</a> for
                   more information.
+                </p>
+                <p class="fs-5 text-secondary">
+                  Below are a list of forms you should prepare before starting
+                  the registration form.
+                  <ul class="text-secondary fs-5">
+                    <li>Camper's Annual Physical (scanned as a single file)</li>
+                    <li>Parent on Duty (POD) or Youth Staff volunteer <a target="_blank" href="https://www.necysc.org/files/CORI_SORI.pdf">CORI/SORI</a></li>
+                    <li>Parent on Duty (POD) or Youth Staff volunteer copy of photo ID (driver's license or passport)</li>
+                    <li><a href="https://necysc.org/files/NECYSC_Staff_BG_Form.pdf" target="_blank">Background Check Form</a> (Youth Staff ONLY)</li>
+                    <li>Prepare your payment method (ACH, etc)</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -540,7 +554,7 @@
           <h2 id="financialaid" style="color: #4e598c" class="mb-3">
             Financial Aid
           </h2>
-          <p class="fs-5">
+          <p class="fs-5 text-secondary">
             <strong
               >We try our best to make our programs affordable for
               everyone.</strong
@@ -551,7 +565,7 @@
             is to offer an opportunity to families who may otherwise not be able
             to afford the program to share our camp experience.
           </p>
-          <p class="fs-5">
+          <p class="fs-5 text-secondary">
             The Financial Aid application is strictly confidential. Financial
             Aid is a separate process from program acceptance and is awarded
             after program acceptance. Please complete both the Camper/CIT
@@ -565,22 +579,22 @@
             Financial Aid application form. Please also note that it is required
             that you send in a 50% deposit with your financial application.
           </p>
-          <p class="fs-5">
+          <p class="fs-5 text-secondary">
             Our data is based on the Federal Poverty Guidelines, which are
             released each year.
           </p>
-          <p class="fs-5">
-            Please mail the following documents to NECYSC, P.O. Box 615, Weston,
-            MA, 02493 or email to
+          <p class="fs-5 text-secondary">
+            Please mail the following documents to
+            <span class="po_box"></span> or email to
             <a href="mailto:registration@necysc.org">registration@necysc.org</a
             >.
           </p>
-          <p class="fs-5">
+          <p class="fs-5 text-secondary">
             Required documents for verification of income with rest of
             registration forms (Submit at Time of Registration or Before May 1,
             <span class="year"></span>):
           </p>
-          <ul class="fs-5">
+          <ul class="fs-5 text-secondary">
             <li>Financial Aid Application Form</li>
             <li>
               <span class="prev_year"></span> family tax return copy (IRS 1040
@@ -695,7 +709,7 @@
         >
       </p>
       <p class="text-center small text-muted">
-        NECYSC, PO Box 615, Weston, MA 02493
+        <span class="po_box"></span>
       </p>
 
       <div class="row text-center align-items-center justify-content-center">

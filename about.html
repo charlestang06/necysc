@@ -69,6 +69,9 @@
 			  document.querySelectorAll(".prev_year").forEach((element) => {
 				element.textContent = CONFIG.prev_year; // Replace CONFIG.year with your variable
 			  });
+			  document.querySelectorAll(".po_box").forEach((element) => {
+				element.textContent = CONFIG.po_box; // Replace CONFIG.year with your variable
+			  });
 			});
 		</script>
 </head>
@@ -418,7 +421,7 @@ style="opacity: 0.9"
             <p class="text-center small text-muted"> Director:
               <a href="mailto:registration@necysc.org" style="color: black">director@necysc.org</a>
             </p>
-            <p class="text-center small text-muted"> NECYSC, PO Box 615, Weston, MA 02493
+            <p class="text-center small text-muted"> <span class="po_box"></span>
             </p>
           
             <div class="row text-center align-items-center justify-content-center">

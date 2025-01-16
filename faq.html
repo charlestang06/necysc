@@ -77,6 +77,9 @@
         document.querySelectorAll(".prev_year").forEach((element) => {
           element.textContent = CONFIG.prev_year;
         });
+        document.querySelectorAll(".po_box").forEach((element) => {
+          element.textContent = CONFIG.po_box; // Replace CONFIG.year with your variable
+        });
       });
     </script>
   </head>
@@ -321,7 +324,7 @@
             <div class="accordion-body">
               If you are not comfortable uploading forms via our registration
               form, our mailing address is:<br />
-              <strong>NECYSC</strong><br />P.O. Box 615<br />Weston, MA 02493
+              <strong><span class="po_box"></span></strong>
             </div>
           </div>
         </div>
@@ -893,7 +896,7 @@
         >
       </p>
       <p class="text-center small text-muted">
-        NECYSC, PO Box 615, Weston, MA 02493
+        <span class="po_box"></span>
       </p>
 
       <div class="row text-center align-items-center justify-content-center">
