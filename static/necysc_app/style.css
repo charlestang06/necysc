@@ -293,3 +293,13 @@ img {
 .glow:hover {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15); /* Adjust the glow effect */
 }
+
+/* .a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+} */
+
+a {
+  color: #f9c784;
+}
