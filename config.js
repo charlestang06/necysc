@@ -43,7 +43,6 @@ const CONFIG = {
 
         ["Deb Breen", "General Admin", "deb_breen.jpg"],
         ["Wendy Chan", "General Admin", "wendy_chan.jpg"],
-        ["Karen Tseng", "General Admin", "karen_tseng.jpg"],
         ["Gabe Sater", "General Admin", "gabe_sater.jpg"],
 
 
