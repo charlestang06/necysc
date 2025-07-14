@@ -28,12 +28,9 @@ const CONFIG = {
         ["Barbara O'Toole", "Registration", "barbara_otoole.jpg"],
         ["Wei Tang", "Registration", "wei_tang.jpg"],
         ["Hongbo Deng", "Registration", "hongbo_deng.jpg"],
-        ["Rong Yu", "Registration", "rong_yu.jpg"],
 
         ["Lola Yao", "Treasurer", "lola_yao.jpg"],
-        ["Ivan Yim", "Treasurer", "ivan_yim.jpg"],
 
-        ["Lina Harp", "Education", "lina_harp.jpg"],
         ["Deb Morris", "Education", "deb_morris.jpg"],
         ["Eugene Chiu", "Education", "eugene_chiu.jpg"],
         ["Steven Hsu", "Education", "steven_hsu.jpg"],
@@ -47,8 +44,7 @@ const CONFIG = {
 
 
         ["Danielle Watson", "Medical", "danielle_watson.jpg"],
-        ["Alyssa Chan", "Medical", "alyssa_chan.jpg"],
         ["Steve Feder", "Medical", "steve_feder.jpg"],
-        ["Jennifer Cheng", "Medical", "jennifer_cheng.jpg"],
+        ["Wesley Chiu", "Medical", "wesley_chiu.jpg"],
     ],
 };
