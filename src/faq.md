@@ -1,0 +1,292 @@
+---
+layout: base.liquid
+title: FAQ
+---
+
+<link rel="stylesheet" href="/static/necysc_app/faq.css" />
+
+
+<div class="container">
+	<section>
+		<div class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+			<div class="overlay"></div>
+		</div>
+	</section>
+	<h1 class="pb-2 text-center py-4 fw-bold display-5" style="color: #4e598c"> Frequently Asked Questions</h1>
+	<div class="accordion container my-5 p-4 shadow rounded-3" id="faqAccordion" style="max-width: 800px; background-color: #f8f9fa">
+    	<!-- BEGIN MIGRATED FAQ CONTENT -->
+    	<h2 id="faqgeneral" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">General</h2>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingObtainReceipt">
+    			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseObtainReceipt" aria-expanded="true" aria-controls="collapseObtainReceipt">
+    				How do I obtain the receipt for my registration?
+    			</button>
+    		</h2>
+    		<div id="collapseObtainReceipt" class="accordion-collapse collapse show" aria-labelledby="headingObtainReceipt" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				After registration, you will receive an email confirmation with your receipt. If you need another copy, please contact <a href="mailto:registration@necysc.org">registration@necysc.org</a>.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingEIN">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEIN" aria-expanded="false" aria-controls="collapseEIN">
+    				What is NECYSC's EIN/Tax ID?
+    			</button>
+    		</h2>
+    		<div id="collapseEIN" class="accordion-collapse collapse" aria-labelledby="headingEIN" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				NECYSC is fiscally sponsored by the Greater Boston Chinese Cultural Association. Our EIN is <strong>04-6144186</strong>.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingEmail">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+    				I am not receiving emails from NECYSC. What should I do?
+    			</button>
+    		</h2>
+    		<div id="collapseEmail" class="accordion-collapse collapse" aria-labelledby="headingEmail" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				NECYSC depends on email communication. To prevent your email from treating our messages as spam, please add the necysc.org domain as a trusted sender. Please check your spam folder as well.<br /><br />Please make sure you register with the correct email address. NECYSC is not responsible for incorrect email addresses.
+    			</div>
+    		</div>
+    	</div>
+    	<!-- Registration Section -->
+    	<h2 id="faqregistration" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">Registration</h2>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingTwo">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    				Why do I need to submit all forms and payment during registration?
+    			</button>
+    		</h2>
+    		<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				With over a hundred campers and CITs, our volunteer staff must review every form before camp begins. Therefore, all forms and payment are required during registration. Campers will not be accepted until all required forms and payment are received. If you need an extension due to special circumstances, please contact <a href="mailto:registration@necysc.org">registration@necysc.org</a>.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingCancellation">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCancellation" aria-expanded="false" aria-controls="collapseCancellation">
+    				What is NECYSC's cancellation policy for submitted registrations?
+    			</button>
+    		</h2>
+    		<div id="collapseCancellation" class="accordion-collapse collapse" aria-labelledby="headingCancellation" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				The camp fee is typically non-refundable and non-transferable. Refunds of any portion of the camp fee (minus $250.00 cancellation fee) may only be made when a written notice of cancellation and a request for refund (email <a href="mailto:director@necysc.org">director@necysc.org</a>) is received by May 15th, <span class="year"></span>. There will be no refunds after May 15, <span class="year"></span> at 11:59pm.<br /><br />In some cases, refunds may be granted after the cancellation and refund period for medical or emergency circumstances only. A written notice of cancellation with explanation of the circumstances must be provided (email <a href="mailto:director@necysc.org">director@necysc.org</a>) for a refund request to be considered. Additional documentation may be requested. Partial refunds may be granted at the discretion of NECYSC.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingThree">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+    				Why can't you simply accept everyone who applies for camp?
+    			</button>
+    		</h2>
+    		<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Factors like room availability, staff-to-camper ratio, and licensing restrictions limit the number of campers we can accept each year.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingEACIT">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEACIT" aria-expanded="false" aria-controls="collapseEACIT">
+    				Should I register for ExplorAsian if I am not accepted as CIT?
+    			</button>
+    		</h2>
+    		<div id="collapseEACIT" class="accordion-collapse collapse" aria-labelledby="headingEACIT" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Yes! If you are within the age range for ExplorAsian, you should register for ExplorAsian through the registration form as usual.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingCIT">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCIT" aria-expanded="false" aria-controls="collapseCIT">
+    				Should I submit registration for CIT/Counselor/RA/OPs positions?
+    			</button>
+    		</h2>
+    		<div id="collapseCIT" class="accordion-collapse collapse" aria-labelledby="headingCIT" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				If you received your acceptance emails into these programs, you should submit your registration, forms, and payment as instructed by the program leaders (Head Counselors).
+    			</div>
+    		</div>
+    	</div>
+    	<!-- Leaving Camp Section -->
+    	<h2 id="faqleavingcamp" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">Leaving Camp, Early Check-out, Visits</h2>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingFour">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+    				Will campers be allowed to leave camp during the camp week?
+    			</button>
+    		</h2>
+    		<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Campers will NOT be allowed to leave camp during the week. This includes routine doctor's visits, sports practices, rehearsals, etc. All routine/non-emergency appointments should be scheduled outside of camp week. Should an unforeseen situation arise, please advise the camp director(s) who will make a case-by-case judgment.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingFive">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+    				Can I check out my child early?
+    			</button>
+    		</h2>
+    		<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				We encourage campers to stay for the full week and participate with their groups in the Closing Ceremonies. However, under extenuating circumstances, prior to the start of camp, parents can complete the Request for Early Check-Out form from Registration. Parents will be expected to complete the check-out procedure (room check and meeting with the Nurse if retrieving medication) within the designated early check-out hour on Friday (Day Camp). Early check-out is only allowed during the designated hour to ensure adequate staffing for the process and to prevent disruption of ongoing camp preparations for the Closing Ceremony.
+    			</div>
+    		</div>
+    	</div>
+    	<!-- Health and Safety Section -->
+    	<h2 id="faqhealth" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">Health and Safety</h2>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingPhysical">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysical" aria-expanded="false" aria-controls="collapsePhysical">
+    				My camper's annual physical exam is scheduled between registration and camp start date, what should I do?
+    			</button>
+    		</h2>
+    		<div id="collapsePhysical" class="accordion-collapse collapse" aria-labelledby="headingPhysical" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Because we can only process camper's application when all required forms and payment are received, you can register the camper using current health form, and mail us the new form as soon as you have it. Our medical staff has to go over every health form before camp begins, and we cannot let camper join the group without up-to-date health form. If you have difficulty meeting the deadline due to special reasons, please contact <a href="mailto:registration@necysc.org">registration@necysc.org</a>.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingImmuno">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImmuno" aria-expanded="false" aria-controls="collapseImmuno">
+    				What are the immunization requirements?
+    			</button>
+    		</h2>
+    		<div id="collapseImmuno" class="accordion-collapse collapse" aria-labelledby="headingImmuno" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Please refer to <a href="https://www.mass.gov/info-details/massachusetts-law-about-vaccination-immunization#massachusetts-regulations-" target="_blank">regulations</a> from Mass Department of Public Health.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingParentCORI">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParentCORI" aria-expanded="false" aria-controls="collapseParentCORI">
+    				Why do we need to submit CORI/SORI for Parent on Duty (POD) or field trip chaperone?
+    			</button>
+    		</h2>
+    		<div id="collapseParentCORI" class="accordion-collapse collapse" aria-labelledby="headingParentCORI" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				A CORI (Criminal Offender Record Information) is a person's criminal history. A SORI (Sex Offender Registry Information) is a record of convictions for specified sexual offenses committed as an adult or juvenile.<br /><br />NECYSC is committed to providing a safe and secure environment for our campers, volunteers, and staff. Our policy states that anyone in contact with campers must undergo CORI and SORI background checks. Any person who has not satisfactorily met the requirements may not serve as POD and field trip chaperone.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingSix">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+    				Are there medical staff on-site at camp?
+    			</button>
+    		</h2>
+    		<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Yes, trained medical staff are available on-site throughout the camp week to handle any medical issues or emergencies.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingSeven">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+    				What happens if my child becomes ill during camp?
+    			</button>
+    		</h2>
+    		<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				If a camper becomes ill, they will be evaluated by medical staff. Parents may be contacted based on the severity of the illness.
+    			</div>
+    		</div>
+    	</div>
+    	<!-- Packing and Preparation Section -->
+    	<h2 id="faqpacking" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">Packing and Preparation</h2>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingEight">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+    				What should my child bring to camp?
+    			</button>
+    		</h2>
+    		<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Campers should bring essentials like clothing, toiletries, a water bottle, and any necessary medication. A detailed packing list will be provided upon registration.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingChineseSpeak">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChineseSpeak" aria-expanded="false" aria-controls="collapseChineseSpeak">
+    				Is knowing how to speak Chinese necessary at camp? If my child does not know Chinese, will s/he fit in?
+    			</button>
+    		</h2>
+    		<div id="collapseChineseSpeak" class="accordion-collapse collapse" aria-labelledby="headingChineseSpeak" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				At NECYSC, we strive for inclusion. It is not necessary to know Chinese to attend NECYSC. The majority of classes are taught in English. The only exception is the 3 - 4 teachers from Taiwan who only speak Mandarin. However, there is always a CIT or Counselor in class to translate. Not everyone at camp can speak Chinese; some speak Cantonese, some speak Mandarin, some only speak English.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingCamperPrograms">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCamperPrograms" aria-expanded="false" aria-controls="collapseCamperPrograms">
+    				What activites will my camper engage in?
+    			</button>
+    		</h2>
+    		<div id="collapseCamperPrograms" class="accordion-collapse collapse" aria-labelledby="headingCamperPrograms" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Folk sports such as Chinese Yo-Yo, Kung Fu, Juggling, Folk Dance and Jump Rope are typically offered. Swimming classes are held in Brandeis University indoor pool. We have also offered volleyball and table tennis in the past. Weather permitting, a field day with fun outdoor activities is held every year. There are plenty of opportunities for your camper to be outside and get some exercise!<br /><br />Learn more about our programs <a href="/programs/">here</a>.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingCamperSwim">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCamperSwim" aria-expanded="false" aria-controls="collapseCamperSwim">
+    				Does my camper need to know how to swim?
+    			</button>
+    		</h2>
+    		<div id="collapseCamperSwim" class="accordion-collapse collapse" aria-labelledby="headingCamperSwim" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Every camper has the option not to swim. NECYSC staff supervises campers who do not want to swim. Brandeis University provides certified lifeguards who monitor the pool during swim classes. A swim test is given to the campers during their first swim class. Furthermore, Counselors and CITs are always in the pool with the campers.
+    			</div>
+    		</div>
+    	</div>
+    	<div class="accordion-item mb-3">
+    		<h2 class="accordion-header" id="headingNine">
+    			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+    				Are electronic devices allowed at camp?
+    			</button>
+    		</h2>
+    		<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+    			<div class="accordion-body">
+    				Please refer to our phone and device use policy in our <a href="https://www.necysc.org/files/Camp_Rules_Form.pdf" target="_blank">Camp Policies</a>.
+    			</div>
+    		</div>
+    	</div>
+    	<!-- Resources Section -->
+    	<h2 id="faqresources" class="faq-subtitle mt-4 mb-3" style="font-size: 1.75rem">Resources</h2>
+    	<div class="row gap-3">
+    		<div>
+    			<a href="https://www.necysc.org/files/SA-Statement-from-Head-Counselors.pdf" target="_blank" class="btn-login">Sexual Assault Awareness/Prevention Statement</a>
+    		</div>
+    		<div>
+    			<a href="https://www.necysc.org/files/Camp_Rules_Form.pdf" target="_blank" class="btn-login">Camp Policies</a>
+    		</div>
+    		<div>
+    			<a href="https://www.necysc.org/files/Rules_and_Regulations.pdf" target="_blank" class="btn-login">Camp Rules & Regulations</a>
+    		</div>
+    		<div>
+    			<a href="https://www.necysc.org/files/Emergency_Protocols.pdf" target="_blank" class="btn-login">Camp Emergency Protocols</a>
+    		</div>
+    		<div>
+    			<a href="https://www.necysc.org/files/Liability_and_Photo_Waiver.pdf" target="_blank" class="btn-login">Liability and Photo Agreement</a>
+    		</div>
+    		<div>
+    			<a href="https://www.necysc.org/files/meninge-camp-common-questions.pdf" target="_blank" class="btn-login">Meningococcal disease notice</a>
+    		</div>
+    	</div>
+    	<!-- END MIGRATED FAQ CONTENT -->
+    </div>
+
+</div>

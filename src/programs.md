@@ -1,0 +1,130 @@
+---
+layout: base.liquid
+title: Programs
+---
+
+<link rel="stylesheet" href="/static/necysc_app/programs.css" />
+
+<section style="height: 98vh" class="container">
+	<div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height: 25%">
+		<div class="overlay"></div>
+	</div>
+	<div class="text-purple">
+		<h1 class="pt-3 fw-bold text-center display-4">A Place to Belong</h1>
+		<h2 class="pt-3 text-center">
+			<i>The bonds you form at NECYSC are lasting. It’s more than camp—it’s your <strong>second family</strong>.</i>
+		</h2>
+	</div>
+	<div class="d-flex flex-row gap-1 pt-3 justify-content-center align-items-center text-white">
+		<a href="#why-join-us" class="text-purple bi bi-chevron-compact-down floating"></a>
+	</div>
+</section>
+
+<section class="container px-4 py-4 mb-sm-5 position-relative" id="why-join-us" style="z-index: 100">
+	<h1 class="pb-2 text-center fw-bold display-5" style="color: #4e598c">Why Join Us?</h1>
+	<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 py-5">
+		<div class="col" style="height: 350px">
+			<div class="card why-join-card card-1 h-100 text-bg-dark rounded-4 shadow-lg" style="position: relative">
+				<div class="text-content">
+					<h3 class="display-6 lh-1 fw-bold">Engage with Culture</h3>
+					<p class="fs-5">Discover Chinese culture with hands-on activities such as Chinese Yo-Yo, Er Hu, Gu Zheng, and calligraphy.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card why-join-card card-2 h-100 text-bg-dark rounded-4 shadow-lg">
+				<div class="text-content">
+					<h3 class="display-6 lh-1 fw-bold">Learn Valuable Skills</h3>
+					<p class="fs-5">Our programs focus on building teamwork, resilience, and leadership: skills that empower campers to thrive both now and in the future.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card why-join-card card-3 h-100 text-bg-dark rounded-4 shadow-lg">
+				<div class="text-content">
+					<h3 class="display-6 lh-1 fw-bold">Build Lifelong Friendships</h3>
+					<p class="fs-5">Campers forge connections that go beyond camp, creating memories that last a lifetime.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="bg-purple position-relative" style="padding: 0; margin-top: -25vw; margin-bottom: 2vw" style="z-index: -100" id="daycamp">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0,192,0,96,0,48,0L0,0Z"></path>
+	</svg>
+	<h1 class="text-center fw-bold display-5 text-white">Our Programs</h1>
+	<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 flex-container px-sm-5">
+		<div class="col align-items-center justify-content-center">
+			<div class="card text-bg-dark shadow-lg m-3">
+				<div class="text-content">
+					<h3 class="display-6 fw-bold text-center pt-4" style="color: #4e598c">Day Camp</h3>
+					<h5 class="text-muted text-center p-1">Ages 6-10</h5>
+					<h5 class="text-muted text-center p-1">Monday -- Friday</h5>
+					<p class="text-muted text-center p-1">Program Fee: <span class="day_fee"></span></p>
+					<p class="ps-md-4 pe-md-4 text-center fs-5 px-4">Day campers, in groups of around 10, travel together to a variety of classes and activities, including Chinese Yo-Yo, cooking, swimming, and arts/crafts. In addition, they enjoy counselor-led events like Carnival and Fun in the Sun. The week wraps up with a Closing Ceremony on Friday, where campers perform and showcase what they’ve learned. Lunch and snacks are provided.</p>
+				</div>
+				<a href="#day" class="btn-purple fw-bold w-50 m-auto mb-4">Discover</a>
+				<a href="https://primetimetable.com/publish/?id=c800f241-a9f7-4db9-96a0-ed8b83fde2f2&classId=fa53f4bf-d4ac-403a-880c-2d687df27a69&rp=1&time=6#id%3Dc800f241-a9f7-4db9-96a0-ed8b83fde2f2" target="_blank" class="btn-yellow fw-bold w-50 m-auto mb-4">Example Schedule</a>
+			</div>
+		</div>
+		<div class="col align-items-center justify-content-center" id="overnightcamp">
+			<div class="card text-bg-dark shadow-lg m-3">
+				<div class="text-content">
+					<h3 class="display-6 fw-bold text-center pt-4" style="color: #4e598c">Overnight Camp</h3>
+					<h5 class="text-muted text-center p-1">Ages 10-14</h5>
+					<h5 class="text-muted text-center p-1">Sunday -- Saturday</h5>
+					<p class="text-muted text-center p-1">Program Fee: <span class="on_fee"></span></p>
+					<p class="ps-md-4 pe-md-4 text-center fs-5 px-4">Overnight campers, in groups of around 10, enjoy activities including Chinese Yo-Yo, cooking, swimming, and arts/crafts. In addition, campers engage in evening activities such as the Talent Show, CIT Dress-Up, Movie Night, and the Dance. Each night, they build close-knit friendships in hall groups. The week culminates in a Closing Ceremony on Saturday, where campers showcase their learned talents.</p>
+				</div>
+				<a href="#day" class="btn-purple fw-bold w-50 m-auto mb-4" style="">Explore</a>
+				<a href="https://primetimetable.com/publish/?id=c800f241-a9f7-4db9-96a0-ed8b83fde2f2&classId=10597498-7010-42f1-9da8-c885e17ea60a&rp=1&time=6#id%3Dc800f241-a9f7-4db9-96a0-ed8b83fde2f2" target="_blank" class="btn-yellow fw-bold w-50 m-auto mb-4" style="">Example Schedule</a>
+			</div>
+		</div>
+		<div class="col align-items-center justify-content-center" id="explorasian">
+			<div class="card text-bg-dark shadow-lg m-3">
+				<div class="text-content">
+					<h3 class="display-6 fw-bold text-center pt-4" style="color: #4e598c">ExplorAsian</h3>
+					<h5 class="text-muted text-center p-1">Ages 14-16</h5>
+					<p class="text-muted text-center p-1">Program Fee: <span class="ea_fee"></span></p>
+					<p class="ps-md-4 pe-md-4 text-center fs-5 px-4">ExplorAsian is a week-long, overnight program focused on exploring Chinese-American identity, developing leadership skills, and fostering connections. With an intimate group of around 20 campers led by Residential Advisors, the program empowers youth to become community leaders while navigating the transition from camper to counselor-in-training (CIT).</p>
+				</div>
+				<a href="#ea" class="btn-purple fw-bold w-50 m-auto mb-4" style="">Learn More</a>
+				<a href="https://primetimetable.com/publish/?id=c800f241-a9f7-4db9-96a0-ed8b83fde2f2&classId=22c03711-a72f-4b28-9130-7128dc8381c3&rp=1&time=6#id%3Dc800f241-a9f7-4db9-96a0-ed8b83fde2f2" class="btn-yellow fw-bold w-50 m-auto mb-4" style="" target="_blank">Example Schedule</a>
+			</div>
+		</div>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+	</svg>
+</div>
+
+<div id="day-overnight-camp" class="container bg-white" style="z-index: 100">
+	<div class="row pb-4 pe-lg-5 pt-lg-5 align-items-center rounded-3 border shadow-lg" id="on">
+		<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+			<h1 class="display-6 fw-bold lh-1 text-body-emphasis" style="color: #4e598c" id="day">Day / Overnight Camp</h1>
+			<p class="lead">Day camp runs from 8:30 AM to 5:00 PM, Monday through Friday. Overnight campers stay in the dorms at Brandeis University from Sunday to Friday. Campers are divided into groups based on age and experience. Throughout the week, campers participate in a variety of activities, including Chinese yo-yo, Kung-fu, Calligraphy, and more. The week ends with a Closing Ceremony on Friday during which campers perform what they’ve learned. Watch the video to learn more about our programs and activities!</p>
+			<a href="/registration/" class="btn-purple fw-bold" style="">Registration</a>
+			<a href="https://primetimetable.com/publish/?id=c800f241-a9f7-4db9-96a0-ed8b83fde2f2&classId=fa53f4bf-d4ac-403a-880c-2d687df27a69&rp=1&time=6#id%3Dc800f241-a9f7-4db9-96a0-ed8b83fde2f2" target="_blank" class="mx-2 btn-yellow fw-bold m-auto mb-4" style="">Sample Day Schedule</a>
+			<a href="https://primetimetable.com/publish/?id=c800f241-a9f7-4db9-96a0-ed8b83fde2f2&classId=10597498-7010-42f1-9da8-c885e17ea60a&rp=1&time=6#id%3Dc800f241-a9f7-4db9-96a0-ed8b83fde2f2" target="_blank" class="mx-2 btn-yellow fw-bold m-auto mb-4" style="">Sample Overnight Schedule</a>
+		</div>
+		<div class="col-lg-5 d-flex align-items-center justify-content-center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/n3vHhjCvBDQ?si=SnO7y3YdS49Z_GUT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+<div id="explorasian-2" class="container bg-white my-4">
+	<div class="row pb-4 pe-lg-5 pt-lg-5 align-items-center rounded-3 border shadow-lg" id="ea">
+		<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+			<h1 class="display-6 fw-bold lh-1 text-body-emphasis" style="color: #4e598c">ExplorAsian</h1>
+			<p class="lead">Established in 2002, ExplorAsian is usually a week-long, overnight program for students aged 14 to 16 who are interested in exploring Chinese-American identity and related issues, building leadership skills, and meeting new people. The goal is to empower youth to become leaders in their communities. Watch the video to learn more about the EA program!</p>
+			<a href="/registration/" class="btn-purple fw-bold" style="">Registration</a>
+			<a href="https://primetimetable.com/publish/?id=c800f241-a9f7-4db9-96a0-ed8b83fde2f2&classId=22c03711-a72f-4b28-9130-7128dc8381c3&rp=1&time=6#id%3Dc800f241-a9f7-4db9-96a0-ed8b83fde2f2" class="btn-yellow mx-2 fw-bold m-auto mb-4" target="_blank" style="">Sample EA Schedule</a>
+		</div>
+		<div class="col-lg-5 d-flex align-items-center justify-content-center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/jf35iCaY63g?si=JSnxyksZZnWARt4u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>

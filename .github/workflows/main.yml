@@ -1,5 +1,8 @@
-on: push
-name: 🚀 Deploy website onto server
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on FTP server
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -15,6 +18,7 @@ jobs:
         username: necysc
         password: ${{ secrets.ftp_password }}
         server-dir: necysc.org/v3/
+        local-dir: build
         exclude: |
           **/.git*
           **/.git*/**

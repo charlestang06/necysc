@@ -1,0 +1,163 @@
+---
+layout: base.liquid
+title: Home
+---
+
+<link rel="stylesheet" href="/static/necysc_app/style.css" />
+<link rel="stylesheet" href="/static/necysc_app/index.css" />
+
+<div class="container">
+<section style="height: 98vh">
+	<div class="hero-section hero-video shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height:Yes 25%">
+		<video autoplay loop muted playsinline poster="/static/necysc_app/images/hero/about_hero.jpg">
+	<source src="/static/necysc_app/images/hero/home_hero_banner.mp4" type="video/mp4" />
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<div>
+		<h1 class="pt-3 text-center display-6">
+			New England's Most Popular
+			<span class="display-4 fw-bold">Chinese-American</span>
+			Summer Camp
+		</h1>
+		<h2 class="pt-3 text-center">
+			<i>Traditions. Friendship. Culture. Fun.</i>
+		</h2>
+	</div>
+	<div class="d-flex flex-row gap-1 pt-3 justify-content-center align-items-center text-white">
+		<a href="#aboutus" class="text-purple bi bi-chevron-compact-down floating"></a>
+	</div>
+</section>
+
+<section>
+	<div class="row">
+		<div class="col-md-6">
+			<h1 class="ps-md-5 mb-3 pt-3 fw-bold" id="aboutus">Welcome to NECYSC</h1>
+			<p class="ps-md-5 pe-5 mb-4 fs-5">
+				Welcome to the New England Chinese Youth Summer Camp (NECYSC) –
+				the premier cultural summer camp for Chinese-American youth in the
+				New England area. Our camp is dedicated to providing an enriching
+				and unforgettable summer experience focused on
+				<strong>nurturing fun, leadership development, cultural immersion, and
+				community building</strong>.
+				Discover the perfect summer camp where your child can grow,
+				learn, and make lasting memories!
+			</p>
+			<div class="ps-md-5">
+				<a href="/registration/" class="col-md-3 fs-5 btn-purple rounded-pill w-75 fw-bold">
+					Register today!
+				</a>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="m-auto text-white pt-3" style="width: 90%">
+				{% include "dates.liquid" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="bg-purple align-items-center justify-content-center text-center text-white py-5 mt-5 row">
+		<h5 class="text-white fs-3">We are excited to announce 2025 NECYSC Camp Dates!</h5>
+		<h5 class="text-white display-5 fw-bolder my-4">{{ config.camp_week }}</h5>
+		<a href="/registration/" class="m-auto btn-yellow fs-5 px-5 rounded-pill d-flex align-items-center justify-content-center w-auto">
+			REGISTER for NECYSC
+			<span class="fs-4 ps-3 text-yellow bi bi-chevron-compact-right d-flex align-items-center"></span>
+		</a>
+	</div>
+</section>
+
+<section>
+	<div class="bg-purple position-relative" style="line-height: 0">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0,192,0,96,0,48,0L0,0Z">
+			</path>
+		</svg>
+		<h2 class="mb-5 text-white text-center">
+			An authentic
+			<span class="fw-bolder text-decoration-underline" style="text-underline-offset: 10px">Chinese-American</span>
+			cultural experience...
+		</h2>
+		<div class="row ms-md-5 me-md-5 pt-0 justify-content-center align-items-center">
+			<div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+				<img src="/static/necysc_app/images/home/home_one.jpg" alt="Water Balloons Image" class="img-fluid" style="object-fit: cover" />
+			</div>
+			<div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+				<img src="/static/necysc_app/images/home/home_two.jpg" alt="Indoors Image" class="img-fluid" style="object-fit: cover" />
+			</div>
+			<div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+				<img src="/static/necysc_app/images/home/home_three.jpg" alt="Pose Image" class="img-fluid" style="object-fit: cover" />
+			</div>
+			<div class="ratio ratio-1x1 mb-5 col-3 mx-2 shadow" style="width: 23%">
+				<img src="/static/necysc_app/images/home/home_four.jpg" alt="Filming Image" class="img-fluid" style="object-fit: cover" />
+			</div>
+		</div>
+	</div>
+ </section>
+
+
+<!-- Parallax image section: bounded to container -->
+<div class="container">
+	<div class="shadow parallax-one mobileparallax"></div>
+</div>
+
+<div class="bg-purple position-relative pt-5">
+	<div class="ps-5 pe-5 justify-content-center align-items-center">
+		<h2 class="text-center text-white fw-bold">Camp Activities</h2>
+		<p class="col-md-6 m-auto text-white fs-5">
+			Our campers actively participate in cultural activities like
+			<strong>Chinese Yo-yo, Kung-fu, and Calligraphy</strong> throughout
+			the day. These are complemented by counselor-led events such as
+			<strong>Carnival, Fun In The Sun, Talent Show, End-of-the-Week Dance, and
+			the eagerly-awaited CIT Dress Up.</strong>
+		</p>
+		<p class="col-md-6 m-auto text-white fs-5 mt-4">
+			Campers create life-long memories and friendships that go beyond the
+			ordinary camp setting. As the week concludes, each group performs
+			skills they learned during their time at NECYSC for friends and
+			family members.
+		</p>
+		<p class="m-auto col-md-6 mt-2 text-white fs-3 text-center mt-4">
+			Check out our
+			<a href="https://sites.google.com/necysc.org/times" class="text-decoration-underline" target="_blank" style="color: #f9c784; text-underline-offset: 10px">camp week newsletter!</a>
+		</p>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+	</svg>
+</div>
+
+<div class="row ms-md-5 me-md-5 mb-5 justify-content-center align-items-center">
+	<div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+		<img src="/static/necysc_app/images/home/home_five.jpg" alt="Lunch Image" class="img-fluid" style="object-fit: cover" />
+	</div>
+	<div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+		<img src="/static/necysc_app/images/home/home_six.jpg" alt="Swim Image" class="img-fluid" style="object-fit: cover" />
+	</div>
+	<div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+		<img src="/static/necysc_app/images/home/home_seven.jpg" alt="Flags Image" class="img-fluid" style="object-fit: cover" />
+	</div>
+	<div class="ratio ratio-1x1 mb-5 mx-2 shadow" style="width: 23%">
+		<img src="/static/necysc_app/images/home/home_eight.jpg" alt="Instrument Image" class="img-fluid" style="object-fit: cover" />
+	</div>
+</div>
+</div>
+
+
+<div class="container">
+	<div class="shadow parallax-two mobileparallax mb-5"></div>
+</div>
+
+<div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px"></div>
+
+<div class="container">
+<div class="container d-flex justify-content-center">
+	<div class="card shadow glow h-100 d-flex flex-column" style="max-width: 500px; width: 100%">
+		<div class="card-body">
+			<h3 class="card-title">Sample Schedule</h3>
+			<img src="/static/necysc_app/images/home/schedule.svg" alt="Sample Schedule" class="img-fluid" />
+		</div>
+	</div>
+</div>
+</div>
