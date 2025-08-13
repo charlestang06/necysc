@@ -1,0 +1,109 @@
+---
+layout: base.liquid
+title: Registration
+---
+
+
+<link rel="stylesheet" href="/static/necysc_app/registration.css" />
+
+
+<div class="container">
+	<section>
+		<div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+			<div class="overlay"></div>
+		</div>
+		<h1 class="text-purple display-5 text-center fw-bold py-5">Exploring Chinese-American culture starts here.</h1>
+	</section>
+	<section>
+		<div class="container m-auto text-white py-5" id="importantdates" style="width: 90%">
+			{% include "dates.liquid" %}
+		</div>
+	</section>
+	<!-- <section>
+		<div class="bg-purple align-items-center justify-content-center text-center text-white py-1 row">
+			<p class="text-white fs-3 fw-bold px-3 pt-3">Spots are filling up fast! Register soon!</p>
+		</div>
+	</section> -->
+	<section>
+		<div class="container py-4">
+			<!-- Three steps, each step has a number encased in a bg-purple circle, and a header/description -->
+			<div class="row mt-5 gap-4">
+				<div class="col-sm-2">
+					<div class="d-flex justify-content-center align-items-center bg-purple rounded-circle text-white step-circle float-sm-end" style="width: 100px; height: 100px">
+						<p class="text-white text-center m-0">STEP<br /><span class="fs-1">1</span></p>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div>
+						<h1 class="text-purple">Register</h1>
+						<p class="fs-5 text-secondary">Get started today and join our community of Chinese-American youth.</p>
+						<p class="fs-5 text-secondary">Signing up is easy. Sign up through the registration form below.</p>
+						<p class="fs-5 text-secondary">Not ready to register? <a href="/">Learn more about NECYSC.</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5 gap-4">
+				<div class="col-sm-2">
+					<div class="d-flex justify-content-center align-items-center bg-purple rounded-circle text-white step-circle float-sm-end" style="width: 100px; height: 100px">
+						<p class="text-white text-center m-0">STEP<br /><span class="fs-1">2</span></p>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div>
+						<h1 class="text-purple">Submit Payment and Forms</h1>
+						<p class="fs-5 text-secondary">In the registration form, parents must submit payment for camp and required medical forms. Only card payments are accepted.</p>
+						<p class="fs-5 text-secondary">We offer an <strong>Early Bird discount</strong> if you register and submit payment before the date listed below.</p>
+						<p class="fs-5 text-secondary">We offer financial aid to campers based on demonstrated need. See the <a href="#financialaid">financial aid section</a> for more information.</p>
+						<p class="fs-5 text-secondary">Parents of Overnight and ExplorAsian campers are required to perform one POD shift per camper. Parents may opt-out of POD participation by submitting a waiver fee of <strong>$300.00</strong> per camper.<br /><br />Below are a list of forms you should prepare <span style="text-decoration: underline">before starting the registration form</span>. Please fill out these forms <strong>PRIOR to registering</strong> for camp. You will be asked to upload these forms during the registration process.</p>
+						<ul class="text-secondary fs-5">
+							<li><strong>Camper's Annual Physical</strong> (scanned as a single file). See our <a href="/faq/#faqhealth">FAQ</a> if your physical is not within the past year.</li>
+							<li><a target="_blank" href="https://www.necysc.org/files/CORI.pdf">CORI</a> and <a target="_blank" href="https://www.necysc.org/files/SORI.pdf">SORI</a> (uploaded as two distinct files). Please see note below to determine if you need to submit this.</li>
+							<li><strong>Copy of photo ID</strong> like driver's license or passport. Please see note below to determine if you need to submit this.</li>
+							<li><a href="https://necysc.org/files/NECYSC_Staff_BG_Form.pdf" target="_blank">Background Check Form</a> (upload as single file). Only Youth Staff need to submit.</li>
+							<li>Prepare your <strong>payment method</strong> (card only).<br />If you are unable to pay by card, please reach out to us at <a href="mailto:registration@necysc.org">registration@necysc.org</a> for assistance.</li>
+						</ul>
+						<p class="text-secondary fs-5">Please note that only parents physically participating in the POD program, all parent volunteers (e.g. Farm Trip chaperones), all Committee Members, and all Youth Staff need to submit CORI and SORI forms <strong>and</strong> a valid form of ID.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5 gap-4">
+				<div class="col-sm-2">
+					<div class="d-flex justify-content-center align-items-center bg-purple rounded-circle text-white step-circle float-sm-end" style="width: 100px; height: 100px">
+						<p class="text-white text-center m-0">STEP<br /><span class="fs-1">3</span></p>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div>
+						<h1 class="text-purple">Prepare for Camp Week</h1>
+						<p class="fs-5 text-secondary">Read our <a href="/faq/">FAQ section</a> for answers to your most frequent questions for camp week.</p>
+						<p class="fs-5 text-secondary">For application updates, please check your email and add <a href="mailto:registration@necysc.org">registration@necysc.org</a> as a trusted sender.</p>
+						<p class="fs-5 text-secondary">Our camp week packing list if added in the <a href="/faq/">FAQ section</a> along with other relevant resources.</p>
+						<p class="fs-5 text-secondary">At least one parent of each camper family must participate in the POD program during camp week. If this is not possible, an additional waiver fee may be added instead.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="bg-purple align-items-center justify-content-center text-center text-white py-5 row">
+			<a href="https://form.jotform.com/243363178260153" target="_blank" class="m-auto btn-yellow fs-5 px-5 rounded-pill d-flex align-items-center justify-content-center w-auto">REGISTER for NECYSC<span class="fs-4 ps-3 text-yellow bi bi-chevron-compact-right d-flex align-items-center"></span></a>
+		</div>
+	</section>
+	
+	<section>
+		<div class="container py-3">
+			<h2 id="financialaid" style="color: #4e598c" class="mb-3">Financial Aid</h2>
+			<p class="fs-5 text-secondary"><strong>We try our best to make our programs affordable for everyone.</strong> Financial Aid is available and is based solely on need. Families who qualify are encouraged to apply as soon as possible. It is essential that you provide support document to demonstrate your need. Our goal is to offer an opportunity to families who may otherwise not be able to afford the program to share our camp experience.</p>
+			<p class="fs-5 text-secondary">The Financial Aid application is strictly confidential. Financial Aid is a separate process from program acceptance and is awarded after program acceptance. Please complete both the Camper/CIT program <a href="https://www.necysc.org/files/Financial_Aid.pdf" target="_blank">application form</a> (indicating that you are applying for Financial Aid) and the Financial Aid application form. Please also note that it is required that you send in a 50% deposit with your financial application.</p>
+			<p class="fs-5 text-secondary">Our data is based on the Federal Poverty Guidelines, which are released each year.</p>
+			<p class="fs-5 text-secondary">Please email the following documents to <a href="mailto:registration@necysc.org">registration@necysc.org</a>.</p>
+			<p class="fs-5 text-secondary">Required documents for verification of income with rest of registration forms (Submit at Time of Registration or Before May 1, <span class="year"></span>):</p>
+			<ul class="fs-5 text-secondary">
+				<li>Financial Aid Application Form</li>
+				<li><span class="prev_year"></span> Family tax return copy (IRS 1040 form)</li>
+				<li>Exemption approval of the School Lunch Program, or other relevant documents</li>
+				<li>Cover letter explaining your situation.</li>
+			</ul>
+		</div>
+	</section>
+</div>

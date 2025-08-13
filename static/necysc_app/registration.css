@@ -1,3 +1,10 @@
+/* Registration hero image */
+.hero-section {
+	background-image: url("./images/hero/registration_hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 * { 
 	margin: 0; 
 	padding: 0
@@ -159,3 +166,4 @@ a{
 .progress-bar { 
 	background-color: #4e598c;
 }
+

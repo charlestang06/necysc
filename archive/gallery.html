@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap Imports -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="thumbnail" content="static/necysc_app/images/other/fans.png" />
+
+    <link href="static/necysc_app/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="static/necysc_app/images/favicon.ico?"
+    />
+
+    <title>NECYSC | Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--global Hind font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Hind", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #4e598c;
+      }
+
+
+      .bg-purple {
+        background-color: #4e598c;
+      }
+      .hero-section {
+        background-image: url("static/necysc_app/images/hero/about_hero.jpg");
+      }
+
+      .btn-dark:hover {
+        background-color: #5a6268;
+        color: white;
+      }
+    </style>
+    <script src="config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".year").forEach((element) => {
+          element.textContent = CONFIG.year; // Replace CONFIG.year with your variable
+        });
+        document.querySelectorAll(".camp_week").forEach((element) => {
+          element.textContent = CONFIG.camp_week; // Replace CONFIG.year with your variable
+        });
+        document.querySelectorAll(".prev_year").forEach((element) => {
+          element.textContent = CONFIG.prev_year; // Replace CONFIG.year with your variable
+        });
+        document.querySelectorAll(".po_box").forEach((element) => {
+          element.textContent = CONFIG.po_box; // Replace CONFIG.year with your variable
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- navbar sticky -->
+    <nav
+      class="row mt-2 pt-2 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row"
+      style="opacity: 0.9"
+    >
+      <!-- NECYSC logo -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger"> &#9776; </label>
+
+      <div class="nav-links">
+        <div class="col-auto d-none d-xxl-block">
+          <a href="index.html" id="logo-link">
+            <img
+              src="static/necysc_app/images/logo_bw.png"
+              alt="Banner Logo"
+              id="logobutton"
+              class="rounded-pill p-2 px-4 me-4"
+              style="width: 12rem; height: auto"
+            />
+          </a>
+        </div>
+
+        <div class="dropdown col-auto">
+          <a href="index.html" class="navbar-link">Home</a>
+        </div>
+
+        <div class="dropdown col-auto">
+          <a href="about.html" class="navbar-link">About</a>
+          <div class="dropdown-content">
+            <a href="about.html#pod">POD Program</a>
+            <a href="about.html#committee">Our Committee</a>
+            <a href="about.html#sponsors">Sponsors</a>
+            <a href="about.html#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="dropdown col-auto">
+          <a href="programs.html" class="navbar-link">Programs</a>
+          <div class="dropdown-content">
+            <a href="programs.html#day">Day Camp</a>
+            <a href="programs.html#on">Overnight Camp</a>
+            <a href="programs.html#ea">ExplorAsian</a>
+          </div>
+        </div>
+
+        <div class="dropdown col-auto">
+          <a href="staff.html" class="navbar-link">Staff</a>
+          <div class="dropdown-content">
+            <a href="staff.html#cit">CIT</a>
+            <a href="staff.html#counselor">Counselor</a>
+            <a href="staff.html#ra">RA</a>
+            <a href="staff.html#ops">OPs</a>
+            <a href="staff.html#committee">Committee</a>
+          </div>
+        </div>
+
+        <div class="dropdown col-auto">
+          <a href="registration.html" class="navbar-link">Registration</a>
+          <div class="dropdown-content">
+            <a href="registration.html#importantdates"
+              ><span class="year"></span> Important Dates</a
+            >
+            <a href="registration.html#financialaid">Financial Aid</a>
+          </div>
+        </div>
+
+        <div class="dropdown col-auto">
+          <a href="faq.html" class="navbar-link">FAQ</a>
+          <div class="dropdown-content">
+            <a href="faq.html#faqregistration">Registration</a>
+            <a href="faq.html#faqleavingcamp">Leaves and Visits</a>
+            <a href="faq.html#faqhealth">Health and Safety</a>
+            <a href="faq.html#faqpacking">Camp Preparation</a>
+          </div>
+        </div>
+
+        <div class="col-auto ms-auto">
+          <a
+            href="https://youtu.be/PPZ1zu8fGl0?si=h436QWcB9vHQeV_G"
+            target="_blank"
+            class="btn-padding me-3 d-none d-xxl-block"
+            >Gallery</a
+          >
+
+          <a href="registration.html" class="btn-login me-3 d-none d-xxl-block"
+            >Register</a
+          >
+          <a href="#contact" class="btn-login d-none d-xxl-block">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <section>
+        <div
+          class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+        >
+          <div class="overlay"></div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer
+      class="container p-4 m-auto align-items-center justify-content-center"
+      id="contact"
+    >
+      <div class="ms-5 me-5 mb-5 bg-dark" style="height: 2px"></div>
+
+      <h2 class="mb-3 mt-5 text-center" style="color: #4e598c">
+        Connect With Us!
+      </h2>
+      <p class="text-center text-muted small">
+        General Inquiries:
+        <a href="mailto:registration@necysc.org" style="color: black"
+          >registration@necysc.org</a
+        >
+      </p>
+      <p class="text-center small text-muted">
+        Director:
+        <a href="mailto:registration@necysc.org" style="color: black"
+          >director@necysc.org</a
+        >
+      </p>
+      <p class="text-center small text-muted">
+        <span class="po_box"></span>
+      </p>
+
+      <div class="row text-center align-items-center justify-content-center">
+        <div class="col-auto">
+          <a
+            href="https://www.instagram.com/NECYSC/"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png"
+              alt="Instagram Logo"
+              style="width: 50px; height: auto"
+            />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://www.facebook.com/NECYSC"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png"
+              alt="Facebook Logo"
+              style="width: 40px; height: auto"
+            />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="http://www.youtube.com/@NECYSC1"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="static/necysc_app/images/youtube_logo.svg"
+              alt="YouTube Logo"
+              style="width: 40px; height: auto"
+            />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://www.tiktok.com/@necysc"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img
+              src="static/necysc_app/images/tiktok_logo.svg"
+              alt="Tiktok Logo"
+              style="width: 40px; height: auto"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="container"></div>
+      <div class="text-center p-4">
+        Copyright © <span class="year"></span> NECYSC. All Rights Reserved.
+        <p><a class="text-reset" href="https://necysc.org/">necysc.org</a></p>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!--Bootstrap JavaScript Plugins-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

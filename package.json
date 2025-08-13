@@ -1,0 +1,13 @@
+{
+  "name": "necysc-11ty-site",
+  "version": "1.0.0",
+  "description": "NECYSC site built with 11ty for dynamic templating.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}

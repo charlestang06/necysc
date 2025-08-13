@@ -1,0 +1,60 @@
+<nav class="row mt-2 pt-2 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row" style="opacity: 0.9">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="hamburger"> &#9776; </label>
+  <div class="nav-links">
+    <div class="col-auto d-none d-xxl-block">
+      <a href="/" id="logo-link">
+        <img src="/static/necysc_app/images/logo_bw.png" alt="Banner Logo" id="logobutton" class="rounded-pill p-2 px-4 me-4" style="width: 12rem; height: auto" />
+      </a>
+    </div>
+    <div class="dropdown col-auto"><a href="/" class="navbar-link{% if page.url == '/' %} active{% endif %}">Home</a></div>
+    <div class="dropdown col-auto">
+      <a href="/about/" class="navbar-link{% if page.url contains '/about' %} active{% endif %}">About</a>
+      <div class="dropdown-content">
+        <a href="/about/#pod">POD Program</a>
+        <a href="/about/#committee">Our Committee</a>
+        <a href="/about/#sponsors">Sponsors</a>
+        <a href="/about/#contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="dropdown col-auto">
+      <a href="/programs/" class="navbar-link{% if page.url contains '/programs' %} active{% endif %}">Programs</a>
+      <div class="dropdown-content">
+        <a href="/programs/#day">Day Camp</a>
+        <a href="/programs/#on">Overnight Camp</a>
+        <a href="/programs/#ea">ExplorAsian</a>
+      </div>
+    </div>
+    <div class="dropdown col-auto">
+      <a href="/staff/" class="navbar-link{% if page.url contains '/staff' %} active{% endif %}">Staff</a>
+      <div class="dropdown-content">
+        <a href="/staff/#cit">CIT</a>
+        <a href="/staff/#counselor">Counselor</a>
+        <a href="/staff/#ra">RA</a>
+        <a href="/staff/#ops">OPs</a>
+        <a href="/staff/#committee">Committee</a>
+      </div>
+    </div>
+    <div class="dropdown col-auto">
+      <a href="/registration/" class="navbar-link{% if page.url contains '/registration' %} active{% endif %}">Registration</a>
+      <div class="dropdown-content">
+  <a href="/registration/#importantdates">{{ config.year }} Important Dates</a>
+        <a href="/registration/#financialaid">Financial Aid</a>
+      </div>
+    </div>
+    <div class="dropdown col-auto">
+      <a href="/faq/" class="navbar-link{% if page.url contains '/faq' %} active{% endif %}">FAQ</a>
+      <div class="dropdown-content">
+        <a href="/faq/#faqregistration">Registration</a>
+        <a href="/faq/#faqleavingcamp">Leaves and Visits</a>
+        <a href="/faq/#faqhealth">Health and Safety</a>
+        <a href="/faq/#faqpacking">Camp Preparation</a>
+      </div>
+    </div>
+    <div class="col-auto ms-auto">
+  <a href="https://youtu.be/n3vHhjCvBDQ" target="_blank" class="btn-padding me-3 d-none d-xxl-block">{{ config.prev_year }} RECAP</a>
+      <a href="/registration/" class="btn-login me-3 d-none d-xxl-block">Register</a>
+      <a href="#contact" class="btn-login d-none d-xxl-block">Contact Us</a>
+    </div>
+  </div>
+</nav>
