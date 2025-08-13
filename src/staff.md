@@ -55,8 +55,8 @@ title: Staff
 					<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #4e598c" id="cit">CIT</h1>
 					<ul class="list-unstyled mb-3 fs-5">
 						<li><strong>Ages:</strong> 16+</li>
-						<li><strong>Dates:</strong><span class="staff_camp_week"></span></li>
-						<li><strong>Program Fee:</strong> <span class="cit_fee"></span></li>
+						<li><strong>Dates:</strong><span class="staff_camp_week"> {{ config.staff_camp_week }}</span></li>
+						<li><strong>Program Fee:</strong> <span class="cit_fee"> {{ config.fees.cit }}</span></li>
 					</ul>
 					<p class="fs-5">The Counselor in Training (CIT) program provides the opportunity for responsible teens to gain valuable leadership experience. We are looking for dedicated, responsible, and passionate Counselors-In-Training to lead campers in daily activities.</p>
 					<p class="fs-5">Learn more about the CIT role and apply through the link below!</p>
@@ -76,7 +76,7 @@ title: Staff
 					<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id="counselor">Counselor</h1>
 					<ul class="list-unstyled mb-3 fs-5">
 						<li><strong>Ages:</strong> 18+</li>
-						<li><strong>Dates:</strong><span class="staff_camp_week"></span></li>
+						<li><strong>Dates:</strong><span class="staff_camp_week"> {{ config.staff_camp_week }}</span></li>
 						<li><strong>Paid Position</strong></li>
 					</ul>
 					<p class="fs-5">Counselors are at the frontlines of daily activities. They generally oversee most of the day-to-day aspects of the camp. A counselor or team of two counselors is responsible for a group of around twenty similarly aged campers. We are looking for dedicated, responsible, and passionate Counselors to lead campers in daily activities.</p>
@@ -97,7 +97,7 @@ title: Staff
 					<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #4e598c" id="ra">Residential Advisor (RA)</h1>
 					<ul class="list-unstyled mb-3 fs-5">
 						<li><strong>Ages:</strong> 18+</li>
-						<li><strong>Dates:</strong><span class="staff_camp_week"></span></li>
+						<li><strong>Dates:</strong><span class="staff_camp_week"> {{ config.staff_camp_week }}</span></li>
 						<li><strong>Paid Position</strong></li>
 					</ul>
 					<p class="fs-5">The Residential Advisor (RA) position leads the ExplorAsian program and is a unique leadership role ideal for college students interested in education, youth mentoring, cultural involvement, and community service.</p>
@@ -118,7 +118,7 @@ title: Staff
 					<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id="ops">Operations CIT (OPs)</h1>
 					<ul class="list-unstyled mb-3 fs-5">
 						<li><strong>Ages:</strong> 16+</li>
-						<li><strong>Dates:</strong><span class="staff_camp_week"></span></li>
+						<li><strong>Dates:</strong><span class="staff_camp_week"> {{ config.staff_camp_week }}</span></li>
 						<li><strong>Paid Position</strong></li>
 					</ul>
 					<p class="fs-5">The Operations CIT (OPs) position conducts day-to-day logistical operations planning responsibilities for the Day and Overnight programs. The OPs team (3-5 members) are tasked with set-up and planning various parts of camp to make everything go as smoothly as possible.</p>
