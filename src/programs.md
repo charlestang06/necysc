@@ -62,7 +62,7 @@ title: Programs
 					<h3 class="display-6 fw-bold text-center pt-4" style="color: #4e598c">Day Camp</h3>
 					<h5 class="text-muted text-center p-1">Ages 6-10</h5>
 					<h5 class="text-muted text-center p-1">Monday -- Friday</h5>
-					<p class="text-muted text-center p-1">Program Fee: <span class="day_fee"></span></p>
+					<p class="text-muted text-center p-1">Program Fee: {{ config.fees.day }}</p>
 					<p class="ps-md-4 pe-md-4 text-center fs-5 px-4">Day campers, in groups of around 10, travel together to a variety of classes and activities, including Chinese Yo-Yo, cooking, swimming, and arts/crafts. In addition, they enjoy counselor-led events like Carnival and Fun in the Sun. The week wraps up with a Closing Ceremony on Friday, where campers perform and showcase what they’ve learned. Lunch and snacks are provided.</p>
 				</div>
 				<a href="#day" class="btn-purple fw-bold w-50 m-auto mb-4">Discover</a>
@@ -75,7 +75,7 @@ title: Programs
 					<h3 class="display-6 fw-bold text-center pt-4" style="color: #4e598c">Overnight Camp</h3>
 					<h5 class="text-muted text-center p-1">Ages 10-14</h5>
 					<h5 class="text-muted text-center p-1">Sunday -- Saturday</h5>
-					<p class="text-muted text-center p-1">Program Fee: <span class="on_fee"></span></p>
+					<p class="text-muted text-center p-1">Program Fee: {{ config.fees.on }}</span></p>
 					<p class="ps-md-4 pe-md-4 text-center fs-5 px-4">Overnight campers, in groups of around 10, enjoy activities including Chinese Yo-Yo, cooking, swimming, and arts/crafts. In addition, campers engage in evening activities such as the Talent Show, CIT Dress-Up, Movie Night, and the Dance. Each night, they build close-knit friendships in hall groups. The week culminates in a Closing Ceremony on Saturday, where campers showcase their learned talents.</p>
 				</div>
 				<a href="#day" class="btn-purple fw-bold w-50 m-auto mb-4" style="">Explore</a>
@@ -87,7 +87,7 @@ title: Programs
 				<div class="text-content">
 					<h3 class="display-6 fw-bold text-center pt-4" style="color: #4e598c">ExplorAsian</h3>
 					<h5 class="text-muted text-center p-1">Ages 14-16</h5>
-					<p class="text-muted text-center p-1">Program Fee: <span class="ea_fee"></span></p>
+					<p class="text-muted text-center p-1">Program Fee: {{ config.fees.ea }}</span></p>
 					<p class="ps-md-4 pe-md-4 text-center fs-5 px-4">ExplorAsian is a week-long, overnight program focused on exploring Chinese-American identity, developing leadership skills, and fostering connections. With an intimate group of around 20 campers led by Residential Advisors, the program empowers youth to become community leaders while navigating the transition from camper to counselor-in-training (CIT).</p>
 				</div>
 				<a href="#ea" class="btn-purple fw-bold w-50 m-auto mb-4" style="">Learn More</a>

@@ -59,7 +59,7 @@ title: Home
 
 <section>
 	<div class="bg-purple align-items-center justify-content-center text-center text-white py-5 mt-5 row">
-		<h5 class="text-white fs-3">We are excited to announce 2025 NECYSC Camp Dates!</h5>
+		<h5 class="text-white fs-3">We are excited to announce {{ config.year }} NECYSC Camp Dates!</h5>
 		<h5 class="text-white display-5 fw-bolder my-4">{{ config.camp_week }}</h5>
 		<a href="/registration/" class="m-auto btn-yellow fs-5 px-5 rounded-pill d-flex align-items-center justify-content-center w-auto">
 			REGISTER for NECYSC
@@ -95,7 +95,6 @@ title: Home
 		</div>
 	</div>
  </section>
-
 
 <!-- Parallax image section: bounded to container -->
 <div class="container">
@@ -143,7 +142,6 @@ title: Home
 	</div>
 </div>
 </div>
-
 
 <div class="container">
 	<div class="shadow parallax-two mobileparallax mb-5"></div>
