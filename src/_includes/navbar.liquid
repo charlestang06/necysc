@@ -1,5 +1,19 @@
-<nav class="row mt-2 pt-2 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 sticky-top bg-bi-white bg-white row" style="opacity: 0.9">
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<div class="sticky-top">
+<!-- announcement banner only for home page -->
+{% if page.url == '/' %}
+<div style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:#f9c784;color:#4e598c;text-align:center;padding:0.75rem 0;font-size:1.25rem;font-weight:600;letter-spacing:0.02em;z-index:2000;display:flex;align-items:center;justify-content:center;gap:1.5rem;">
+  <span>🎉 Celebrating 40 Years of NECYSC! Step into our memories </span>
+  <a href="/history/" class="banner-arrow-btn" style="display:inline-flex;align-items:center;justify-content:center;background:#4e598c;color:#fff;border-radius:50%;width:2.5rem;height:2.5rem;text-decoration:none;transition:background 0.2s;box-shadow:0 2px 8px rgba(78,89,140,0.08);font-size:1.5rem;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:auto;">
+      <circle cx="12" cy="12" r="12" fill="none"/>
+      <path d="M8 12h8M14 8l4 4-4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="visually-hidden">Go to History</span>
+  </a>
+</div>
+{% endif %}
+<nav class="row pt-2 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 bg-bi-white bg-white row" style="opacity: 0.9">  
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
   <label for="menu-toggle" class="hamburger"> &#9776; </label>
   <div class="nav-links">
     <div class="col-auto d-none d-xxl-block">
@@ -53,9 +67,10 @@
       </div>
     </div>
     <div class="col-auto ms-auto">
-  <a href="https://youtu.be/n3vHhjCvBDQ" target="_blank" class="btn-padding me-3 d-none d-xxl-block">{{ config.prev_year }} RECAP</a>
+      <a href="https://youtu.be/n3vHhjCvBDQ" target="_blank" class="btn-padding me-3 d-none d-xxl-block">{{ config.prev_year }} RECAP</a>
       <a href="/registration/" class="btn-login me-3 d-none d-xxl-block">Register</a>
       <a href="#contact" class="btn-login d-none d-xxl-block">Contact Us</a>
     </div>
   </div>
 </nav>
+</div>
