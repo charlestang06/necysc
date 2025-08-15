@@ -1,0 +1,36 @@
+{
+  "logo": "/static/times/2022/2022.png",
+  "year": "2022",
+  "newsletters": [
+    {
+      "day": "Sunday",
+      "image": "/static/times/2022/sunday.jpg",
+      "date": "2022-07-24"
+    },
+    {
+      "day": "Monday",
+      "image": "/static/times/2022/monday.jpg",
+      "date": "2022-07-25"
+    },
+    {
+      "day": "Tuesday",
+      "image": "/static/times/2022/tuesday.jpg",
+      "date": "2022-07-26"
+    },
+    {
+      "day": "Wednesday",
+      "image": "/static/times/2022/wednesday.jpg",
+      "date": "2022-07-27"
+    },
+    {
+      "day": "Thursday",
+      "image": "/static/times/2022/thursday.jpg",
+      "date": "2022-07-28"
+    },
+    {
+      "day": "Friday",
+      "image": "/static/times/2022/friday.jpg",
+      "date": "2022-07-29"
+    }
+  ]
+}

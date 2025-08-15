@@ -1,0 +1,36 @@
+{
+  "logo": "/static/times/2021/2021.png",
+  "year": "2021",
+  "newsletters": [
+    {
+      "day": "Sunday",
+      "image": "/static/times/2021/sunday.jpg",
+      "date": "2021-07-25"
+    },
+    {
+      "day": "Monday",
+      "image": "/static/times/2021/monday.jpg",
+      "date": "2021-07-26"
+    },
+    {
+      "day": "Tuesday",
+      "image": "/static/times/2021/tuesday.jpg",
+      "date": "2021-07-27"
+    },
+    {
+      "day": "Wednesday",
+      "image": "/static/times/2021/wednesday.jpg",
+      "date": "2021-07-28"
+    },
+    {
+      "day": "Thursday",
+      "image": "/static/times/2021/thursday.jpg",
+      "date": "2021-07-29"
+    },
+    {
+      "day": "Friday",
+      "image": "/static/times/2021/friday.jpg",
+      "date": "2021-07-30"
+    }
+  ]
+}

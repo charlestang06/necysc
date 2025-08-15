@@ -1,0 +1,36 @@
+{
+  "logo": "/static/times/2024/2024.png",
+  "year": "2024",
+  "newsletters": [
+    {
+      "day": "Sunday",
+      "image": "/static/times/2024/sunday.jpg",
+      "date": "2024-07-28"
+    },
+    {
+      "day": "Monday",
+      "image": "/static/times/2024/monday.jpg",
+      "date": "2024-07-29"
+    },
+    {
+      "day": "Tuesday",
+      "image": "/static/times/2024/tuesday.jpg",
+      "date": "2024-07-30"
+    },
+    {
+      "day": "Wednesday",
+      "image": "/static/times/2024/wednesday.jpg",
+      "date": "2024-07-31"
+    },
+    {
+      "day": "Thursday",
+      "image": "/static/times/2024/thursday.jpg",
+      "date": "2024-08-01"
+    },
+    {
+      "day": "Friday",
+      "image": "/static/times/2024/friday.jpg",
+      "date": "2024-08-02"
+    }
+  ]
+}

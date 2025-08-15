@@ -1,0 +1,36 @@
+{
+  "logo": "/static/times/2025/2025.png",
+  "year": "2025",
+  "newsletters": [
+    {
+      "day": "Sunday",
+      "image": "/static/times/2025/sunday.png",
+      "date": "2025-07-27"
+    },
+    {
+      "day": "Monday",
+      "image": "/static/times/2025/monday.png",
+      "date": "2025-07-28"
+    },
+    {
+      "day": "Tuesday",
+      "image": "/static/times/2025/tuesday.png",
+      "date": "2025-07-29"
+    },
+    {
+      "day": "Wednesday",
+      "image": "/static/times/2025/wednesday.png",
+      "date": "2025-07-30"
+    },
+    {
+      "day": "Thursday",
+      "image": "/static/times/2025/thursday.png",
+      "date": "2025-07-31"
+    },
+    {
+      "day": "Friday",
+      "image": "/static/times/2025/friday.png",
+      "date": "2025-08-01"
+    }
+  ]
+}
