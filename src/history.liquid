@@ -1,0 +1,51 @@
+---
+layout: base.liquid
+title: 40 Years of NECYSC
+nav_active: history
+---
+
+<link rel="stylesheet" href="/static/necysc_app/style.css" />
+<style>
+.year-card-col {
+  margin-bottom: 2.2rem !important;
+}
+</style>
+
+<div class="container">
+  <section>
+    <div class="hero-section position-relative overflow-hidden d-flex flex-column justify-content-center align-items-center text-center bg-light" style="min-height: 420px; background-image: url('/static/necysc_app/images/hero/about_hero.jpg'); background-size: cover; background-position: center;">
+      <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.35);"></div>
+      <div class="position-relative" style="z-index:2;">
+        <h1 class="display-1 fw-bold text-white" style="text-shadow: 0 4px 24px rgba(0,0,0,0.4); letter-spacing: 0.05em;">40 Years of NECYSC</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-5" style="font-size:2.5rem; color:#4e598c;">A Journey Through Time</h2>
+    <!-- Place holder for all 40 years past of NECYSC logos -->
+     <img src="/static/history/20years.png" alt="NECYSC Logos" class="img-fluid rounded mx-auto d-block" style="max-width: 50%; height: auto;">
+  </section>
+
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-5" style="font-size:2.5rem; color:#4e598c;">NECYSC Weekly Newsletters</h2>
+    <!-- Place holder for all 40 years past of NECYSC logos -->
+
+  </section>
+
+  <section style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;padding:0;">
+    <h2 class="text-center fw-bold mb-5" style="font-size:2.5rem; color:#4e598c;">Gallery</h2>
+    <div class="museum-gallery row align-items-stretch" style="margin:0;padding:0;width:100vw;">
+      {% for item in gallery %}
+      <div class="col-lg-4 col-md-6 col-12 d-flex flex-column align-items-center" style="padding:0;margin:0;">
+        <div class="gallery-card" style="background-image: url('{{ item.image }}'); background-size: cover; background-position: center;">
+          <div class="gallery-card-overlay">{{ item.description }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-5 text-muted" style="font-size:1.2rem;">More memories coming soon...</div>
+  </section>
+
+
+</div>
