@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "static": "static" });
   return {
     htmlTemplateEngine: "liquid",
@@ -12,3 +12,4 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+
