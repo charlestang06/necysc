@@ -3,11 +3,6 @@
   "year": "2021",
   "newsletters": [
     {
-      "day": "Sunday",
-      "image": "/static/times/2021/sunday.jpg",
-      "date": "2021-07-25"
-    },
-    {
       "day": "Monday",
       "image": "/static/times/2021/monday.jpg",
       "date": "2021-07-26"

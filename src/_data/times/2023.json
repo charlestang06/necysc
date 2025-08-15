@@ -26,11 +26,6 @@
       "day": "Thursday",
       "image": "/static/times/2023/thursday.jpg",
       "date": "2023-07-27"
-    },
-    {
-      "day": "Friday",
-      "image": "/static/times/2023/friday.jpg",
-      "date": "2023-07-28"
     }
   ]
 }
