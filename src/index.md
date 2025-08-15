@@ -119,7 +119,7 @@ title: Home
 		</p>
 		<p class="m-auto col-md-6 mt-2 text-white fs-3 text-center mt-4">
 			Check out our
-			<a href="https://sites.google.com/necysc.org/times" class="text-decoration-underline" target="_blank" style="color: #f9c784; text-underline-offset: 10px">camp week newsletter!</a>
+			<a href="/times/" class="text-decoration-underline" style="color: #f9c784; text-underline-offset: 10px">camp week newsletter!</a>
 		</p>
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

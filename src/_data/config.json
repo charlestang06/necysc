@@ -41,5 +41,42 @@
     ["Danielle Watson", "Medical", "danielle_watson.jpg"],
     ["Steve Feder", "Medical", "steve_feder.jpg"],
     ["Wesley Chiu", "Medical", "wesley.jpg"]
+  ],
+  "sponsors": [
+    {
+      "name": "Tow Family",
+      "description": "The Tow family honors Alana Tow's legacy by supporting NECYSC through the Alana for Allergies Memorial Fund, in remembrance of her summers as a camper and counselor, where she made lifelong friends.",
+      "level": "dragon"
+    },
+    {
+      "name": "Cultural Center of TECO in Boston",
+      "description": "Thank you for your generous support to Director Mr. Chris Liao!",
+      "level": "diamond"
+    },
+    {
+      "name": "Overseas Community Affairs Council (OCAC)",
+      "description": "Thank you for your generous support to Director Mr. Zhuren Pan!",
+      "level": "diamond"
+    },
+    {
+      "name": "Greater Boston Chinese Culture Association (GBCCA)",
+      "description": "Thank you for your generous support to Ms. Shirley Wong and Ms. Renne Liu!",
+      "level": "diamond"
+    },
+    {
+      "name": "Summer Star Foundation for Nature Art and Humanity",
+      "description": "Thank you for your generous support to Ms. Shalin Liu and the Summer Star Foundation for Nature Art and Humanity. Your contribution supports our camper outings, allowing them to connect with and appreciate the natural environment around us.",
+      "level": "diamond"
+    },
+    {
+      "name": "Breger Family",
+      "description": "Thank you for your generous support to the Breger Family!",
+      "level": "diamond"
+    },
+    {
+      "name": "Iridium Strategy Solutions",
+      "description": "Thank you for your generous support to Andrew and Kim from Iridium Strategy Solutions!",
+      "level": "platinum"
+    }
   ]
 }
