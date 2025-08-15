@@ -1,0 +1,8 @@
+{
+  "year": 2019,
+  "logo": "/static/times/2019/2019.png",
+  "newsletters": [
+    { "day": "Sunday", "image": "/static/times/2019/sunday.jpg" },
+    { "day": "Tuesday", "image": "/static/times/2019/tuesday.jpg" }
+  ]
+}

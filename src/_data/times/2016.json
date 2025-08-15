@@ -1,0 +1,7 @@
+{
+  "year": 2016,
+  "logo": "/static/times/2016/2016.png",
+  "newsletters": [
+    { "day": "Saturday", "image": "/static/times/2016/saturday.jpg" }
+  ]
+}
