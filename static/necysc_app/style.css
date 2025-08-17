@@ -1,3 +1,73 @@
+/* --- High-End Business Gallery --- */
+.museum-gallery {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.museum-gallery .row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.museum-gallery [class*="col-"] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(40, 50, 80, 0.08);
+  background: #fff;
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  transition: box-shadow 0.25s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.25s cubic-bezier(0.4, 2, 0.6, 1);
+  margin: 0;
+}
+.gallery-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(78, 89, 140, 0.16),
+    0 2px 16px rgba(100, 115, 255, 0.1);
+  transform: translateY(-2px) scale(1.015);
+}
+.gallery-card .gallery-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 40, 0.55);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 2rem 1.5rem;
+  transition: opacity 0.25s cubic-bezier(0.4, 2, 0.6, 1);
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
+.gallery-card:hover .gallery-card-overlay {
+  opacity: 1;
+}
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.25s cubic-bezier(0.4, 2, 0.6, 1);
+  border-radius: 12px;
+}
+.gallery-card:hover img {
+  filter: brightness(0.85) blur(1px);
+}
 @media (max-width: 600px) {
   .banner-arrow-btn {
     margin-right: 1.25rem !important;

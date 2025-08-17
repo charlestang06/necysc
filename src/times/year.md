@@ -34,15 +34,11 @@ margin-right: 0 !important;
 </style>
 
 <div class="container">
-    <section>
-        <div class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; background-image: url('/static/necysc_app/images/hero/about_hero.jpg'); background-size: cover; background-position: center;">
-            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.25);"></div>
-        </div>
-    </section>
-    <section class="container text-center mt-4 mb-2">
-        <h1 class="display-4 fw-bold text-purple">{{ yearData.year }} NECYSC Times</h1>
-        <p class="lead">Daily newsletters from our {{ yearData.year }} camp session.</p>
-    </section>
+    <section class="w-100 position-relative overflow-hidden text-center d-flex align-items-center justify-content-center min-vh-60" style="min-height: 60vh; background: linear-gradient(120deg, #4e598c 30%, #f9c784 100%);">
+    <div class="w-100">
+      <h1 class="display-2 fw-bold text-white mb-3" style="text-shadow: 0 4px 24px rgba(0,0,0,0.18); letter-spacing: 0.04em;">{{ yearData.year }} NECYSC Times</h1>
+    </div>
+  </section>
 
     <section class="mt-5">
         {% for newsletter in yearData.newsletters %}
