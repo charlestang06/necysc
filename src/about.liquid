@@ -4,10 +4,33 @@ title: About
 nav_active: about
 ---
 <link rel="stylesheet" href="/static/necysc_app/about.css" />
-
+<style>
+#history {
+  scroll-margin-top: 200px;
+}
+</style>
 
 <section class="container">
-	<div class="hero-section shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+	<div style="height: 98vh">
+	<div class="hero-section hero-video shadow position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 400px; height:Yes 25%">
+		<video autoplay loop muted playsinline poster="/static/necysc_app/images/hero/about_hero.jpg">
+	<source src="/static/necysc_app/images/hero/home_hero_banner.mp4" type="video/mp4" />
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<div>
+		<h1 class="pt-3 text-center display-6">
+			Celebrating
+			<span class="display-4 fw-bold">{{ config.year | minus: 1986 }} years</span>
+			of Friendship
+		</h1>
+		<h2 class="pt-3 text-center">
+			<i>Explore our history</i>
+		</h2>
+	</div>
+	<div class="d-flex flex-row gap-1 pt-3 justify-content-center align-items-center text-white">
+		<a href="#history" class="text-purple bi bi-chevron-compact-down floating"></a>
+	</div>
 	</div>
 </section>
 
@@ -84,6 +107,8 @@ nav_active: about
 			</div>
 		</div>
 </section>
+
+{% include 'history.liquid' %}
 
 
 

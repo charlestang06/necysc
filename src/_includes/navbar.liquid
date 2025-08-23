@@ -2,7 +2,7 @@
 <!-- announcement banner only for home page -->
 {% if page.url == '/' and config.announcement_bar.show %}
 <div style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:#f9c784;color:#4e598c;text-align:center;padding:0.75rem 0;font-size:1.25rem;font-weight:600;letter-spacing:0.02em;z-index:2000;display:flex;align-items:center;justify-content:center;gap:1.5rem;">
-  <span>{{ config.announcement_bar.text }}</span>
+  <span class="announcement-gradient-text">{{ config.announcement_bar.text }}</span>
   {% if config.announcement_bar.button.show %}
   <a href="{{ config.announcement_bar.button.url }}" class="banner-arrow-btn" style="display:inline-flex;align-items:center;justify-content:center;background:#4e598c;color:#fff;border-radius:50%;width:2.5rem;height:2.5rem;text-decoration:none;transition:background 0.2s;box-shadow:0 2px 8px rgba(78,89,140,0.08);font-size:1.5rem;">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:auto;">
