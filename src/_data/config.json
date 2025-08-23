@@ -48,7 +48,7 @@
     "button": {
       "show": true,
       "text": "Go to History",
-      "url": "/history/"
+      "url": "/about/"
     }
   },
   "sponsors": [

@@ -1,22 +1,71 @@
-/* --- High-End Business Gallery --- */
-.museum-gallery {
-  margin: 0 !important;
-  padding: 0 !important;
+/* Parallax Timeline Section Styles */
+.timeline-parallax-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
 }
-.museum-gallery .row {
-  --bs-gutter-x: 0 !important;
-  --bs-gutter-y: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
+/* Animated Glow Effect for Timeline Heading */
+.glow-animate {
+  text-shadow: 0 0 2px #f9c784, 0 0 16px #4e598c, 0 0 2px #fff;
+  animation: glow-pulse 2s ease-in-out infinite alternate;
 }
-.museum-gallery [class*="col-"] {
-  padding: 0 !important;
-  margin: 0 !important;
+
+@keyframes glow-pulse {
+  0% {
+    text-shadow: 0 0 8px #f9c784, 0 0 16px #4e598c, 0 0 2px #fff;
+  }
+  100% {
+    text-shadow: 0 0 24px #f9c784, 0 0 32px #4e598c, 0 0 8px #fff;
+  }
+}
+.parallax-timeline-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.timeline-blurb {
+  z-index: 2;
+  max-width: 600px;
+}
+@media (max-width: 900px) {
+  .parallax-timeline-bg {
+    background-attachment: scroll;
+  }
+}
+/* Animated gradient text for announcement bar */
+.announcement-gradient-text {
+  background: linear-gradient(90deg, #4e598c, #f9c784, #4e598c 90%);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: announcement-gradient-move 4s linear infinite;
+}
+
+@keyframes announcement-gradient-move {
+  0% {
+    background-position: 200% 50%;
+  }
+  30% {
+    background-position: 200% 50%;
+  }
+  70% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .gallery-card {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
   box-shadow: 0 2px 16px rgba(40, 50, 80, 0.08);
   background: #fff;
   width: 100%;
@@ -63,7 +112,6 @@
   object-fit: cover;
   display: block;
   transition: filter 0.25s cubic-bezier(0.4, 2, 0.6, 1);
-  border-radius: 12px;
 }
 .gallery-card:hover img {
   filter: brightness(0.85) blur(1px);
