@@ -1,38 +1,86 @@
 [
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A brief description of this special moment in NECYSC history."
+    "image": "/static/necysc_app/images/history/gallery/2025.JPG",
+    "description": "Overnight Camp Photo: NECYSC 2025."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A brief description of another milestone or memory."
+    "image": "/static/necysc_app/images/history/gallery/2022.jpeg",
+    "description": "Back to person at Brandeis University: NECYSC 2022."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A short caption for this gallery item."
+    "image": "/static/necysc_app/images/history/gallery/2020.png",
+    "description": "NECYSC 2020: our COVID virtual year."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A brief description of this special moment in NECYSC history."
+    "image": "/static/necysc_app/images/history/gallery/2019.jpg",
+    "description": "Closing Ceremony, NECYSC 2019."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A brief description of another milestone or memory."
+    "image": "/static/necysc_app/images/history/gallery/2019_directors.jpg",
+    "description": "Directors at NECYSC, 2019."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A short caption for this gallery item."
+    "image": "/static/necysc_app/images/history/gallery/2018_necysc.jpg",
+    "description": "NECYSC group photo, 2018."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A brief description of this special moment in NECYSC history."
+    "image": "/static/necysc_app/images/history/gallery/2018_directors.jpg",
+    "description": "Directors at NECYSC, 2018."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A brief description of another milestone or memory."
+    "image": "/static/necysc_app/images/history/gallery/2017_fits.jpg",
+    "description": "Fun in the Sun (FITS) event, 2017."
   },
   {
-    "image": "/static/necysc_app/images/hero/about_hero.jpg",
-    "description": "A short caption for this gallery item."
+    "image": "/static/necysc_app/images/history/gallery/2017_closing_ceremony.jpg",
+    "description": "2017 closing ceremony group photo."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2017_30years.jpg",
+    "description": "Celebrating 30 years of NECYSC in 2017."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2016_limbo.jpg",
+    "description": "Limbo at at NECYSC 2016 Carnival."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2016_class.jpg",
+    "description": "Campers in class, 2016."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2015_picnic.jpg",
+    "description": "2015 NECYSC picnic gathering."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2014.jpg",
+    "description": "A moment from NECYSC 2014."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2014_on.jpg",
+    "description": "NECYSC 2014: Campers enjoying the dining hall."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2012_visit_chinatown.jpg",
+    "description": "Campers visiting Chinatown in 2012."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2009_directors.jpg",
+    "description": "Directors at NECYSC, 2009."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2009_closing.jpg",
+    "description": "Campers at the 2009 closing ceremony."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2008_directors.jpg",
+    "description": "NECYSC directors group photo, 2008."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2007_closing.jpg",
+    "description": "Closing ceremony of NECYSC 2007."
+  },
+  {
+    "image": "/static/necysc_app/images/history/gallery/2006_picnic.jpg",
+    "description": "Campers and families at the 2006 NECYSC picnic."
   }
 ]
