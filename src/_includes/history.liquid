@@ -9,7 +9,7 @@
     <h2 class="text-center fw-bold my-5 text-white glow-animate" style="font-size:4rem">40 Years of NECYSC</h2>
 
   <!-- FOUNDERS/LEGACY SECTION -->
-  <h2 class="text-center fw-bold my-5 text-white" style="font-size:2.5rem">Our Founders & Legacy</h2>
+  {% comment %} <h2 class="text-center fw-bold my-5 text-white" style="font-size:2.5rem">Our Founders & Legacy</h2>
   <div class="row justify-content-center g-4">
     <div class="col-6 col-md-3 text-center">
       <img src="/static/necysc_app/images/headshots/founder1.jpg" alt="Founder 1" class="rounded-circle shadow mb-3" style="width:120px;height:120px;object-fit:cover;" />
@@ -26,7 +26,7 @@
       <div class="fw-bold" style="color:#4e598c;">Founder Name</div>
       <div class="fst-italic small ">“Community is everything.”</div>
     </div>
-  </div>
+  </div> {% endcomment %}
   <!-- IMPACT STATS SECTION -->
   <h2 class="text-center fw-bold my-5 text-white" style="font-size:2.5rem">Our Impact</h2>
   <div class="row text-center g-4">
@@ -54,38 +54,40 @@
   
   <!-- TIMELINE SECTION -->
   <div class="container py-5 my-5 d-flex align-items-center justify-content-center flex-column" style="min-height: 20vh;">
-    <h3 class="fw-bold mb-2 text-center text-white">1986: NECYSC is Born</h3>
+    <h3 class="fw-bold mb-2 text-center text-white display-6">1986: NECYSC is Born</h3>
     <p class="lead mb-0 text-center">A group of passionate families and leaders come together to create a summer experience for Asian American youth.</p>
   </div>
   
   <div class="timeline-parallax-section position-relative" style="min-height: 100vh;">
-    <div class="parallax-timeline-bg" style="background-image: url('/static/necysc_app/images/hero/about_hero.jpg');"></div>
+    <div class="parallax-timeline-bg" style="background-image: url('/static/necysc_app/images/history/history_one.jpg');"></div>
   </div>
   
   <div class="container py-5 my-5 d-flex align-items-center justify-content-center flex-column" style="min-height: 60vh;">
-    <h3 class="fw-bold mb-2 text-center text-white">2000s: Growth & Innovation</h3>
+    <h3 class="fw-bold mb-2 text-center text-white display-6">2000s: Growth & Innovation</h3>
     <p class="lead mb-0 text-center">New programs, new faces, and a growing legacy. NECYSC expands its reach and impact across New England.</p>
   </div>
   
 
   <div class="timeline-parallax-section position-relative mb-0" style="min-height: 100vh;">
-    <div class="parallax-timeline-bg" style="background-image: url('/static/necysc_app/images/home/home_two.jpg');"></div>
+    <div class="parallax-timeline-bg" style="background-image: url('/static/necysc_app/images/history/history_two.jpg');"></div>
   </div>
   <div class="container py-5 my-5 d-flex align-items-center justify-content-center flex-column" style="min-height: 60vh;">
-    <h3 class="fw-bold mb-2 text-center text-white">2020s: 40 Years Strong</h3>
+    <h3 class="fw-bold mb-2 text-center text-white display-6">2020s: 40 Years Strong</h3>
     <p class="lead mb-0 text-center">Celebrating four decades of community, resilience, and joy. The journey continues with new generations.</p>
   </div>
 
-  <div class="timeline-parallax-section position-relative mb-5" style="min-height: 60vh;">
-    <div class="parallax-timeline-bg" style="background-image: url('/static/necysc_app/images/home/home_one.jpg');"></div>
+  <div class="timeline-parallax-section position-relative mb-5" style="min-height: 100vh;">
+    <div class="parallax-timeline-bg" style="background-image: url('/static/necysc_app/images/history/history_three.jpg');"></div>
   </div>
 
+  <!-- GALLERY SECTION (already present, left as is) -->
+
   <div class="align-items-center justify-content-center flex-column d-flex" style="min-height: 15vh;">
-  <h2 class="text-center fw-bold my-5 text-white" style="font-size:2.5rem">Gallery</h2>
+  <h2 class="text-center fw-bold my-5 text-white" style="font-size:4rem">Gallery</h2>
   </div>
   <div class="museum-gallery row align-items-stretch mt-5" style="margin:0;padding:0;">
     {% for item in gallery %}
-    <div class="col-lg-4 col-md-6 col-12 d-flex align-items-stretch" style="padding:0;margin:0;">
+    <div class="col-lg-4 col-md-6 col-6 d-flex align-items-stretch" style="padding:0;margin:0;">
       <div class="gallery-card">
         <img src="{{ item.image }}" alt="Gallery image" loading="lazy" />
         <div class="gallery-card-overlay">{{ item.description }}</div>
@@ -96,7 +98,6 @@
   
 </section>
 
-<!-- GALLERY SECTION (already present, left as is) -->
 
 <section >
   
