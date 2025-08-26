@@ -42,6 +42,15 @@
     ["Steve Feder", "Medical", "steve_feder.jpg"],
     ["Wesley Chiu", "Medical", "wesley.jpg"]
   ],
+  "announcement_bar": {
+    "show": true,
+    "text": "🎉 Celebrating 40 Years of NECYSC! Step into our memories ",
+    "button": {
+      "show": true,
+      "text": "Go to History",
+      "url": "/about/"
+    }
+  },
   "sponsors": [
     {
       "name": "Tow Family",
