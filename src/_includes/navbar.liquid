@@ -1,7 +1,7 @@
 <div class="sticky-top">
 <!-- announcement banner only for home page -->
 {% if page.url == '/' and config.announcement_bar.show %}
-<div style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:#f9c784;color:#4e598c;text-align:center;padding:0.75rem 0;font-size:1.25rem;font-weight:600;letter-spacing:0.02em;z-index:2000;display:flex;align-items:center;justify-content:center;gap:1.5rem;">
+<div class="w-100 bg-yellow text-purple text-center py-3 px-3 fw-bold d-flex align-items-center justify-content-center gap-sm-4 gap-2" style="z-index:2000; font-size:1.25rem; letter-spacing:0.02em;">
   <span class="announcement-gradient-text">{{ config.announcement_bar.text }}</span>
   {% if config.announcement_bar.button.show %}
   <a href="{{ config.announcement_bar.button.url }}" class="banner-arrow-btn" style="display:inline-flex;align-items:center;justify-content:center;background:#4e598c;color:#fff;border-radius:50%;width:2.5rem;height:2.5rem;text-decoration:none;transition:background 0.2s;box-shadow:0 2px 8px rgba(78,89,140,0.08);font-size:1.5rem;">
@@ -14,7 +14,7 @@
   {% endif %}
 </div>
 {% endif %}
-<nav class="row pt-2 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 bg-bi-white bg-white row" style="opacity: 0.9">  
+<nav class="row pt-3 pb-2 mb-3 d-flex ps-4 pe-5 align-items-center gap-3 bg-bi-white bg-white row" style="opacity: 0.9">  
 <input type="checkbox" id="menu-toggle" class="menu-toggle" />
   <label for="menu-toggle" class="hamburger"> &#9776; </label>
   <div class="nav-links">

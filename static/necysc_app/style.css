@@ -1,3 +1,7 @@
+.bg-yellow {
+  background-color: #f9c784 !important;
+}
+
 /* Parallax Timeline Section Styles */
 .timeline-parallax-section {
   position: relative;
@@ -32,7 +36,8 @@
 .timeline-blurb {
   z-index: 2;
   max-width: 600px;
-}ß
+}
+ß
 
 /* Animated gradient text for announcement bar */
 .announcement-gradient-text {
@@ -569,8 +574,7 @@ img {
     display: none;
     flex-direction: column;
     background-color: white;
-    position: absolute;
-    top: 60px;
+    position: sticky;
     right: 0;
     width: 100%;
     padding: 10px;
