@@ -132,9 +132,30 @@ title: Staff
 			</div>
 		</div>
 	</section>
+	<section id="head-counselors" class="mt-5">
+		<div class="container">
+			<div class="row p-5 border rounded-3 shadow-lg my-5">
+				<div>
+					<h1 class="fw-bold display-5 position-relative" style="color: #4e598c" id="head-counselors">Meet The Head Counselor Team</h1>
+					<div class="row g-3 pt-2 justify-content-center align-items-end">
+						{% for member in config.committee %}
+							{% if member[1] contains 'Head Counselor' %}
+								<div class="col-xl-2 col-lg-2 col-md-3 col-4 text-center">
+									<img onerror="this.onerror=null; this.src='/static/necysc_app/images/headshots/anonymous.png';" class="img-fluid rounded-circle mb-2" style="width: 90px; height: 90px; object-fit: cover;" src="/static/necysc_app/images/headshots/{{ member[2] }}" alt="{{ member[0] }}">
+									<div class="small fw-bold">{{ member[0] }}</div>
+									<div class="small text-muted">{{ member[1] }}</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="committee">
 		<div class="container">
-			<div class="row p-5 border rounded-3 shadow-lg">
+			<div class="row p-5 border rounded-3 shadow-lg my-5">
 				<div>
 					<h1 class="fw-bold display-5 position-relative" style="color: #4e598c" id="committee">Committee</h1>
 					<p class="fs-5">The NECYSC Committee is made up of dedicated parent volunteers who play a vital role in ensuring the smooth operation of our camp. As a committee member, you’ll work closely with our Director and Head Counselor team to help coordinate logistics and support behind-the-scenes activities that make NECYSC possible.</p>
