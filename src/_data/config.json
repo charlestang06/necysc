@@ -50,7 +50,7 @@
     "button": {
       "show": true,
       "text": "Go to History",
-      "url": "/about/"
+      "url": "/about#history"
     }
   },
   "sponsors": [
