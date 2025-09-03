@@ -1,4 +1,3 @@
-  
 <style>
 .year-card-col {
   margin-bottom: 2.2rem !important;
@@ -31,22 +30,22 @@
   <h2 class="text-center fw-bold my-5 text-white" style="font-size:2.5rem">Our Impact</h2>
   <div class="row text-center g-4">
     <div class="col-6 col-md-3">
-      <div class="display-4 fw-bold" style="color:#f9c784;">40+</div>
+      <div class="display-4 fw-bold scramble-number" data-target="40" style="color:#f9c784;">40+</div>
       <h3 class="fw-bold" style="color:#f9c784;">Years</h3>
       <div class=" small">of community</div>
     </div>
     <div class="col-6 col-md-3">
-      <div class="display-4 fw-bold" style="color:#f9c784;">2,000+</div>
+      <div class="display-4 fw-bold scramble-number" data-target="2000" style="color:#f9c784;">2,000+</div>
       <h3 class="fw-bold" style="color:#f9c784;">Campers</h3>
       <div class=" small">since 1985</div>
     </div>
     <div class="col-6 col-md-3">
-      <div class="display-4 fw-bold" style="color:#f9c784;">350+</div>
+      <div class="display-4 fw-bold scramble-number" data-target="350" style="color:#f9c784;">350+</div>
       <h3 class="fw-bold" style="color:#f9c784;">Staff</h3>
       <div class=" small">worldwide</div>
     </div>
     <div class="col-6 col-md-3">
-      <div class="display-4 fw-bold" style="color:#f9c784;">10+</div>
+      <div class="display-4 fw-bold scramble-number" data-target="10" style="color:#f9c784;">10+</div>
       <h3 class="fw-bold" style="color:#f9c784;">Programs</h3>
       <div class="small">for all ages</div>
     </div>
@@ -98,8 +97,43 @@
   
 </section>
 
+<script>
+function scrambleNumber(el, target, duration = 2000) {
+  let start = 0;
+  let startTime = null;
+  target = parseInt(target, 10);
+  function animateScramble(ts) {
+    if (!startTime) startTime = ts;
+    let progress = Math.min((ts - startTime) / duration, 1);
+    let current = Math.floor(progress * target);
+    el.textContent = current.toLocaleString() + "+";
+    if (progress < 1) {
+      requestAnimationFrame(animateScramble);
+    } else {
+      el.textContent = target.toLocaleString() + "+";
+    }
+  }
+  requestAnimationFrame(animateScramble);
+}
 
-<section >
-  
-</section>
+document.addEventListener("DOMContentLoaded", function() {
+  let hasScrambled = false;
+  const impactSection = document.querySelector('.row.text-center.g-4');
+  if (!impactSection) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasScrambled) {
+        document.querySelectorAll('.scramble-number').forEach(el => {
+          scrambleNumber(el, el.getAttribute('data-target'));
+        });
+        hasScrambled = true;
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(impactSection);
+});
+</script>
 

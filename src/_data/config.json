@@ -10,6 +10,7 @@
     "cit": "$1,120"
   },
   "po_box": "NECYSC, P.O. Box 650132, West Newton, MA 02465",
+  "registration_url": "https://form.jotform.com/243363178260153",
   "committee": [
     ["Christopher Chiu", "Director", "chris_chiu.jpg"],
     ["Paul Eska", "Assistant Director", "paul_eska.jpg"],
@@ -49,7 +50,7 @@
     "button": {
       "show": true,
       "text": "Go to History",
-      "url": "/about/"
+      "url": "/about#history"
     }
   },
   "sponsors": [

@@ -101,7 +101,7 @@ nav_active: about
 		If you’re interested in joining our team and contributing to the camp’s success, please reach out to us at <a href="mailto:director@necysc.org">director@necysc.org</a>.
 	</p>
 		<div class="mb-5">
-		<div class="row g-3 pt-2 justify-content-center align-items-end" id="meettheteam">{% for member in config.committee %}<div class="col-xl-2 col-lg-2 col-md-3 col-4 text-center"><img onerror="this.onerror=null; this.src='/static/necysc_app/images/headshots/anonymous.png';" class="img-fluid rounded-circle mb-2" style="width: 90px; height: 90px; object-fit: cover;" src="/static/necysc_app/images/headshots/{{ member[2] }}" alt="{{ member[0] }}"><div class="small fw-bold">{{ member[0] }}</div><div class="small text-muted">{{ member[1] }}</div></div>{% endfor %}</div>
+		<div class="row g-3 pt-2 justify-content-center align-items-start" id="meettheteam">{% for member in config.committee %}<div class="col-xl-2 col-lg-2 col-md-3 col-4 text-center"><img onerror="this.onerror=null; this.src='/static/necysc_app/images/headshots/anonymous.png';" class="img-fluid rounded-circle mb-2" style="width: 90px; height: 90px; object-fit: cover;" src="/static/necysc_app/images/headshots/{{ member[2] }}" alt="{{ member[0] }}"><div class="small fw-bold">{{ member[0] }}</div><div class="small text-muted">{{ member[1] }}</div></div>{% endfor %}</div>
 			<div class="mt-4">
 				<p class="fs-5">Want to join committee? Learn more about us <a href="/staff/#committee">here.</a></p>
 			</div>
