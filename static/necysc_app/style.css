@@ -10,16 +10,16 @@
 }
 /* Animated Glow Effect for Timeline Heading */
 .glow-animate {
-  text-shadow: 0 0 2px #f9c784, 0 0 16px #4e598c, 0 0 2px #fff;
+  text-shadow: 0 0 2px #f9c784, 0 0 16px #393866, 0 0 2px #fff;
   animation: glow-pulse 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow-pulse {
   0% {
-    text-shadow: 0 0 8px #f9c784, 0 0 16px #4e598c, 0 0 2px #fff;
+    text-shadow: 0 0 8px #f9c784, 0 0 16px #393866, 0 0 2px #fff;
   }
   100% {
-    text-shadow: 0 0 24px #f9c784, 0 0 32px #4e598c, 0 0 8px #fff;
+    text-shadow: 0 0 24px #f9c784, 0 0 32px #393866, 0 0 8px #fff;
   }
 }
 .parallax-timeline-bg {
@@ -41,7 +41,7 @@
 
 /* Animated gradient text for announcement bar */
 .announcement-gradient-text {
-  background: linear-gradient(90deg, #4e598c, #f9c784, #4e598c 90%);
+  background: linear-gradient(90deg, #393866, #f9c784, #393866 90%);
   background-size: 200% auto;
   color: transparent;
   background-clip: text;
@@ -314,7 +314,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #4e598c;
+  color: #393866;
 }
 
 #faqregistration,
@@ -358,7 +358,7 @@ h3 {
 }
 
 .btn-purple {
-  background-color: #4e598c;
+  background-color: #393866;
   color: #f9c784;
   transition: all 0.3s ease;
   padding: 10px 20px;
@@ -377,7 +377,7 @@ h3 {
 
 .btn-yellow {
   background-color: #f9c784;
-  color: #4e598c;
+  color: #393866;
   transition: all 0.3s ease;
   padding: 10px 20px;
   border-radius: 20px;
@@ -389,25 +389,25 @@ h3 {
 }
 
 .btn-yellow:hover {
-  background-color: #4e598c;
+  background-color: #393866;
   color: #ffffff;
 }
 
 .accordion-item .accordion-button:not(.collapsed) {
-  background-color: #4e598c; /* Darker purple when open */
+  background-color: #393866; /* Darker purple when open */
   color: #ffffff; /* White text for contrast */
 }
 
 .bg-purple {
-  background-color: #4e598c;
+  background-color: #393866;
 }
 
 .text-purple {
-  color: #4e598c;
+  color: #393866;
 }
 
 .border-purple {
-  border-color: #4e598c;
+  border-color: #393866;
 }
 
 @keyframes floatAnimation {
@@ -452,7 +452,7 @@ a {
 }
 
 .dropdown-content a {
-  color: #4e598c;
+  color: #393866;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -460,7 +460,7 @@ a {
 }
 
 .dropdown-content a:hover {
-  background-color: #4e598c;
+  background-color: #393866;
   color: #f9c784;
 }
 
@@ -483,28 +483,28 @@ a {
 }
 
 .navbar-link {
-  color: #4e598c;
+  color: #393866;
   transition: color 0.3s ease;
   padding: 10px 20px;
 }
 
 .navbar-link:hover {
   color: #f9c784;
-  background: #4e598c;
+  background: #393866;
   transition: color 0.3s ease;
   border-radius: 50px;
 }
 
 .active {
   color: #f9c784;
-  background: #4e598c;
+  background: #393866;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 50px;
 }
 
 .btn-login {
-  background-color: #4e598c;
+  background-color: #393866;
   color: #f9c784;
   transition: all 0.3s ease;
   padding: 10px 20px;
@@ -524,12 +524,12 @@ a {
   display: inline-block;
   text-align: center;
   background: #f9c784;
-  color: #4e598c;
+  color: #393866;
   transition: all 0.3s ease;
 }
 
 .btn-padding:hover {
-  background-color: #4e598c;
+  background-color: #393866;
   color: #ffffff;
 }
 
@@ -544,7 +544,7 @@ img {
 }
 
 #logobutton {
-  background-color: #4e598c;
+  background-color: #393866;
   transition: all 0.3s ease;
 }
 
@@ -561,7 +561,7 @@ img {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #4e598c;
+  color: #393866;
 }
 
 .nav-links {
