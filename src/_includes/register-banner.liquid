@@ -4,7 +4,7 @@
             <h5 class="text-white fs-3">Don't miss out! Register for {{ config.year }} NECYSC today!</h5>
         {% else %}
             <a href="/registration/" class="m-auto btn-yellow fs-5 px-5 rounded-pill d-flex align-items-center justify-content-center w-auto">
-                REGISTER Today
+                {{ config.registration_button_text }} Today
                 <span class="fs-4 ps-3 text-yellow bi bi-chevron-compact-right d-flex align-items-center"></span>
             </a>
         {% endif %}
