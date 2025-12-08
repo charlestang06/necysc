@@ -10,9 +10,11 @@
     "cit": "$1,120"
   },
   "po_box": "NECYSC, P.O. Box 650132, West Newton, MA 02465",
-  "registration_button_text": "Express Interest",
+  "registration_button_text": "Join our mailing list",
   "registration_url": "https://forms.gle/7sNLk7yoc3nsynif8",
   "old_registration_url": "https://form.jotform.com/243363178260153",
+  "staff_app_button_text": "Apply Now",
+  "staff_app_url": "https://forms.gle/3Ua8wvJfMN83LWLg8",
   "committee": [
     ["Christopher Chiu", "Director", "chris_chiu.jpg"],
     ["Paul Eska", "Assistant Director", "paul_eska.jpg"],
@@ -51,11 +53,11 @@
   ],
   "announcement_bar": {
     "show": true,
-    "text": "🎉 Celebrating 40 Years of NECYSC! Step into our memories ",
+    "text": "🎉 Youth Staff Applications Now Open! ",
     "button": {
       "show": true,
-      "text": "Go to History",
-      "url": "/about#history"
+      "text": "Go to Application",
+      "url": "/staff"
     }
   },
   "sponsors": [
