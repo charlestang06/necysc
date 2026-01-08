@@ -4,14 +4,15 @@
   "camp_week": "(Sun) July 26 - (Sat) Aug 1, 2026",
   "staff_camp_week": "(Sat) July 25 - (Sat) Aug 1, 2026",
   "fees": {
-    "day": "$915, Early Bird $815",
-    "on": "$1,835, Early Bird $1735",
-    "ea": "$1,835, Early Bird $1735",
-    "cit": "$1,120"
+    "day": "$950, Early Bird $850, Late Registration: $1,000",
+    "on": "$1,900, Early Bird $1,800, Late Registration: $2,000",
+    "ea": "$1,900, Early Bird $1,800, Late Registration: $2,000",
+    "cit": "$1,150"
   },
   "po_box": "NECYSC, P.O. Box 650132, West Newton, MA 02465",
-  "registration_button_text": "Join our mailing list",
-  "registration_url": "https://forms.gle/7sNLk7yoc3nsynif8",
+  "registration_button_text": "Register",
+  "registration_url": "https://pci.jotform.com/form/252848528410157",
+  "mailing_list_url": "https://forms.gle/7sNLk7yoc3nsynif8",
   "old_registration_url": "https://form.jotform.com/243363178260153",
   "staff_app_button_text": "Apply Now",
   "staff_app_url": "https://forms.gle/3Ua8wvJfMN83LWLg8",
@@ -53,11 +54,11 @@
   ],
   "announcement_bar": {
     "show": true,
-    "text": "🎉 Youth Staff Applications Now Open! ",
+    "text": "🎉 Registration for Summer Camp 2026 is Open! ",
     "button": {
       "show": true,
-      "text": "Go to Application",
-      "url": "/staff"
+      "text": "REGISTER Now",
+      "url": "/registration"
     }
   },
   "sponsors": [
